@@ -1,18 +1,11 @@
-1971 • FEAR multi-page website
+1971 • FEAR — MULTI-PAGE WEBSITE (expanded edition)
 
 Upload ALL files in this folder to the root of your GitHub Pages repository.
-index.html must remain at the top level.
+index.html must remain at the repository root.
 
-Pages included:
-- Home
-- Season 2: Polar World
-- Season 3: Golden Realm
-- Events
-- Guides
-- Free-to-Play Guide
-- Alliance Rules
-- Leadership
-- Gallery
-- Recruitment
+Expanded pages:
+- season2.html — Polar World detailed playbook
+- season3.html — Golden Kingdom detailed playbook
+- f2p.html — Free-to-play daily/weekly guide
 
-Edit any .html file in GitHub to update names, event times, rules, or guide text.
+The site is an unofficial fan/alliance resource. Season mechanics can change, so verify current values in-game.
