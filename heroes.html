@@ -37,7 +37,7 @@ section{padding:42px 0}
 .rarity.ur{color:var(--gold);border-color:#705b2b}.rarity.ssr{color:#b9a2ff}.rarity.sr{color:#80bfff}
 .role{display:inline-block;font-size:11px;font-weight:800;color:#ddd;background:#20282d;padding:5px 8px;margin-bottom:5px}
 .detail{border-top:1px solid var(--line);padding-top:14px;margin-top:15px}
-.detail p{margin:0}
+.detail p{margin:0}.skill-list{margin:8px 0 0;padding-left:20px}.skill-list li{margin:8px 0;color:var(--muted);line-height:1.55}.skill-list strong{color:#f4f2ea}
 .weapon{margin-top:16px;padding:15px;border:1px solid var(--line);background:#0b0f11}
 .weapon-active{border-color:#705b2b;background:#17150f}.weapon-active h3,.weapon-active strong{color:var(--gold)}
 .weapon p{margin:7px 0 0}
@@ -102,9 +102,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Attack</div>
   <p>High-output AOE Energy Damage carry. Build skills around her barrage damage and attack scaling.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Barrage Strike • Energy Assault</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Barrage Strike</strong> — Fires a volley of rockets at random enemies for Energy Damage. Higher skill tiers add more rockets and increase the damage, making this her main multi-target burst skill.</li><li><strong>Energy Boost</strong> — Passively increases Kimberly's Energy Damage throughout the battle.</li><li><strong>Super Sensing</strong> — Expertise that raises Kimberly's HP, Attack and Defense and improves her skill cooldown rate.</li></ul></div>
   <div class="weapon weapon-active">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>Rocket Shadow</strong>
@@ -126,9 +124,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Defense</div>
   <p>Front-row defender focused on Physical Damage reduction and protecting the formation.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Ironclad Barrier • Cannon Fire</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Cannon Fire</strong> — Basic cannon attack that deals Physical Damage to an enemy.</li><li><strong>Ironclad Barrier</strong> — Temporarily increases Physical Damage Reduction for the front row; at higher tiers the protection can extend to the whole squad and last longer.</li><li><strong>Stand Firm</strong> — Passively reduces damage taken by front-row units, strengthening the squad's frontline.</li><li><strong>Super Sensing</strong> — Expertise that raises Murphy's HP, Attack and Defense and improves skill cooldown rate.</li></ul></div>
   <div class="weapon weapon-active">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>Mitigation Master</strong>
@@ -150,9 +146,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Defense</div>
   <p>Defensive anchor built around damage reduction, defense buffs and front-row survival.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Ironclad Shield • Stun Bomb</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Cannon Fire</strong> — Basic cannon attack that deals Physical Damage.</li><li><strong>Ironclad Barrier</strong> — Temporarily boosts Physical Damage Reduction for the front row, with stronger tiers extending duration and team coverage.</li><li><strong>Defensive Passive</strong> — Improves frontline durability and helps Williams function as a defensive anchor in longer battles.</li></ul></div>
   <div class="weapon weapon-active">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>Exclusive Weapon available</strong>
@@ -174,9 +168,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Support</div>
   <p>Back-row support hero who improves squad Attack/Crit performance and helps Tank formations.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Command Strategy • Triad Harmony</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Command / Support Skill</strong> — Improves the offensive performance of allied heroes, helping the squad deal more damage rather than acting as a primary damage dealer.</li><li><strong>Team Buff Passive</strong> — Provides continuing squad-wide offensive support, making him especially valuable behind a durable frontline.</li></ul></div>
   <div class="weapon weapon-active">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>Command Focus Fire</strong>
@@ -198,9 +190,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Attack</div>
   <p>Tank-type damage dealer with strong Energy Damage and critical-hit scaling.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Lightning Rush • Orb Lightning</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Lightning Rush</strong> — Delivers strong Energy Damage and functions as Stetmann's primary burst attack.</li><li><strong>Orb Lightning</strong> — Adds repeated Energy Damage pressure and helps him serve as a secondary Tank-squad DPS.</li><li><strong>Offensive Passive</strong> — Improves Stetmann's Energy/critical damage output as his skills are upgraded.</li></ul></div>
   <div class="weapon weapon-active">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>Exclusive Weapon available</strong>
@@ -222,9 +212,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Attack</div>
   <p>Aircraft burst carry built around heavy Energy Damage and rapid elimination of priority targets.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Steel Barrage • Vortex Missile</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Steel Barrage</strong> — Primary Aircraft damage skill that delivers a heavy burst against enemy targets.</li><li><strong>Vortex Missile</strong> — Adds additional Energy Damage pressure and helps DVA punish vulnerable enemy backline heroes.</li><li><strong>Offensive Passive</strong> — Improves DVA's damage scaling so her burst becomes more dangerous as she is developed.</li></ul></div>
   <div class="weapon weapon-active">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>Energy Master</strong>
@@ -246,9 +234,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Defense</div>
   <p>Aircraft front-line defender with survivability, shielding/evasion utility and enemy pressure.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Inferno Blaze • Absorb Shell</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Aircraft Defense Skill</strong> — Reduces incoming pressure and improves Carlie's ability to survive in the front row.</li><li><strong>Formation Protection</strong> — Adds defensive support for the Aircraft formation, helping the rest of the squad survive longer.</li><li><strong>Defensive Passive</strong> — Improves Carlie's durability and reinforces her role as an Aircraft frontline tank.</li></ul></div>
   <div class="weapon weapon-active">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>Exclusive Weapon available</strong>
@@ -270,9 +256,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Defense</div>
   <p>Aircraft defensive specialist providing resistance and protection to the formation.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Knight&#x27;s Spirit • Aero Shell</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Defensive Support Skill</strong> — Protects the Aircraft formation by improving resistance to incoming damage.</li><li><strong>Aero Shell</strong> — Provides defensive protection that helps the squad withstand enemy burst windows.</li><li><strong>Support Passive</strong> — Strengthens Lucius's ability to keep allied Aircraft heroes alive rather than focusing on personal damage.</li></ul></div>
   <div class="weapon weapon-active">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>Exclusive Weapon available</strong>
@@ -294,9 +278,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Attack / CC</div>
   <p>Back-row attacker with burst Energy Damage and stun-based crowd control.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Blast Frenzy • Power Barrage</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Blast Frenzy</strong> — Deals Energy Damage and contributes to Schuyler's burst pressure.</li><li><strong>Power Barrage</strong> — Attacks enemies while providing a chance to disrupt/stun targets, giving Aircraft teams crowd-control utility.</li><li><strong>Control Passive</strong> — Improves Schuyler's ability to interfere with enemy actions and create damage windows for allied attackers.</li></ul></div>
   <div class="weapon weapon-active">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>Exclusive Weapon available</strong>
@@ -318,9 +300,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Attack / Shred</div>
   <p>Physical-damage Aircraft hero whose defense-shred effects help the entire squad hit harder.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Armor Piercing Shot • Gatling Burst</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Armor Piercing Shot</strong> — Deals Physical Damage while helping break through enemy defenses.</li><li><strong>Gatling Burst</strong> — Provides sustained Physical Damage pressure.</li><li><strong>Defense Shred</strong> — Reduces enemy defensive effectiveness so Morrison and allied Aircraft heroes can deal more damage.</li></ul></div>
   <div class="weapon weapon-active">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>Exclusive Weapon available</strong>
@@ -342,9 +322,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Attack</div>
   <p>Missile Energy Damage carry. Lightning/Inductive effects scale as combat continues.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Electric Grid • Lightning Chain</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Electric Grid</strong> — Deals Energy Damage and pressures multiple enemy targets.</li><li><strong>Lightning Chain</strong> — Chains Energy Damage across enemies, giving Tesla strong multi-target/AOE pressure.</li><li><strong>Energy Passive</strong> — Improves Tesla's Energy Damage; his Exclusive Weapon can add Inductive stacks that further scale his AOE damage.</li></ul></div>
   <div class="weapon weapon-active">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>Inductive Current</strong>
@@ -366,9 +344,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Attack</div>
   <p>Physical-damage Missile hero who specializes in targeting and finishing weakened enemies.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Weakness Targeting • Targeted Strike</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Weakness Targeting</strong> — Focuses damage on vulnerable targets, helping Swift finish weakened enemies.</li><li><strong>Targeted Strike</strong> — Delivers concentrated Physical Damage to priority targets.</li><li><strong>Offensive Passive</strong> — Improves Swift's burst/target-finishing performance, especially during the opening damage window.</li></ul></div>
   <div class="weapon weapon-active">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>Exclusive Weapon available</strong>
@@ -390,9 +366,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Attack</div>
   <p>Multi-target Missile damage dealer with strong physical AOE pressure.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Atomic Blast • Double Trajectory</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Atomic Blast</strong> — Deals powerful Physical AOE damage across multiple targets.</li><li><strong>Double Trajectory</strong> — Adds multi-target pressure, allowing Fiona to damage more than one enemy during her attack cycle.</li><li><strong>Damage Passive</strong> — Improves Fiona's sustained Missile-squad damage and AOE effectiveness.</li></ul></div>
   <div class="weapon weapon-active">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>Exclusive Weapon available</strong>
@@ -414,9 +388,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Defense</div>
   <p>Missile front-line defender built around counterattacks and reflected/counter damage.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Counter Defense • MK43 Fire</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Counter Defense</strong> — Turns incoming pressure into counterattack value, making Adam dangerous while tanking.</li><li><strong>MK43 Fire</strong> — Provides offensive fire while Adam occupies a frontline defensive role.</li><li><strong>Counter Passive</strong> — Improves counterattack scaling and rewards keeping Adam alive on the frontline.</li></ul></div>
   <div class="weapon weapon-active">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>Exclusive Weapon available</strong>
@@ -438,9 +410,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Defense</div>
   <p>Durable Missile defender with taunt/protection mechanics that help shield the back row.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Unyielding Heart • Forward Rush</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Unyielding Heart</strong> — Improves McGregor's durability so he can absorb frontline pressure.</li><li><strong>Forward Rush</strong> — Aggressive frontline skill that helps him engage/protect the formation.</li><li><strong>Protection Passive</strong> — Supports his taunt/protection role, drawing pressure away from vulnerable back-row heroes.</li></ul></div>
   <div class="weapon weapon-active">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>Exclusive Weapon available</strong>
@@ -462,9 +432,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Support / Economy</div>
   <p>Excellent utility hero for resource farming and PvE economy. Valuable even when not used in the main PvP squad.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Treasure Hunting • Economy Boost</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Treasure Hunting</strong> — Improves Monica's PvE/resource value, making her useful when farming rather than only judging her by PvP damage.</li><li><strong>Economy Boost</strong> — Provides economy/resource-oriented utility that helps increase farming efficiency.</li></ul></div>
   <div class="weapon weapon-none">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>—</strong>
@@ -486,9 +454,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Attack / PvE</div>
   <p>Strong PvE Tank attacker. Can be promoted to UR in Season 1 and is especially useful against monsters/zombies.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Z-Buster • Monster Slayer</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Z-Buster</strong> — Primary attack skill built for dealing damage to zombie/PvE targets.</li><li><strong>Monster Slayer</strong> — Passive that increases Mason's effectiveness against monsters and zombies, which is why he remains valuable in PvE.</li></ul></div>
   <div class="weapon weapon-none">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>—</strong>
@@ -510,9 +476,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Defense</div>
   <p>Defensive Tank with AOE damage-over-time and damage-reduction utility. Promotable to UR in Season 2.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Poison Mist • Ice Armor</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Poison Mist</strong> — Applies area damage-over-time pressure to enemies.</li><li><strong>Ice Armor</strong> — Improves Violet's survivability through damage reduction/defensive protection, supporting her frontline role.</li></ul></div>
   <div class="weapon weapon-none">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>—</strong>
@@ -534,9 +498,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Defense</div>
   <p>Defensive Tank focused on shielding and personal durability. Promotable to UR in Season 3.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Pulse Barrier • Shield Mastery</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Pulse Barrier</strong> — Creates defensive shielding that helps absorb incoming damage.</li><li><strong>Shield Mastery</strong> — Improves Scarlett's personal defensive/shield performance, making her a durable secondary Tank hero.</li></ul></div>
   <div class="weapon weapon-none">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>—</strong>
@@ -558,9 +520,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Attack</div>
   <p>Budget Tank bruiser useful for secondary squads and early progression.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Iron Defense • Counter-Strike</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Iron Defense</strong> — Improves Richard's durability so he can function as a budget frontline bruiser.</li><li><strong>Counter-Strike</strong> — Returns damage/pressure when engaged, giving him some offense while tanking.</li></ul></div>
   <div class="weapon weapon-none">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>—</strong>
@@ -582,9 +542,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Support</div>
   <p>Aircraft support with speed/buff utility. Promotable to UR in later seasonal progression.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Air Support • Aero Buff</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Air Support</strong> — Provides support utility to Aircraft heroes rather than functioning as a pure damage dealer.</li><li><strong>Aero Buff</strong> — Buffs Aircraft performance, including speed/offensive support depending on skill development.</li></ul></div>
   <div class="weapon weapon-none">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>—</strong>
@@ -606,9 +564,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Attack</div>
   <p>Aircraft attacker suited to early and secondary formations.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Rapid Fire • Air Mastery</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Rapid Fire</strong> — Delivers repeated Aircraft damage against enemy targets.</li><li><strong>Air Mastery</strong> — Improves Aircraft-oriented offensive performance and makes Maxwell useful in early/secondary Air squads.</li></ul></div>
   <div class="weapon weapon-none">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>—</strong>
@@ -630,9 +586,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Defense</div>
   <p>Early-game Aircraft defender that can hold a front-row slot in secondary squads.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Reinforced Hull • Defense Support</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Reinforced Hull</strong> — Increases Cage's survivability and helps him serve as an early Aircraft frontline tank.</li><li><strong>Defense Support</strong> — Adds defensive utility for the formation, improving his value beyond personal durability.</li></ul></div>
   <div class="weapon weapon-none">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>—</strong>
@@ -654,9 +608,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Attack</div>
   <p>Missile attacker built around corrosive damage-over-time and anti-healing mechanics; promotable to UR in seasonal progression.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Toxic Bolt • Acidic Passive</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Toxic Bolt</strong> — Applies corrosive damage-over-time pressure to enemies.</li><li><strong>Acidic Passive</strong> — Strengthens Venom's corrosion effects and provides anti-healing utility, making enemy recovery less effective.</li></ul></div>
   <div class="weapon weapon-none">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>—</strong>
@@ -678,9 +630,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Defense / Utility</div>
   <p>Missile defender with slowing and logistics/resource utility.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Freezing Missile • Logistics Expert</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Freezing Missile</strong> — Deals Missile damage while applying slowing utility to hinder enemy tempo.</li><li><strong>Logistics Expert</strong> — Provides logistics/resource-gathering utility in addition to combat use.</li></ul></div>
   <div class="weapon weapon-none">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>—</strong>
@@ -702,9 +652,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Attack</div>
   <p>Missile attacker with crit-oriented squad utility, useful in secondary squads.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Explosive Round • Missile Mastery</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Explosive Round</strong> — Deals burst Missile damage to enemy targets.</li><li><strong>Missile Mastery</strong> — Improves Missile-oriented offense, including critical-hit support for Missile formations.</li></ul></div>
   <div class="weapon weapon-none">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>—</strong>
@@ -723,7 +671,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   </div>
   <div class="role">Attack</div>
   <p>Tank attacker in the current Last War hero roster, primarily useful in early or secondary formations.</p>
-  <div class="detail"><h3>SKILLS</h3><p>Check the current in-game hero panel for exact skill names, levels and percentages.</p></div>
+  <div class="detail"><h3>SKILLS</h3><ul class="skill-list"><li><strong>Attack Skill</strong> — Provides direct damage for an early-game/secondary squad.</li><li><strong>Passive Skill</strong> — Improves Farhad's basic combat contribution. Exact current skill wording should be checked in-game because public references do not consistently publish his full skill descriptions.</li></ul></div>
   <div class="weapon weapon-none"><h3>EXCLUSIVE WEAPON</h3><strong>—</strong><p>No standard UR Exclusive Weapon entry is listed for Farhad.</p></div>
 </article>
 
@@ -741,9 +689,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Defense</div>
   <p>Starter Tank hero primarily used during early progression.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Basic Block • Sturdy</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Basic Block</strong> — Improves Gump's ability to absorb early-game frontline damage.</li><li><strong>Sturdy</strong> — Passive durability boost that supports his role as a starter Tank defender.</li></ul></div>
   <div class="weapon weapon-none">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>—</strong>
@@ -765,9 +711,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Defense</div>
   <p>Starter Tank defender and early-game placeholder.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Shield Bash • Guard</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Shield Bash</strong> — Provides basic frontline damage/control pressure.</li><li><strong>Guard</strong> — Improves Loki's defensive capability as an early-game Tank placeholder.</li></ul></div>
   <div class="weapon weapon-none">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>—</strong>
@@ -789,9 +733,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Attack</div>
   <p>Starter Aircraft hero for early progression and secondary use.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Burst Fire • Air Tactics</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Burst Fire</strong> — Basic Aircraft damage skill for early progression.</li><li><strong>Air Tactics</strong> — Improves Ambolt's Aircraft-oriented offensive contribution.</li></ul></div>
   <div class="weapon weapon-none">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>—</strong>
@@ -813,9 +755,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:1
   <div class="role">Attack</div>
   <p>Starter Missile hero for early progression and secondary use.</p>
   <div class="detail">
-    <h3>SKILLS</h3>
-    <p>Piercing Shot • Missile Tactics</p>
-  </div>
+    <h3>SKILLS</h3><ul class="skill-list"><li><strong>Piercing Shot</strong> — Basic Missile attack focused on direct damage.</li><li><strong>Missile Tactics</strong> — Improves Kane's Missile-oriented offensive contribution.</li></ul></div>
   <div class="weapon weapon-none">
     <h3>EXCLUSIVE WEAPON</h3>
     <strong>—</strong>
