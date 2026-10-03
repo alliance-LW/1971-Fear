@@ -49,10 +49,10 @@ section{padding:42px 0}
 .hidden{display:none}
 footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:12px}
 @media(max-width:850px){.nav{align-items:flex-start;padding:14px 0;flex-direction:column}.grid{grid-template-columns:1fr}.wide{grid-column:auto}.milestones{grid-template-columns:repeat(2,1fr)}}
-</style>
+.navtop{display:flex;align-items:center;justify-content:space-between}.menu-toggle{display:none;background:var(--red);color:#fff;border:0;border-radius:4px;padding:10px 13px;font-weight:800;font-size:14px;cursor:pointer}@media(max-width:850px){.nav{height:auto!important;min-height:64px!important;display:block!important;padding:10px 0!important}.navtop{width:100%}.menu-toggle{display:block}.links{display:none!important;width:100%;padding:10px 0 4px!important;gap:6px!important;flex-direction:column!important}.links.open{display:flex!important}.links a{display:block;width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:4px;background:var(--panel);font-size:13px}}</style>
 </head>
 <body>
-<nav><div class="wrap nav"><div class="brand">1971 • <b>FEAR</b></div><div class="links"><a href="index.html">HOME</a><a href="daily.html">DAILY</a><a href="vs.html">VS</a><a href="combat.html">COMBAT</a><a href="growth.html">GROWTH</a><a href="squads.html">SQUADS</a><a href="team.html">TEAM</a><a href="heroes.html">HEROES</a><a href="gorilla.html">GORILLA</a><a href="seasons.html">SEASONS</a><a href="guides.html">GUIDES</a><a href="f2p.html">F2P</a><a href="rules.html">RULES</a><a href="gallery.html">GALLERY</a><a href="recruitment.html">JOIN</a></div></div></nav>
+<nav><div class="wrap nav"><div class="navtop"><div class="brand">1971 • <b>FEAR</b></div><button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-menu">☰ <span>MENU</span></button></div><div class="links" id="main-menu"><a href="index.html">HOME</a><a href="daily.html">DAILY</a><a href="vs.html">VS</a><a href="combat.html">COMBAT</a><a href="growth.html">GROWTH</a><a href="squads.html">SQUADS</a><a href="team.html">TEAM</a><a href="heroes.html">HEROES</a><a href="gorilla.html">GORILLA</a><a href="seasons.html">SEASONS</a><a href="guides.html">GUIDES</a><a href="f2p.html">F2P</a><a href="rules.html">RULES</a><a href="gallery.html">GALLERY</a><a href="recruitment.html">JOIN</a></div></div></nav>
 
 <header><div class="wrap">
 <div class="kicker">HERO INTELLIGENCE</div>
@@ -805,5 +805,5 @@ document.querySelectorAll('.hero-portrait').forEach(img=>{
   });
 });
 </script>
-</body>
+<script>const menuButton=document.querySelector(".menu-toggle"),mainMenu=document.querySelector("#main-menu");if(menuButton&&mainMenu){menuButton.addEventListener("click",()=>{const open=mainMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(open));menuButton.firstChild.nodeValue=open?"✕ ":"☰ "});mainMenu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{mainMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false");menuButton.firstChild.nodeValue="☰ "}))}</script></body>
 </html>
