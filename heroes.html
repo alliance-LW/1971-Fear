@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HEROES | 1971 FEAR</title>
+<style>
+:root{--bg:#090c0f;--panel:#11171b;--red:#d82929;--gold:#e6ad3d;--text:#f4f2ea;--muted:#aab3b8;--line:#293238}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(#0a0e11,#07090b);color:var(--text);font-family:Arial,sans-serif}
+.wrap{width:min(1150px,92%);margin:auto}
+nav{position:sticky;top:0;background:#090c0ff2;border-bottom:1px solid var(--line);z-index:5}
+.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-size:24px;font-weight:900}.brand b{color:var(--red)}
+.links{display:flex;gap:13px;flex-wrap:wrap}.links a{color:#ddd;text-decoration:none;font-size:12px;font-weight:800}.links a:hover,.links a.active{color:var(--gold)}
+header{padding:78px 0 48px;background:radial-gradient(circle at 75% 0,#26343a,transparent 35%)}
+.kicker,.tag{color:var(--gold);font-weight:800;letter-spacing:1.5px;font-size:11px}
+h1{font-size:clamp(44px,8vw,78px);margin:8px 0 12px}h2{margin:5px 0 8px}h3{font-size:12px;letter-spacing:1px;margin:0 0 7px}
+header p{color:#c0c7ca;max-width:900px;line-height:1.7}
+section{padding:42px 0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:linear-gradient(145deg,#151c20,#0e1215);border:1px solid var(--line);padding:24px;border-left:4px solid var(--red)}
+.card p,.card li{color:var(--muted);line-height:1.6}
+.wide{grid-column:1/-1}
+.callout{padding:18px;border:1px solid #705b2b;background:#17150f;color:#decda4;line-height:1.6}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 24px}
+.controls input{flex:1;min-width:230px;background:#0e1215;border:1px solid var(--line);color:#fff;padding:12px 14px;font-size:14px}
+.filter{border:1px solid var(--line);background:#151c20;color:#ddd;padding:11px 14px;font-weight:800;cursor:pointer}
+.filter:hover,.filter.active{border-color:var(--gold);color:var(--gold)}
+.hero-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.hero-heading{display:flex;align-items:center;gap:14px;min-width:0}
+.portrait-fallback{display:flex;align-items:center;justify-content:center;font-weight:900;font-size:22px;color:var(--gold);background:#11171b}.hero-portrait{width:78px;height:78px;flex:0 0 78px;object-fit:cover;object-position:center;border:2px solid #705b2b;background:#0b0f11;box-shadow:0 0 0 1px #293238}
+.hero-nameblock{min-width:0}
+.hero-nameblock h2{margin:5px 0 8px}
+@media(max-width:520px){.hero-portrait{width:64px;height:64px;flex-basis:64px}}
+.rarity{font-size:11px;font-weight:900;padding:6px 8px;border:1px solid var(--line)}
+.rarity.ur{color:var(--gold);border-color:#705b2b}.rarity.ssr{color:#b9a2ff}.rarity.sr{color:#80bfff}
+.role{display:inline-block;font-size:11px;font-weight:800;color:#ddd;background:#20282d;padding:5px 8px;margin-bottom:5px}
+.detail{border-top:1px solid var(--line);padding-top:14px;margin-top:15px}
+.detail p{margin:0}
+.weapon{margin-top:16px;padding:15px;border:1px solid var(--line);background:#0b0f11}
+.weapon-active{border-color:#705b2b;background:#17150f}.weapon-active h3,.weapon-active strong{color:var(--gold)}
+.weapon p{margin:7px 0 0}
+.ew-guide{border-left-color:var(--gold)}
+.milestones{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:15px}
+.milestone{padding:14px;background:#0c1012;border:1px solid var(--line);text-align:center}
+.milestone b{display:block;color:var(--gold);font-size:20px;margin-bottom:6px}
+.note{font-size:12px;color:#8d989e}
+.hidden{display:none}
+footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8a90;font-size:12px}
+@media(max-width:850px){.nav{align-items:flex-start;padding:14px 0;flex-direction:column}.grid{grid-template-columns:1fr}.wide{grid-column:auto}.milestones{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><div class="brand">1971 • <b>FEAR</b></div><div class="links">
+<a href="index.html">HOME</a><a href="daily.html">DAILY</a><a href="vs.html">VS</a><a href="combat.html">COMBAT</a><a href="growth.html">GROWTH</a><a href="squads.html">SQUADS</a><a href="team.html">TEAM</a><a class="active" href="heroes.html">HEROES</a><a href="season2.html">SEASON 2</a><a href="season3.html">SEASON 3</a><a href="guides.html">GUIDES</a><a href="f2p.html">F2P</a><a href="rules.html">RULES</a><a href="gallery.html">GALLERY</a><a href="recruitment.html">JOIN</a>
+</div></div></nav>
+
+<header><div class="wrap">
+<div class="kicker">HERO INTELLIGENCE</div>
+<h1>HEROES</h1>
+<p>FEAR hero reference for Last War: Survival. Browse the full 30-hero roster, compare hero roles and core skills, and focus your upgrades around the Exclusive Weapons that can change how UR heroes perform in battle.</p>
+</div></header>
+
+<section><div class="wrap"><div class="grid">
+<article class="card ew-guide wide">
+<span class="tag">EXCLUSIVE WEAPON GUIDE</span>
+<h2>Exclusive Weapon Milestones</h2>
+<p>Exclusive Weapons are hero-specific progression systems. A 5-star hero and 50 named weapon shards are generally required for the initial activation. After activation, weapon upgrades increase hero stats and unlock major effects at milestone levels. Universal shards can be used for upgrades after activation.</p>
+<div class="milestones">
+<div class="milestone"><b>LV 1</b>Weapon activation<br>Signature effect begins</div>
+<div class="milestone"><b>LV 10</b>Second major<br>weapon effect</div>
+<div class="milestone"><b>LV 20</b>Major formation bonus<br>Key stopping point</div>
+<div class="milestone"><b>LV 30</b>Final weapon<br>ability</div>
+</div>
+<p class="note">Availability can depend on server age and season. Verify exact skill percentages and shard costs in your current in-game hero/weapon screen before spending resources.</p>
+</article>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="controls">
+<input id="heroSearch" type="search" placeholder="Search heroes, skills or roles..." aria-label="Search heroes">
+<button class="filter active" data-filter="all">ALL</button>
+<button class="filter" data-filter="tank">TANK</button>
+<button class="filter" data-filter="aircraft">AIRCRAFT</button>
+<button class="filter" data-filter="missile">MISSILE</button>
+<button class="filter" data-filter="weapon">EXCLUSIVE WEAPONS</button>
+</div>
+<div class="grid" id="heroGrid">
+
+<article class="card hero-card" data-name="kimberly" data-type="tank" data-rarity="ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/kimberly.png" alt="Kimberly hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">TANK</span>
+        <h2>Kimberly</h2>
+      </div>
+    </div>
+    <span class="rarity ur">UR</span>
+  </div>
+  <div class="role">Attack</div>
+  <p>High-output AOE Energy Damage carry. Build skills around her barrage damage and attack scaling.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Barrage Strike • Energy Assault</p>
+  </div>
+  <div class="weapon weapon-active">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>Rocket Shadow</strong>
+    <p>Adds Energy Amplification-style scaling and strengthens her AOE damage. A major Tank carry weapon.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="murphy" data-type="tank" data-rarity="ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/murphy.png" alt="Murphy hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">TANK</span>
+        <h2>Murphy</h2>
+      </div>
+    </div>
+    <span class="rarity ur">UR</span>
+  </div>
+  <div class="role">Defense</div>
+  <p>Front-row defender focused on Physical Damage reduction and protecting the formation.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Ironclad Barrier • Cannon Fire</p>
+  </div>
+  <div class="weapon weapon-active">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>Mitigation Master</strong>
+    <p>Enhances damage mitigation for allies and greatly improves front-line durability.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="williams" data-type="tank" data-rarity="ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/williams.png" alt="Williams hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">TANK</span>
+        <h2>Williams</h2>
+      </div>
+    </div>
+    <span class="rarity ur">UR</span>
+  </div>
+  <div class="role">Defense</div>
+  <p>Defensive anchor built around damage reduction, defense buffs and front-row survival.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Ironclad Shield • Stun Bomb</p>
+  </div>
+  <div class="weapon weapon-active">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>Exclusive Weapon available</strong>
+    <p>Strengthens Williams&#x27; defensive kit, including his defense buff and personal damage reduction.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="marshall" data-type="tank" data-rarity="ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/marshall.png" alt="Marshall hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">TANK</span>
+        <h2>Marshall</h2>
+      </div>
+    </div>
+    <span class="rarity ur">UR</span>
+  </div>
+  <div class="role">Support</div>
+  <p>Back-row support hero who improves squad Attack/Crit performance and helps Tank formations.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Command Strategy • Triad Harmony</p>
+  </div>
+  <div class="weapon weapon-active">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>Command Focus Fire</strong>
+    <p>Expands Marshall&#x27;s coordinated-fire/support identity and strengthens team offensive buffs.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="stetmann" data-type="tank" data-rarity="ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/stetmann.png" alt="Stetmann hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">TANK</span>
+        <h2>Stetmann</h2>
+      </div>
+    </div>
+    <span class="rarity ur">UR</span>
+  </div>
+  <div class="role">Attack</div>
+  <p>Tank-type damage dealer with strong Energy Damage and critical-hit scaling.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Lightning Rush • Orb Lightning</p>
+  </div>
+  <div class="weapon weapon-active">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>Exclusive Weapon available</strong>
+    <p>Season 5 weapon that improves Stetmann&#x27;s damage output and restores value as a Tank secondary DPS.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="dva" data-type="aircraft" data-rarity="ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/dva.png" alt="DVA hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">AIRCRAFT</span>
+        <h2>DVA</h2>
+      </div>
+    </div>
+    <span class="rarity ur">UR</span>
+  </div>
+  <div class="role">Attack</div>
+  <p>Aircraft burst carry built around heavy Energy Damage and rapid elimination of priority targets.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Steel Barrage • Vortex Missile</p>
+  </div>
+  <div class="weapon weapon-active">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>Energy Master</strong>
+    <p>Adds powerful burst/energy scaling and is one of the defining Aircraft Exclusive Weapons.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="carlie" data-type="aircraft" data-rarity="ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/carlie.png" alt="Carlie hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">AIRCRAFT</span>
+        <h2>Carlie</h2>
+      </div>
+    </div>
+    <span class="rarity ur">UR</span>
+  </div>
+  <div class="role">Defense</div>
+  <p>Aircraft front-line defender with survivability, shielding/evasion utility and enemy pressure.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Inferno Blaze • Absorb Shell</p>
+  </div>
+  <div class="weapon weapon-active">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>Exclusive Weapon available</strong>
+    <p>Improves Carlie&#x27;s front-line Aircraft performance and adds weapon-specific offensive/debuff utility.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="lucius" data-type="aircraft" data-rarity="ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/lucius.png" alt="Lucius hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">AIRCRAFT</span>
+        <h2>Lucius</h2>
+      </div>
+    </div>
+    <span class="rarity ur">UR</span>
+  </div>
+  <div class="role">Defense</div>
+  <p>Aircraft defensive specialist providing resistance and protection to the formation.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Knight&#x27;s Spirit • Aero Shell</p>
+  </div>
+  <div class="weapon weapon-active">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>Exclusive Weapon available</strong>
+    <p>Season 4 weapon that reinforces Lucius&#x27; defensive support and Aircraft front-line role.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="schuyler" data-type="aircraft" data-rarity="ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/schuyler.png" alt="Schuyler hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">AIRCRAFT</span>
+        <h2>Schuyler</h2>
+      </div>
+    </div>
+    <span class="rarity ur">UR</span>
+  </div>
+  <div class="role">Attack / CC</div>
+  <p>Back-row attacker with burst Energy Damage and stun-based crowd control.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Blast Frenzy • Power Barrage</p>
+  </div>
+  <div class="weapon weapon-active">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>Exclusive Weapon available</strong>
+    <p>Season 3 weapon that improves Schuyler&#x27;s damage/control package and Aircraft synergy.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="morrison" data-type="aircraft" data-rarity="ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/morrison.png" alt="Morrison hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">AIRCRAFT</span>
+        <h2>Morrison</h2>
+      </div>
+    </div>
+    <span class="rarity ur">UR</span>
+  </div>
+  <div class="role">Attack / Shred</div>
+  <p>Physical-damage Aircraft hero whose defense-shred effects help the entire squad hit harder.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Armor Piercing Shot • Gatling Burst</p>
+  </div>
+  <div class="weapon weapon-active">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>Exclusive Weapon available</strong>
+    <p>Season 5 weapon amplifies Morrison&#x27;s armor-piercing/defense-shred contribution.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="tesla" data-type="missile" data-rarity="ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/tesla.png" alt="Tesla hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">MISSILE</span>
+        <h2>Tesla</h2>
+      </div>
+    </div>
+    <span class="rarity ur">UR</span>
+  </div>
+  <div class="role">Attack</div>
+  <p>Missile Energy Damage carry. Lightning/Inductive effects scale as combat continues.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Electric Grid • Lightning Chain</p>
+  </div>
+  <div class="weapon weapon-active">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>Inductive Current</strong>
+    <p>Adds Inductive Current stacks. At weapon milestones Tesla gains enhanced attacks, Missile formation bonuses and stronger stack-based tactics.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="swift" data-type="missile" data-rarity="ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/swift.png" alt="Swift hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">MISSILE</span>
+        <h2>Swift</h2>
+      </div>
+    </div>
+    <span class="rarity ur">UR</span>
+  </div>
+  <div class="role">Attack</div>
+  <p>Physical-damage Missile hero who specializes in targeting and finishing weakened enemies.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Weakness Targeting • Targeted Strike</p>
+  </div>
+  <div class="weapon weapon-active">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>Exclusive Weapon available</strong>
+    <p>Strengthens Swift&#x27;s targeted-damage identity and Missile squad contribution.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="fiona" data-type="missile" data-rarity="ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/fiona.png" alt="Fiona hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">MISSILE</span>
+        <h2>Fiona</h2>
+      </div>
+    </div>
+    <span class="rarity ur">UR</span>
+  </div>
+  <div class="role">Attack</div>
+  <p>Multi-target Missile damage dealer with strong physical AOE pressure.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Atomic Blast • Double Trajectory</p>
+  </div>
+  <div class="weapon weapon-active">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>Exclusive Weapon available</strong>
+    <p>Season 5 weapon improves Fiona&#x27;s damage against durable/buffed formations and enhances her carry potential.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="adam" data-type="missile" data-rarity="ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/adam.png" alt="Adam hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">MISSILE</span>
+        <h2>Adam</h2>
+      </div>
+    </div>
+    <span class="rarity ur">UR</span>
+  </div>
+  <div class="role">Defense</div>
+  <p>Missile front-line defender built around counterattacks and reflected/counter damage.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Counter Defense • MK43 Fire</p>
+  </div>
+  <div class="weapon weapon-active">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>Exclusive Weapon available</strong>
+    <p>Season 4 weapon strengthens Adam&#x27;s counter-defense scaling and Missile front-line value.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="mcgregor" data-type="missile" data-rarity="ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/mcgregor.png" alt="McGregor hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">MISSILE</span>
+        <h2>McGregor</h2>
+      </div>
+    </div>
+    <span class="rarity ur">UR</span>
+  </div>
+  <div class="role">Defense</div>
+  <p>Durable Missile defender with taunt/protection mechanics that help shield the back row.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Unyielding Heart • Forward Rush</p>
+  </div>
+  <div class="weapon weapon-active">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>Exclusive Weapon available</strong>
+    <p>Season 3 weapon boosts HP, Attack and Defense while expanding McGregor&#x27;s defensive skill ceiling.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="monica" data-type="tank" data-rarity="ssr">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/monica.png" alt="Monica hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">TANK</span>
+        <h2>Monica</h2>
+      </div>
+    </div>
+    <span class="rarity ssr">SSR</span>
+  </div>
+  <div class="role">Support / Economy</div>
+  <p>Excellent utility hero for resource farming and PvE economy. Valuable even when not used in the main PvP squad.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Treasure Hunting • Economy Boost</p>
+  </div>
+  <div class="weapon weapon-none">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>—</strong>
+    <p>No standard UR Exclusive Weapon in the researched 15-weapon roster.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="mason" data-type="tank" data-rarity="ssr → ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/mason.png" alt="Mason hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">TANK</span>
+        <h2>Mason</h2>
+      </div>
+    </div>
+    <span class="rarity ur">SSR → UR</span>
+  </div>
+  <div class="role">Attack / PvE</div>
+  <p>Strong PvE Tank attacker. Can be promoted to UR in Season 1 and is especially useful against monsters/zombies.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Z-Buster • Monster Slayer</p>
+  </div>
+  <div class="weapon weapon-none">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>—</strong>
+    <p>Not included in the researched standard 15-hero Exclusive Weapon roster.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="violet" data-type="tank" data-rarity="ssr → ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/violet.png" alt="Violet hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">TANK</span>
+        <h2>Violet</h2>
+      </div>
+    </div>
+    <span class="rarity ur">SSR → UR</span>
+  </div>
+  <div class="role">Defense</div>
+  <p>Defensive Tank with AOE damage-over-time and damage-reduction utility. Promotable to UR in Season 2.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Poison Mist • Ice Armor</p>
+  </div>
+  <div class="weapon weapon-none">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>—</strong>
+    <p>Not included in the researched standard 15-hero Exclusive Weapon roster.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="scarlett" data-type="tank" data-rarity="ssr → ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/scarlett.png" alt="Scarlett hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">TANK</span>
+        <h2>Scarlett</h2>
+      </div>
+    </div>
+    <span class="rarity ur">SSR → UR</span>
+  </div>
+  <div class="role">Defense</div>
+  <p>Defensive Tank focused on shielding and personal durability. Promotable to UR in Season 3.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Pulse Barrier • Shield Mastery</p>
+  </div>
+  <div class="weapon weapon-none">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>—</strong>
+    <p>Not included in the researched standard 15-hero Exclusive Weapon roster.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="richard" data-type="tank" data-rarity="ssr">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/richard.png" alt="Richard hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">TANK</span>
+        <h2>Richard</h2>
+      </div>
+    </div>
+    <span class="rarity ssr">SSR</span>
+  </div>
+  <div class="role">Attack</div>
+  <p>Budget Tank bruiser useful for secondary squads and early progression.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Iron Defense • Counter-Strike</p>
+  </div>
+  <div class="weapon weapon-none">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>—</strong>
+    <p>No standard Exclusive Weapon listed in the researched roster.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="sarah" data-type="aircraft" data-rarity="ssr → ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/sarah.png" alt="Sarah hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">AIRCRAFT</span>
+        <h2>Sarah</h2>
+      </div>
+    </div>
+    <span class="rarity ur">SSR → UR</span>
+  </div>
+  <div class="role">Support</div>
+  <p>Aircraft support with speed/buff utility. Promotable to UR in later seasonal progression.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Air Support • Aero Buff</p>
+  </div>
+  <div class="weapon weapon-none">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>—</strong>
+    <p>No standard Exclusive Weapon listed in the researched 15-weapon roster.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="maxwell" data-type="aircraft" data-rarity="ssr">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/maxwell.png" alt="Maxwell hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">AIRCRAFT</span>
+        <h2>Maxwell</h2>
+      </div>
+    </div>
+    <span class="rarity ssr">SSR</span>
+  </div>
+  <div class="role">Attack</div>
+  <p>Aircraft attacker suited to early and secondary formations.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Rapid Fire • Air Mastery</p>
+  </div>
+  <div class="weapon weapon-none">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>—</strong>
+    <p>No standard Exclusive Weapon listed in the researched roster.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="cage" data-type="aircraft" data-rarity="ssr">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/cage.png" alt="Cage hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">AIRCRAFT</span>
+        <h2>Cage</h2>
+      </div>
+    </div>
+    <span class="rarity ssr">SSR</span>
+  </div>
+  <div class="role">Defense</div>
+  <p>Early-game Aircraft defender that can hold a front-row slot in secondary squads.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Reinforced Hull • Defense Support</p>
+  </div>
+  <div class="weapon weapon-none">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>—</strong>
+    <p>No standard Exclusive Weapon listed in the researched roster.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="venom" data-type="missile" data-rarity="ssr → ur">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/venom.png" alt="Venom hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">MISSILE</span>
+        <h2>Venom</h2>
+      </div>
+    </div>
+    <span class="rarity ur">SSR → UR</span>
+  </div>
+  <div class="role">Attack</div>
+  <p>Missile attacker built around corrosive damage-over-time and anti-healing mechanics; promotable to UR in seasonal progression.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Toxic Bolt • Acidic Passive</p>
+  </div>
+  <div class="weapon weapon-none">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>—</strong>
+    <p>Not part of the researched standard 15-hero Exclusive Weapon roster.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="elsa" data-type="missile" data-rarity="ssr">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/elsa.png" alt="Elsa hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">MISSILE</span>
+        <h2>Elsa</h2>
+      </div>
+    </div>
+    <span class="rarity ssr">SSR</span>
+  </div>
+  <div class="role">Defense / Utility</div>
+  <p>Missile defender with slowing and logistics/resource utility.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Freezing Missile • Logistics Expert</p>
+  </div>
+  <div class="weapon weapon-none">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>—</strong>
+    <p>No standard Exclusive Weapon listed in the researched roster.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="braz" data-type="missile" data-rarity="ssr">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://teamsnvr.fr/images/LW/blaz.webp" alt="Braz hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">MISSILE</span>
+        <h2>Braz</h2>
+      </div>
+    </div>
+    <span class="rarity ssr">SSR</span>
+  </div>
+  <div class="role">Attack</div>
+  <p>Missile attacker with crit-oriented squad utility, useful in secondary squads.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Explosive Round • Missile Mastery</p>
+  </div>
+  <div class="weapon weapon-none">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>—</strong>
+    <p>No standard Exclusive Weapon listed in the researched roster.</p>
+  </div>
+</article>
+
+
+<article class="card hero-card" data-name="farhad" data-type="tank" data-rarity="ssr">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/farhad.png" alt="Farhad hero portrait" loading="lazy">
+      <div class="hero-nameblock"><span class="tag">TANK</span><h2>Farhad</h2></div>
+    </div>
+    <span class="rarity ssr">SSR</span>
+  </div>
+  <div class="role">Attack</div>
+  <p>Tank attacker in the current Last War hero roster, primarily useful in early or secondary formations.</p>
+  <div class="detail"><h3>SKILLS</h3><p>Check the current in-game hero panel for exact skill names, levels and percentages.</p></div>
+  <div class="weapon weapon-none"><h3>EXCLUSIVE WEAPON</h3><strong>—</strong><p>No standard UR Exclusive Weapon entry is listed for Farhad.</p></div>
+</article>
+
+<article class="card hero-card" data-name="gump" data-type="tank" data-rarity="sr">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/gump.png" alt="Gump hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">TANK</span>
+        <h2>Gump</h2>
+      </div>
+    </div>
+    <span class="rarity sr">SR</span>
+  </div>
+  <div class="role">Defense</div>
+  <p>Starter Tank hero primarily used during early progression.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Basic Block • Sturdy</p>
+  </div>
+  <div class="weapon weapon-none">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>—</strong>
+    <p>No standard Exclusive Weapon.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="loki" data-type="tank" data-rarity="sr">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/loki.png" alt="Loki hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">TANK</span>
+        <h2>Loki</h2>
+      </div>
+    </div>
+    <span class="rarity sr">SR</span>
+  </div>
+  <div class="role">Defense</div>
+  <p>Starter Tank defender and early-game placeholder.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Shield Bash • Guard</p>
+  </div>
+  <div class="weapon weapon-none">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>—</strong>
+    <p>No standard Exclusive Weapon.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="ambolt" data-type="aircraft" data-rarity="sr">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/ambolt.png" alt="Ambolt hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">AIRCRAFT</span>
+        <h2>Ambolt</h2>
+      </div>
+    </div>
+    <span class="rarity sr">SR</span>
+  </div>
+  <div class="role">Attack</div>
+  <p>Starter Aircraft hero for early progression and secondary use.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Burst Fire • Air Tactics</p>
+  </div>
+  <div class="weapon weapon-none">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>—</strong>
+    <p>No standard Exclusive Weapon.</p>
+  </div>
+</article>
+
+<article class="card hero-card" data-name="kane" data-type="missile" data-rarity="sr">
+  <div class="hero-top">
+    <div class="hero-heading">
+      <img class="hero-portrait" src="https://ufkkkjzukfxitxjfugag.supabase.co/storage/v1/object/public/heroes/kane.png" alt="Kane hero portrait" loading="lazy" >
+      <div class="hero-nameblock">
+        <span class="tag">MISSILE</span>
+        <h2>Kane</h2>
+      </div>
+    </div>
+    <span class="rarity sr">SR</span>
+  </div>
+  <div class="role">Attack</div>
+  <p>Starter Missile hero for early progression and secondary use.</p>
+  <div class="detail">
+    <h3>SKILLS</h3>
+    <p>Piercing Shot • Missile Tactics</p>
+  </div>
+  <div class="weapon weapon-none">
+    <h3>EXCLUSIVE WEAPON</h3>
+    <strong>—</strong>
+    <p>No standard Exclusive Weapon.</p>
+  </div>
+</article>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="callout"><b>FEAR TIP:</b> Do not spread Exclusive Weapon shards randomly. Build around the heroes in your primary squad and pay close attention to the Level 20 milestone before pushing expensive upgrades toward Level 30.</div>
+</div></section>
+
+<footer><div class="wrap">© 2026 1971 • FEAR — Unofficial Last War: Survival alliance/fan site. Hero skills, seasonal availability and weapon values can change with game updates. Verify exact current values in-game.</div></footer>
+
+<script>
+const cards=[...document.querySelectorAll('.hero-card')];
+const search=document.getElementById('heroSearch');
+const buttons=[...document.querySelectorAll('.filter')];
+let active='all';
+function applyFilters(){
+  const q=search.value.toLowerCase().trim();
+  cards.forEach(card=>{
+    const text=card.innerText.toLowerCase();
+    const type=card.dataset.type;
+    const hasWeapon=card.querySelector('.weapon-active')!==null;
+    const typeMatch=active==='all'||(active==='weapon'&&hasWeapon)||type.includes(active);
+    card.classList.toggle('hidden',!(typeMatch&&text.includes(q)));
+  });
+}
+search.addEventListener('input',applyFilters);
+buttons.forEach(btn=>btn.addEventListener('click',()=>{
+  buttons.forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  active=btn.dataset.filter;
+  applyFilters();
+}));
+</script>
+
+<script>
+document.querySelectorAll('.hero-portrait').forEach(img=>{
+  img.addEventListener('error',function(){
+    const name=(this.alt||'Hero').replace(' hero portrait','');
+    const box=document.createElement('div');
+    box.className='hero-portrait portrait-fallback';
+    box.textContent=name.slice(0,2).toUpperCase();
+    box.title=name+' portrait could not be loaded';
+    this.replaceWith(box);
+  });
+});
+</script>
+</body>
+</html>
