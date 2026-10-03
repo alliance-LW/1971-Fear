@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "alliance": "FEAR",
+  "server": 1971,
+  "week": "TEST",
+  "members": [
+    {
+      "name": "TEST Alpha",
+      "vs": 25000000,
+      "donations": 52000
+    },
+    {
+      "name": "TEST Bravo",
+      "vs": 19000000,
+      "donations": 41000
+    },
+    {
+      "name": "TEST Charlie",
+      "vs": 32000000,
+      "donations": 29000
+    },
+    {
+      "name": "TEST Delta",
+      "vs": 15800000,
+      "donations": 63000
+    },
+    {
+      "name": "TEST Echo",
+      "vs": 22100000,
+      "donations": 38000
+    },
+    {
+      "name": "TEST Foxtrot",
+      "vs": 28500000,
+      "donations": 47000
+    },
+    {
+      "name": "TEST Golf",
+      "vs": 12500000,
+      "donations": 35000
+    },
+    {
+      "name": "TEST Hotel",
+      "vs": 18000000,
+      "donations": 56000
+    }
+  ]
+}
