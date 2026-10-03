@@ -224,8 +224,7 @@ async function generate() {
         name: member.name,
         status: "INELIGIBLE",
         vs: memberVS.toString(),
-        donations:
-          memberDonations.toString(),
+        donations: memberDonations.toString(),
         reasons
       });
 
@@ -239,9 +238,52 @@ async function generate() {
     });
   }
 
-  console.log(
-    `Eligible members: ${eligible.length}`
-  );
+  console.log(`Eligible members: ${eligible.length}`);
+
+  // -------------------------
+  // DIAGNOSTIC LOGGING
+  // -------------------------
+
+  const reasonCounts = {};
+
+  for (const member of audit) {
+    if (member.status === "INELIGIBLE") {
+      for (const reason of member.reasons) {
+        reasonCounts[reason] =
+          (reasonCounts[reason] || 0) + 1;
+      }
+    }
+  }
+
+  console.log("");
+  console.log("INELIGIBILITY BREAKDOWN:");
+  console.log(reasonCounts);
+
+  console.log("");
+  console.log("FARMOPS DATA COUNTS:");
+  console.log(`Members returned: ${members.length}`);
+  console.log(`Donation rows returned: ${donations.length}`);
+  console.log(`VS rows returned: ${duels.length}`);
+  console.log(`Donation members mapped this week: ${donationMap.size}`);
+  console.log(`VS members mapped this week: ${vsMap.size}`);
+
+  console.log("");
+  console.log("SAMPLE FARMOPS DONATION ROW:");
+  console.log(donations[0] || "NO DONATION ROWS RETURNED");
+
+  console.log("");
+  console.log("SAMPLE FARMOPS VS ROW:");
+  console.log(duels[0] || "NO VS ROWS RETURNED");
+
+  console.log("");
+  console.log("SAMPLE ACTIVE MEMBER:");
+  console.log(activeMembers[0] || "NO ACTIVE MEMBERS RETURNED");
+
+  console.log("");
+
+  // -------------------------
+  // MINIMUM ELIGIBLE CHECK
+  // -------------------------
 
   if (eligible.length < 8) {
     throw new Error(
