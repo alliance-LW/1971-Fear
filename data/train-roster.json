@@ -43,6 +43,16 @@
       "name": "TEST Hotel",
       "vs": 18000000,
       "donations": 56000
+    },
+    {
+      "name": "TEST India",
+      "vs": 20500000,
+      "donations": 44000
+    },
+    {
+      "name": "TEST Juliett",
+      "vs": 16800000,
+      "donations": 33000
     }
   ]
 }
