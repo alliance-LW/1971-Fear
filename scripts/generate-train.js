@@ -144,12 +144,18 @@ async function generate() {
     members,
     dailyDuels,
     donations,
-    fullExport,\n    powerRows,\n    killRows,\n    thpRows\n  ] = await Promise.all([
+    fullExport,    powerRows,
+    killRows,
+    thpRows
+  ] = await Promise.all([
     farmOps("/alliance"),
     farmOps("/alliance/members"),
     farmOps("/alliance/members/duels"),
     farmOps("/alliance/members/donations"),
-    farmOps("/alliance/export"),\n    farmOps("/alliance/members/power"),\n    farmOps("/alliance/members/kills"),\n    farmOps("/alliance/members/thp")\n  ]);
+    farmOps("/alliance/export"),\n    farmOps("/alliance/members/power"),
+    farmOps("/alliance/members/kills"),
+    farmOps("/alliance/members/thp")
+  ]);
 
   const activeMembers = members.filter(
     member => member.status === "ACTIVE"
@@ -171,6 +177,70 @@ async function generate() {
       alliance: alliance.name || "FEAR",
       members: activeMembers.map(member => ({ name: member.name }))
     }, null, 2) + "\n"
+  );
+
+  // --------------------------------------------------
+  // MEMBER DASHBOARD METRICS
+  // FarmOps metric endpoints return historical rows. Keep the newest
+  // row for each member and publish only the fields used by the site.
+  // --------------------------------------------------
+
+  function latestMetric(rows, valueKeys) {
+    const map = new Map();
+
+    for (const row of Array.isArray(rows) ? rows : []) {
+      const memberId = row.memberId || row.member_id || row.id;
+      if (!memberId) continue;
+
+      const stamp = String(
+        row.recordedAt || row.recorded_at || row.scoredOn ||
+        row.scored_on || row.createdAt || row.created_at ||
+        row.date || row.weekStart || ""
+      );
+
+      let value = null;
+      for (const key of valueKeys) {
+        if (row[key] !== undefined && row[key] !== null) {
+          value = row[key];
+          break;
+        }
+      }
+      if (value === null) continue;
+
+      const previous = map.get(memberId);
+      if (!previous || stamp >= previous.stamp) {
+        map.set(memberId, { value: String(value), stamp });
+      }
+    }
+
+    return map;
+  }
+
+  const powerMap = latestMetric(powerRows, ["power", "totalPower", "value"]);
+  const killMap = latestMetric(killRows, ["kills", "killCount", "totalKills", "value"]);
+  const thpMap = latestMetric(thpRows, ["thp", "totalHeroPower", "heroPower", "value"]);
+
+  const dashboardMembers = activeMembers.map(member => ({
+    name: member.name,
+    power: powerMap.get(member.id)?.value || null,
+    thp: thpMap.get(member.id)?.value || null,
+    kills: killMap.get(member.id)?.value || null,
+    hq: member.hqLevel ?? member.hq ?? member.headquartersLevel ?? member.headquarters ?? null
+  }));
+
+  fs.writeFileSync(
+    "data/member-dashboard.json",
+    JSON.stringify({
+      schema_version: 1,
+      generated_at: new Date().toISOString(),
+      source: "FarmOps API",
+      alliance: alliance.name || "FEAR",
+      members: dashboardMembers
+    }, null, 2) + "\n"
+  );
+
+  console.log(
+    `Dashboard metrics: power=${powerMap.size}, thp=${thpMap.size}, kills=${killMap.size}, hq=${dashboardMembers.filter(member => member.hq !== null).length}`
   );
 
   // --------------------------------------------------
