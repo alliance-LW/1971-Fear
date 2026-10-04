@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name "FEAR Train Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/train-results.json data/members.json
+          git add data/train-results.json data/train-7-day.json data/members.json
           git diff --cached --quiet && exit 0
           git commit -m "Generate proposed FEAR Train roster"
           git push
