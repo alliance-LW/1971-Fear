@@ -169,6 +169,9 @@ async function generate() {
 
   console.log(`Active members: ${activeMembers.length}`);
 
+  // Members-only mode: refresh roster/dashboard without changing the locked Train schedule.
+  const membersOnly = process.argv.includes("--members-only");
+
   // Publish only the minimum public roster data needed by the Members login page.
   // Never publish the FarmOps API key or full FarmOps member records.
   fs.writeFileSync(
@@ -244,6 +247,11 @@ async function generate() {
   console.log(
     `Dashboard metrics: power=${powerMap.size}, thp=${thpMap.size}, kills=${killMap.size}, hq=${dashboardMembers.filter(member => member.hq !== null).length}`
   );
+
+  if (membersOnly) {
+    console.log("Members-only refresh complete; Train schedule unchanged.");
+    return;
+  }
 
   // --------------------------------------------------
   // FIND CURRENT WEEK FROM FARMOPS DONATION DATA
