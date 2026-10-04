@@ -4,13 +4,34 @@
   "source": "FarmOps API via GitHub Actions",
   "source_week": "2026-09-28 to 2026-10-04",
   "schedule_week": "2026-10-05 to 2026-10-11",
-  "generated_at": "2026-10-04T04:08:15.062Z",
+  "generated_at": "2026-10-04T14:22:07.564Z",
   "days": [
     {
       "date": "2026-10-05",
       "conductor": {
-        "primary": "TruPtGard",
-        "score": 84.04,
+        "primary": "ArmyArmy",
+        "score": 69.05,
+        "alternates": [
+          "PlotTwisT",
+          "TruPtGard",
+          "Sadaji"
+        ]
+      },
+      "vip": {
+        "primary": "Pourdecisions",
+        "score": 64.68,
+        "alternates": [
+          "Milner14",
+          "Skiff1980",
+          "Hybriddom1"
+        ]
+      }
+    },
+    {
+      "date": "2026-10-06",
+      "conductor": {
+        "primary": "PlotTwisT",
+        "score": 68.03,
         "alternates": [
           "Sadaji",
           "Milner14",
@@ -18,138 +39,117 @@
         ]
       },
       "vip": {
-        "primary": "Ashallayn Darkmyr",
-        "score": 65.56,
+        "primary": "TruPtGard",
+        "score": 82.17,
         "alternates": [
-          "MJArmy",
-          "ArmyArmy",
-          "PlotTwisT"
-        ]
-      }
-    },
-    {
-      "date": "2026-10-06",
-      "conductor": {
-        "primary": "Sadaji",
-        "score": 71.15,
-        "alternates": [
-          "Skiff1980",
-          "MJArmy",
-          "ArmyArmy"
-        ]
-      },
-      "vip": {
-        "primary": "Milner14",
-        "score": 63.86,
-        "alternates": [
-          "PlotTwisT",
-          "WpgLos",
-          "Sniperbird"
+          "Hybriddom1",
+          "Go No Go",
+          "Weeks304"
         ]
       }
     },
     {
       "date": "2026-10-07",
       "conductor": {
-        "primary": "Skiff1980",
-        "score": 63.26,
+        "primary": "Sadaji",
+        "score": 76.39,
         "alternates": [
-          "ArmyArmy",
-          "PlotTwisT",
-          "WpgLos"
+          "Skiff1980",
+          "Hybriddom1",
+          "Go No Go"
         ]
       },
       "vip": {
-        "primary": "MJArmy",
-        "score": 60.3,
+        "primary": "Milner14",
+        "score": 57.94,
         "alternates": [
-          "Sniperbird",
-          "Commander MDK",
-          "Weeks304"
+          "Weeks304",
+          "SnowFOX",
+          "Sniperbird"
         ]
       }
     },
     {
       "date": "2026-10-08",
       "conductor": {
-        "primary": "ArmyArmy",
-        "score": 61.45,
+        "primary": "Skiff1980",
+        "score": 64.46,
         "alternates": [
-          "WpgLos",
-          "Sniperbird",
-          "Commander MDK"
+          "Go No Go",
+          "Weeks304",
+          "SnowFOX"
         ]
       },
       "vip": {
-        "primary": "PlotTwisT",
-        "score": 53.5,
+        "primary": "Hybriddom1",
+        "score": 52.79,
         "alternates": [
-          "Weeks304",
-          "gyu 규규0",
-          "Pøison Ivy"
+          "Sniperbird",
+          "Super JuNiOr",
+          "LuckyCharms23"
         ]
       }
     },
     {
       "date": "2026-10-09",
       "conductor": {
-        "primary": "WpgLos",
-        "score": 47.13,
+        "primary": "Go No Go",
+        "score": 53.77,
         "alternates": [
-          "Commander MDK",
-          "Weeks304",
-          "gyu 규규0"
+          "SnowFOX",
+          "Sniperbird",
+          "Super JuNiOr"
         ]
       },
       "vip": {
-        "primary": "Sniperbird",
-        "score": 56.28,
+        "primary": "Weeks304",
+        "score": 54.76,
         "alternates": [
-          "Pøison Ivy",
-          "SnowFOX",
-          "Pourdecisions"
+          "LuckyCharms23",
+          "Ma7eruix",
+          "Lord  Dark  Helmet"
         ]
       }
     },
     {
       "date": "2026-10-10",
       "conductor": {
-        "primary": "Commander MDK",
-        "score": 60.86,
+        "primary": "SnowFOX",
+        "score": 49.96,
         "alternates": [
-          "gyu 규규0",
-          "Pøison Ivy",
-          "SnowFOX"
+          "Super JuNiOr",
+          "LuckyCharms23",
+          "Ma7eruix"
         ]
       },
       "vip": {
-        "primary": "Weeks304",
-        "score": 55.03,
+        "primary": "Sniperbird",
+        "score": 53.07,
         "alternates": [
-          "Pourdecisions",
-          "H20MAN",
-          "Go No Go"
+          "Lord  Dark  Helmet",
+          "Myosin",
+          "Loudog90"
         ]
       }
     },
     {
       "date": "2026-10-11",
       "conductor": {
-        "primary": "gyu 규규0",
-        "score": 40.49,
+        "primary": "Super JuNiOr",
+        "score": 53.8,
         "alternates": [
-          "SnowFOX",
-          "Pourdecisions",
-          "H20MAN"
+          "Ma7eruix",
+          "Lord  Dark  Helmet",
+          "Myosin"
         ]
       },
       "vip": {
-        "primary": "Pøison Ivy",
-        "score": 41.42,
+        "primary": "LuckyCharms23",
+        "score": 52.17,
         "alternates": [
-          "Go No Go",
-          "Kcon1225",
-          "commanderbigdawg"
+          "Loudog90",
+          "Mulekezord",
+          "LetBim"
         ]
       }
     }
