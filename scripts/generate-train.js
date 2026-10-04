@@ -144,7 +144,8 @@ async function generate() {
     members,
     dailyDuels,
     donations,
-    fullExport,    powerRows,
+    fullExport,
+    powerRows,
     killRows,
     thpRows
   ] = await Promise.all([
@@ -152,7 +153,8 @@ async function generate() {
     farmOps("/alliance/members"),
     farmOps("/alliance/members/duels"),
     farmOps("/alliance/members/donations"),
-    farmOps("/alliance/export"),\n    farmOps("/alliance/members/power"),
+    farmOps("/alliance/export"),
+    farmOps("/alliance/members/power"),
     farmOps("/alliance/members/kills"),
     farmOps("/alliance/members/thp")
   ]);
