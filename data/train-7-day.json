@@ -4,26 +4,26 @@
   "source": "FarmOps API via GitHub Actions",
   "source_week": "2026-09-28 to 2026-10-04",
   "schedule_week": "2026-10-04 to 2026-10-10",
-  "generated_at": "2026-10-04T16:27:16.041Z",
+  "generated_at": "2026-10-04T16:41:52.886Z",
   "days": [
     {
       "date": "2026-10-04",
       "conductor": {
-        "primary": "Sadaji",
-        "score": 66.55,
+        "primary": "Sniperbird",
+        "score": 79.72,
         "alternates": [
           "TruPtGard",
-          "PlotTwisT",
-          "Skiff1980"
+          "Milner14",
+          "Mulekezord"
         ]
       },
       "vip": {
-        "primary": "Weeks304",
-        "score": 71.91,
+        "primary": "Skiff1980",
+        "score": 76.11,
         "alternates": [
-          "KencityXX",
-          "Ashallayn Darkmyr",
-          "Stocktonator"
+          "PlotTwisT",
+          "Sadaji",
+          "ArmyArmy"
         ]
       }
     },
@@ -31,125 +31,125 @@
       "date": "2026-10-05",
       "conductor": {
         "primary": "TruPtGard",
-        "score": 60.92,
+        "score": 64.28,
         "alternates": [
-          "Skiff1980",
-          "KencityXX",
-          "Ashallayn Darkmyr"
+          "Mulekezord",
+          "PlotTwisT",
+          "Sadaji"
         ]
       },
       "vip": {
-        "primary": "PlotTwisT",
-        "score": 69.17,
+        "primary": "Milner14",
+        "score": 61.05,
         "alternates": [
-          "Stocktonator",
-          "Myosin",
-          "Lord  Dark  Helmet"
+          "ArmyArmy",
+          "Weeks304",
+          "Field Marshal Ro V"
         ]
       }
     },
     {
       "date": "2026-10-06",
       "conductor": {
-        "primary": "Skiff1980",
-        "score": 76.37,
+        "primary": "Mulekezord",
+        "score": 63.65,
         "alternates": [
-          "Ashallayn Darkmyr",
-          "Stocktonator",
-          "Myosin"
+          "Sadaji",
+          "ArmyArmy",
+          "Weeks304"
         ]
       },
       "vip": {
-        "primary": "KencityXX",
-        "score": 63.27,
+        "primary": "PlotTwisT",
+        "score": 71.29,
         "alternates": [
-          "Lord  Dark  Helmet",
-          "SpareParts709",
-          "McDirick"
+          "Field Marshal Ro V",
+          "Commander MDK",
+          "KencityXX"
         ]
       }
     },
     {
       "date": "2026-10-07",
       "conductor": {
-        "primary": "Ashallayn Darkmyr",
-        "score": 59.03,
+        "primary": "Sadaji",
+        "score": 71.7,
         "alternates": [
-          "Myosin",
-          "Lord  Dark  Helmet",
-          "SpareParts709"
+          "Weeks304",
+          "Field Marshal Ro V",
+          "Commander MDK"
         ]
       },
       "vip": {
-        "primary": "Stocktonator",
-        "score": 54.09,
+        "primary": "ArmyArmy",
+        "score": 65.08,
         "alternates": [
-          "McDirick",
-          "Pourdecisions",
-          "Commander MDK"
+          "KencityXX",
+          "db666",
+          "WpgLos"
         ]
       }
     },
     {
       "date": "2026-10-08",
       "conductor": {
-        "primary": "Myosin",
-        "score": 53.4,
+        "primary": "Weeks304",
+        "score": 70.94,
         "alternates": [
-          "SpareParts709",
-          "McDirick",
-          "Pourdecisions"
+          "Commander MDK",
+          "KencityXX",
+          "db666"
         ]
       },
       "vip": {
-        "primary": "Lord  Dark  Helmet",
-        "score": 50.34,
+        "primary": "Field Marshal Ro V",
+        "score": 45.76,
         "alternates": [
-          "Commander MDK",
-          "Field Marshal Ro V",
-          "HoneyCakes"
+          "WpgLos",
+          "Stocktonator",
+          "Pourdecisions"
         ]
       }
     },
     {
       "date": "2026-10-09",
       "conductor": {
-        "primary": "SpareParts709",
-        "score": 52.74,
+        "primary": "Commander MDK",
+        "score": 55.52,
         "alternates": [
-          "Pourdecisions",
-          "Commander MDK",
-          "Field Marshal Ro V"
+          "db666",
+          "WpgLos",
+          "Stocktonator"
         ]
       },
       "vip": {
-        "primary": "McDirick",
-        "score": 46.77,
+        "primary": "KencityXX",
+        "score": 56.93,
         "alternates": [
-          "HoneyCakes",
-          "ArmyArmy",
-          "Big Horse 96"
+          "Pourdecisions",
+          "SSStealth",
+          "LuckyCharms23"
         ]
       }
     },
     {
       "date": "2026-10-10",
       "conductor": {
-        "primary": "Pourdecisions",
-        "score": 61.14,
+        "primary": "db666",
+        "score": 45.69,
         "alternates": [
-          "Field Marshal Ro V",
-          "HoneyCakes",
-          "ArmyArmy"
+          "Stocktonator",
+          "Pourdecisions",
+          "SSStealth"
         ]
       },
       "vip": {
-        "primary": "Commander MDK",
-        "score": 55.95,
+        "primary": "WpgLos",
+        "score": 51.69,
         "alternates": [
-          "Big Horse 96",
-          "Big Meat BBQ",
-          "H20MAN"
+          "LuckyCharms23",
+          "SpareParts709",
+          "MVP BigFoot"
         ]
       }
     }
