@@ -36,7 +36,9 @@ async function farmOps(path) {
     process.exit(1);
   }
 
-  return body.data || [];
+  // Most FarmOps endpoints wrap results in data.
+  // /alliance/export may contain a large object.
+  return body.data ?? body;
 }
 
 function toBigInt(value) {
@@ -49,7 +51,6 @@ function toBigInt(value) {
 
 function normalize(value, maximum) {
   if (maximum <= 0n) return 0;
-
   return Number((value * 10000n) / maximum) / 100;
 }
 
@@ -59,17 +60,99 @@ function addDays(dateString, days) {
   return date.toISOString().slice(0, 10);
 }
 
+/*
+ * Recursively look through the FarmOps export for keys that
+ * appear to contain VS / duel information.
+ *
+ * We intentionally do NOT print the API key.
+ */
+function findVsStructures(value, path = "export", results = [], depth = 0) {
+  if (depth > 8 || value === null || value === undefined) {
+    return results;
+  }
+
+  if (Array.isArray(value)) {
+    if (value.length) {
+      const sample = value[0];
+
+      if (sample && typeof sample === "object") {
+        const keys = Object.keys(sample);
+
+        const interesting = keys.some(key =>
+          /duel|vs|score|weekly|week/i.test(key)
+        );
+
+        if (interesting) {
+          results.push({
+            path,
+            type: "array",
+            count: value.length,
+            sample
+          });
+        }
+      }
+    }
+
+    for (let i = 0; i < Math.min(value.length, 3); i++) {
+      findVsStructures(
+        value[i],
+        `${path}[${i}]`,
+        results,
+        depth + 1
+      );
+    }
+
+    return results;
+  }
+
+  if (typeof value === "object") {
+    for (const [key, child] of Object.entries(value)) {
+      const childPath = `${path}.${key}`;
+
+      if (/duel|vs|score|weekly|week/i.test(key)) {
+        results.push({
+          path: childPath,
+          type: Array.isArray(child)
+            ? "array"
+            : typeof child,
+          count: Array.isArray(child)
+            ? child.length
+            : undefined,
+          sample: Array.isArray(child)
+            ? child[0]
+            : child
+        });
+      }
+
+      findVsStructures(
+        child,
+        childPath,
+        results,
+        depth + 1
+      );
+    }
+  }
+
+  return results;
+}
+
 async function generate() {
   console.log("Connecting to FarmOps...");
 
-  const [alliance, members, duels, donations] = await Promise.all([
+  const [
+    alliance,
+    members,
+    dailyDuels,
+    donations,
+    fullExport
+  ] = await Promise.all([
     farmOps("/alliance"),
     farmOps("/alliance/members"),
     farmOps("/alliance/members/duels"),
-    farmOps("/alliance/members/donations")
+    farmOps("/alliance/members/donations"),
+    farmOps("/alliance/export")
   ]);
 
-  // ACTIVE FEAR MEMBERS ONLY
   const activeMembers = members.filter(
     member => member.status === "ACTIVE"
   );
@@ -80,9 +163,9 @@ async function generate() {
 
   console.log(`Active members: ${activeMembers.length}`);
 
-  // -------------------------
-  // FIND CURRENT FARMOPS WEEK
-  // -------------------------
+  // --------------------------------------------------
+  // FIND CURRENT WEEK FROM FARMOPS DONATION DATA
+  // --------------------------------------------------
 
   const donationRows = donations.filter(
     row => activeIds.has(row.memberId)
@@ -101,11 +184,13 @@ async function generate() {
 
   const weekEnd = addDays(weekStart, 6);
 
-  console.log(`FarmOps week: ${weekStart} through ${weekEnd}`);
+  console.log(
+    `FarmOps week: ${weekStart} through ${weekEnd}`
+  );
 
-  // -------------------------
+  // --------------------------------------------------
   // DONATIONS
-  // -------------------------
+  // --------------------------------------------------
 
   const donationMap = new Map();
 
@@ -118,13 +203,13 @@ async function generate() {
     }
   }
 
-  // -------------------------
-  // VS SCORES
-  // -------------------------
+  // --------------------------------------------------
+  // DAILY VS DATA
+  // --------------------------------------------------
 
   const vsMap = new Map();
 
-  for (const row of duels) {
+  for (const row of dailyDuels) {
     if (
       activeIds.has(row.memberId) &&
       row.scoredOn >= weekStart &&
@@ -140,9 +225,101 @@ async function generate() {
     }
   }
 
-  // -------------------------
+  console.log(
+    `Daily VS rows returned: ${dailyDuels.length}`
+  );
+
+  console.log(
+    `Members with daily VS this week: ${vsMap.size}`
+  );
+
+  // --------------------------------------------------
+  // IF DAILY VS IS EMPTY, INSPECT FULL FARMOPS EXPORT
+  // --------------------------------------------------
+
+  if (vsMap.size === 0) {
+    console.log("");
+    console.log(
+      "WARNING: No daily VS records were returned."
+    );
+
+    console.log(
+      "FarmOps web UI may be using weekly VS totals."
+    );
+
+    console.log("");
+    console.log(
+      "Inspecting /alliance/export for VS structures..."
+    );
+
+    const candidates =
+      findVsStructures(fullExport);
+
+    console.log("");
+    console.log(
+      "POSSIBLE VS / WEEKLY DATA STRUCTURES:"
+    );
+
+    if (!candidates.length) {
+      console.log(
+        "No obvious VS structures found in alliance export."
+      );
+    } else {
+      /*
+       * Limit output so GitHub Actions does not become
+       * unreadable.
+       */
+      for (const candidate of candidates.slice(0, 30)) {
+        console.log("");
+        console.log("PATH:", candidate.path);
+        console.log("TYPE:", candidate.type);
+
+        if (candidate.count !== undefined) {
+          console.log("COUNT:", candidate.count);
+        }
+
+        console.log(
+          "SAMPLE:",
+          JSON.stringify(
+            candidate.sample,
+            null,
+            2
+          )
+        );
+      }
+    }
+
+    /*
+     * Save the structure names for inspection.
+     * This file contains FarmOps alliance data, so don't
+     * automatically publish it to a public website.
+     */
+    fs.writeFileSync(
+      "data/farmops-vs-diagnostic.json",
+      JSON.stringify(
+        {
+          generatedAt: new Date().toISOString(),
+          weekStart,
+          weekEnd,
+          dailyDuelRows: dailyDuels.length,
+          candidates
+        },
+        null,
+        2
+      ) + "\n"
+    );
+
+    throw new Error(
+      "FarmOps returned no daily VS rows. " +
+      "Weekly VS structure diagnostic created at " +
+      "data/farmops-vs-diagnostic.json. " +
+      "Review the PATH/SAMPLE output above."
+    );
+  }
+
+  // --------------------------------------------------
   // HISTORY / OVERRIDES
-  // -------------------------
+  // --------------------------------------------------
 
   const history = JSON.parse(
     fs.readFileSync(
@@ -176,9 +353,9 @@ async function generate() {
     )
   );
 
-  // -------------------------
+  // --------------------------------------------------
   // ELIGIBILITY
-  // -------------------------
+  // --------------------------------------------------
 
   const eligible = [];
   const audit = [];
@@ -238,62 +415,20 @@ async function generate() {
     });
   }
 
-  console.log(`Eligible members: ${eligible.length}`);
-
-  // -------------------------
-  // DIAGNOSTIC LOGGING
-  // -------------------------
-
-  const reasonCounts = {};
-
-  for (const member of audit) {
-    if (member.status === "INELIGIBLE") {
-      for (const reason of member.reasons) {
-        reasonCounts[reason] =
-          (reasonCounts[reason] || 0) + 1;
-      }
-    }
-  }
-
-  console.log("");
-  console.log("INELIGIBILITY BREAKDOWN:");
-  console.log(reasonCounts);
-
-  console.log("");
-  console.log("FARMOPS DATA COUNTS:");
-  console.log(`Members returned: ${members.length}`);
-  console.log(`Donation rows returned: ${donations.length}`);
-  console.log(`VS rows returned: ${duels.length}`);
-  console.log(`Donation members mapped this week: ${donationMap.size}`);
-  console.log(`VS members mapped this week: ${vsMap.size}`);
-
-  console.log("");
-  console.log("SAMPLE FARMOPS DONATION ROW:");
-  console.log(donations[0] || "NO DONATION ROWS RETURNED");
-
-  console.log("");
-  console.log("SAMPLE FARMOPS VS ROW:");
-  console.log(duels[0] || "NO VS ROWS RETURNED");
-
-  console.log("");
-  console.log("SAMPLE ACTIVE MEMBER:");
-  console.log(activeMembers[0] || "NO ACTIVE MEMBERS RETURNED");
-
-  console.log("");
-
-  // -------------------------
-  // MINIMUM ELIGIBLE CHECK
-  // -------------------------
+  console.log(
+    `Eligible members: ${eligible.length}`
+  );
 
   if (eligible.length < 8) {
     throw new Error(
-      `Need at least 8 eligible members. Only ${eligible.length} were found. Check FarmOps VS imports, donations, cooldowns and unavailable members.`
+      `Need at least 8 eligible members. ` +
+      `Only ${eligible.length} were found.`
     );
   }
 
-  // -------------------------
+  // --------------------------------------------------
   // NORMALIZATION
-  // -------------------------
+  // --------------------------------------------------
 
   const maximumVS = eligible.reduce(
     (max, member) =>
@@ -312,9 +447,9 @@ async function generate() {
       0n
     );
 
-  // -------------------------
+  // --------------------------------------------------
   // 40 / 30 / 30 FORMULA
-  // -------------------------
+  // --------------------------------------------------
 
   for (const member of eligible) {
     const vsNormalized =
@@ -342,36 +477,20 @@ async function generate() {
     audit.push({
       name: member.name,
       status: "ELIGIBLE",
-
-      vs:
-        member.vs.toString(),
-
+      vs: member.vs.toString(),
       donations:
         member.donations.toString(),
-
       vs_normalized:
-        Number(
-          vsNormalized.toFixed(2)
-        ),
-
+        Number(vsNormalized.toFixed(2)),
       donation_normalized:
-        Number(
-          donationNormalized.toFixed(2)
-        ),
-
+        Number(donationNormalized.toFixed(2)),
       random:
-        Number(
-          randomScore.toFixed(2)
-        ),
-
+        Number(randomScore.toFixed(2)),
       final:
-        Number(
-          finalScore.toFixed(2)
-        )
+        Number(finalScore.toFixed(2))
     });
   }
 
-  // Highest score first
   eligible.sort(
     (a, b) =>
       b.finalScore - a.finalScore
@@ -380,9 +499,9 @@ async function generate() {
   const take = () =>
     eligible.shift().name;
 
-  // -------------------------
+  // --------------------------------------------------
   // SELECTIONS
-  // -------------------------
+  // --------------------------------------------------
 
   const selections = {
     conductor: {
@@ -404,15 +523,13 @@ async function generate() {
     }
   };
 
-  // -------------------------
+  // --------------------------------------------------
   // RESULTS
-  // -------------------------
+  // --------------------------------------------------
 
   const results = {
     schema_version: 1,
-
     status: "PROPOSED",
-
     source: "FarmOps API",
 
     alliance:
@@ -427,13 +544,9 @@ async function generate() {
     formula: {
       minimum_donations:
         MIN_DONATIONS,
-
       vs_weight: 0.40,
-
       donation_weight: 0.30,
-
       random_weight: 0.30,
-
       cooldown:
         "Anyone actually assigned Conductor or VIP in the previous week is excluded."
     },
@@ -441,7 +554,6 @@ async function generate() {
     data_summary: {
       active_members:
         activeMembers.length,
-
       eligible_members:
         audit.filter(
           item =>
@@ -450,7 +562,6 @@ async function generate() {
     },
 
     selections,
-
     audit
   };
 
