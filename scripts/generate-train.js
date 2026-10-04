@@ -577,6 +577,70 @@ async function generate() {
     audit
   };
 
+  // --------------------------------------------------
+  // WEEKLY 7-DAY SCHEDULE
+  // Generated once by GitHub Actions after Saturday reset.
+  // The website only displays this committed result.
+  // --------------------------------------------------
+  const schedulePool = audit
+    .filter(item => item.status === "ELIGIBLE")
+    .map(item => ({ ...item }))
+    .sort((a, b) => {
+      const aWeighted = (a.final || 0) + crypto.randomInt(0, 2001) / 100;
+      const bWeighted = (b.final || 0) + crypto.randomInt(0, 2001) / 100;
+      return bWeighted - aWeighted;
+    });
+
+  if (schedulePool.length < 14) {
+    throw new Error("Need at least 14 eligible members to create the 7-day schedule.");
+  }
+
+  const scheduleUsed = new Set();
+  const takeScheduleMember = () => {
+    const member = schedulePool.find(item => !scheduleUsed.has(item.name));
+    if (!member) throw new Error("Not enough unique members for 7-day schedule.");
+    scheduleUsed.add(member.name);
+    return member;
+  };
+
+  const scheduleStart = addDays(weekEnd, 1);
+  const days = [];
+
+  for (let i = 0; i < 7; i++) {
+    const conductor = takeScheduleMember();
+    const vip = takeScheduleMember();
+    const remaining = schedulePool.filter(item => !scheduleUsed.has(item.name));
+
+    days.push({
+      date: addDays(scheduleStart, i),
+      conductor: {
+        primary: conductor.name,
+        score: conductor.final,
+        alternates: remaining.slice(0, 3).map(item => item.name)
+      },
+      vip: {
+        primary: vip.name,
+        score: vip.final,
+        alternates: remaining.slice(3, 6).map(item => item.name)
+      }
+    });
+  }
+
+  const weeklySchedule = {
+    schema_version: 1,
+    status: "LOCKED",
+    source: "FarmOps API via GitHub Actions",
+    source_week: `${weekStart} to ${weekEnd}`,
+    schedule_week: `${scheduleStart} to ${addDays(scheduleStart, 6)}`,
+    generated_at: new Date().toISOString(),
+    days
+  };
+
+  fs.writeFileSync(
+    "data/train-7-day.json",
+    JSON.stringify(weeklySchedule, null, 2) + "\n"
+  );
+
   fs.writeFileSync(
     "data/train-results.json",
     JSON.stringify(
