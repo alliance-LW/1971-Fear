@@ -603,7 +603,7 @@ async function generate() {
     return member;
   };
 
-  const scheduleStart = weekEnd;
+  const scheduleStart = addDays(weekEnd, 1);
   const days = [];
 
   for (let i = 0; i < 7; i++) {
