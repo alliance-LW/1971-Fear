@@ -4,26 +4,26 @@
   "source": "FarmOps API via GitHub Actions",
   "source_week": "2026-09-28 to 2026-10-04",
   "schedule_week": "2026-10-04 to 2026-10-10",
-  "generated_at": "2026-10-04T16:41:52.886Z",
+  "generated_at": "2026-10-04T16:45:24.782Z",
   "days": [
     {
       "date": "2026-10-04",
       "conductor": {
         "primary": "Sniperbird",
-        "score": 79.72,
+        "score": 78.8,
         "alternates": [
           "TruPtGard",
-          "Milner14",
-          "Mulekezord"
+          "Commander MDK",
+          "ArmyArmy"
         ]
       },
       "vip": {
-        "primary": "Skiff1980",
-        "score": 76.11,
+        "primary": "PlotTwisT",
+        "score": 72.99,
         "alternates": [
-          "PlotTwisT",
-          "Sadaji",
-          "ArmyArmy"
+          "MJArmy",
+          "Lord  Dark  Helmet",
+          "LetBim"
         ]
       }
     },
@@ -31,125 +31,125 @@
       "date": "2026-10-05",
       "conductor": {
         "primary": "TruPtGard",
-        "score": 64.28,
+        "score": 70.76,
         "alternates": [
-          "Mulekezord",
-          "PlotTwisT",
-          "Sadaji"
+          "ArmyArmy",
+          "MJArmy",
+          "Lord  Dark  Helmet"
         ]
       },
       "vip": {
-        "primary": "Milner14",
-        "score": 61.05,
+        "primary": "Commander MDK",
+        "score": 68.22,
         "alternates": [
-          "ArmyArmy",
-          "Weeks304",
-          "Field Marshal Ro V"
+          "LetBim",
+          "Milner14",
+          "BUCK 5516"
         ]
       }
     },
     {
       "date": "2026-10-06",
       "conductor": {
-        "primary": "Mulekezord",
-        "score": 63.65,
+        "primary": "ArmyArmy",
+        "score": 55.73,
         "alternates": [
-          "Sadaji",
-          "ArmyArmy",
-          "Weeks304"
+          "Lord  Dark  Helmet",
+          "LetBim",
+          "Milner14"
         ]
       },
       "vip": {
-        "primary": "PlotTwisT",
-        "score": 71.29,
+        "primary": "MJArmy",
+        "score": 53.52,
         "alternates": [
-          "Field Marshal Ro V",
-          "Commander MDK",
-          "KencityXX"
+          "BUCK 5516",
+          "Vordon888",
+          "BeFE"
         ]
       }
     },
     {
       "date": "2026-10-07",
       "conductor": {
-        "primary": "Sadaji",
-        "score": 71.7,
+        "primary": "Lord  Dark  Helmet",
+        "score": 48.37,
         "alternates": [
-          "Weeks304",
-          "Field Marshal Ro V",
-          "Commander MDK"
+          "Milner14",
+          "BUCK 5516",
+          "Vordon888"
         ]
       },
       "vip": {
-        "primary": "ArmyArmy",
-        "score": 65.08,
+        "primary": "LetBim",
+        "score": 55.9,
         "alternates": [
-          "KencityXX",
-          "db666",
-          "WpgLos"
+          "BeFE",
+          "Skiff1980",
+          "Stocktonator"
         ]
       }
     },
     {
       "date": "2026-10-08",
       "conductor": {
-        "primary": "Weeks304",
-        "score": 70.94,
+        "primary": "Milner14",
+        "score": 59.65,
         "alternates": [
-          "Commander MDK",
-          "KencityXX",
-          "db666"
+          "Vordon888",
+          "BeFE",
+          "Skiff1980"
         ]
       },
       "vip": {
-        "primary": "Field Marshal Ro V",
-        "score": 45.76,
+        "primary": "BUCK 5516",
+        "score": 47.93,
         "alternates": [
-          "WpgLos",
           "Stocktonator",
-          "Pourdecisions"
+          "Weeks304",
+          "MVP BigFoot"
         ]
       }
     },
     {
       "date": "2026-10-09",
       "conductor": {
-        "primary": "Commander MDK",
-        "score": 55.52,
+        "primary": "Vordon888",
+        "score": 46.64,
         "alternates": [
-          "db666",
-          "WpgLos",
-          "Stocktonator"
+          "Skiff1980",
+          "Stocktonator",
+          "Weeks304"
         ]
       },
       "vip": {
-        "primary": "KencityXX",
-        "score": 56.93,
+        "primary": "BeFE",
+        "score": 52.28,
         "alternates": [
-          "Pourdecisions",
-          "SSStealth",
-          "LuckyCharms23"
+          "MVP BigFoot",
+          "Mmarronn",
+          "Myosin"
         ]
       }
     },
     {
       "date": "2026-10-10",
       "conductor": {
-        "primary": "db666",
-        "score": 45.69,
+        "primary": "Skiff1980",
+        "score": 50.45,
         "alternates": [
-          "Stocktonator",
-          "Pourdecisions",
-          "SSStealth"
+          "Weeks304",
+          "MVP BigFoot",
+          "Mmarronn"
         ]
       },
       "vip": {
-        "primary": "WpgLos",
-        "score": 51.69,
+        "primary": "Stocktonator",
+        "score": 53.91,
         "alternates": [
-          "LuckyCharms23",
-          "SpareParts709",
-          "MVP BigFoot"
+          "Myosin",
+          "6 0 2 K",
+          "Freddyfrick"
         ]
       }
     }

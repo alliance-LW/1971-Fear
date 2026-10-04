@@ -4,7 +4,7 @@
   "source": "FarmOps API",
   "alliance": "The Dark Side",
   "week": "2026-09-28 to 2026-10-04",
-  "generated_at": "2026-10-04T16:41:52.886Z",
+  "generated_at": "2026-10-04T16:45:24.782Z",
   "formula": {
     "minimum_donations": 30000,
     "vs_weight": 0.4,
@@ -13,24 +13,24 @@
     "cooldown": "Anyone actually assigned Conductor or VIP in the previous week is excluded."
   },
   "data_summary": {
-    "active_members": 88,
-    "eligible_members": 79
+    "active_members": 87,
+    "eligible_members": 78
   },
   "selections": {
     "conductor": {
       "primary": "Sniperbird",
       "alternates": [
-        "Skiff1980",
-        "Sadaji",
-        "PlotTwisT"
+        "PlotTwisT",
+        "TruPtGard",
+        "Commander MDK"
       ]
     },
     "vip": {
-      "primary": "Weeks304",
+      "primary": "Milner14",
       "alternates": [
-        "ArmyArmy",
-        "TruPtGard",
-        "Mulekezord"
+        "Ashallayn Darkmyr",
+        "LetBim",
+        "ArmyArmy"
       ]
     }
   },
@@ -123,8 +123,8 @@
       "donations": "37200",
       "vs_normalized": 14.04,
       "donation_normalized": 39.97,
-      "random": 84.01,
-      "final": 42.81
+      "random": 97.92,
+      "final": 46.98
     },
     {
       "name": "Angeluht",
@@ -133,8 +133,8 @@
       "donations": "33550",
       "vs_normalized": 25.5,
       "donation_normalized": 36.05,
-      "random": 41.18,
-      "final": 33.37
+      "random": 38.55,
+      "final": 32.58
     },
     {
       "name": "Archimedes X",
@@ -143,8 +143,8 @@
       "donations": "37150",
       "vs_normalized": 13.66,
       "donation_normalized": 39.92,
-      "random": 42.52,
-      "final": 30.2
+      "random": 96.6,
+      "final": 46.42
     },
     {
       "name": "ArmyArmy",
@@ -153,8 +153,8 @@
       "donations": "39700",
       "vs_normalized": 79.93,
       "donation_normalized": 42.66,
-      "random": 67.71,
-      "final": 65.08
+      "random": 36.54,
+      "final": 55.73
     },
     {
       "name": "Ashallayn Darkmyr",
@@ -163,8 +163,8 @@
       "donations": "65700",
       "vs_normalized": 37.96,
       "donation_normalized": 70.6,
-      "random": 9.53,
-      "final": 39.22
+      "random": 68.48,
+      "final": 56.91
     },
     {
       "name": "BUCK 5516",
@@ -173,8 +173,8 @@
       "donations": "41050",
       "vs_normalized": 18.01,
       "donation_normalized": 44.11,
-      "random": 22.81,
-      "final": 27.28
+      "random": 91.64,
+      "final": 47.93
     },
     {
       "name": "BeFE",
@@ -183,8 +183,8 @@
       "donations": "55750",
       "vs_normalized": 18.97,
       "donation_normalized": 59.91,
-      "random": 23.03,
-      "final": 32.47
+      "random": 89.07,
+      "final": 52.28
     },
     {
       "name": "Big Horse 96",
@@ -193,8 +193,8 @@
       "donations": "50000",
       "vs_normalized": 11.35,
       "donation_normalized": 53.73,
-      "random": 50.54,
-      "final": 35.82
+      "random": 35.7,
+      "final": 31.37
     },
     {
       "name": "Big Meat BBQ",
@@ -203,8 +203,8 @@
       "donations": "45200",
       "vs_normalized": 9.42,
       "donation_normalized": 48.57,
-      "random": 35.09,
-      "final": 28.87
+      "random": 38.63,
+      "final": 29.93
     },
     {
       "name": "BlackWidows",
@@ -213,8 +213,8 @@
       "donations": "46650",
       "vs_normalized": 6.44,
       "donation_normalized": 50.13,
-      "random": 11.13,
-      "final": 20.95
+      "random": 58.05,
+      "final": 35.03
     },
     {
       "name": "BoneSaw802",
@@ -223,8 +223,8 @@
       "donations": "40000",
       "vs_normalized": 20.97,
       "donation_normalized": 42.98,
-      "random": 41.91,
-      "final": 33.85
+      "random": 60.55,
+      "final": 39.45
     },
     {
       "name": "BoostedT70",
@@ -233,8 +233,8 @@
       "donations": "45050",
       "vs_normalized": 28.24,
       "donation_normalized": 48.41,
-      "random": 16.3,
-      "final": 30.71
+      "random": 17.8,
+      "final": 31.16
     },
     {
       "name": "BriVado",
@@ -243,8 +243,8 @@
       "donations": "73150",
       "vs_normalized": 14.59,
       "donation_normalized": 78.61,
-      "random": 62.26,
-      "final": 48.1
+      "random": 50.9,
+      "final": 44.69
     },
     {
       "name": "Commandant Chewie",
@@ -253,8 +253,8 @@
       "donations": "58500",
       "vs_normalized": 26.32,
       "donation_normalized": 62.86,
-      "random": 21.7,
-      "final": 35.9
+      "random": 44.22,
+      "final": 42.65
     },
     {
       "name": "Commander MDK",
@@ -263,8 +263,8 @@
       "donations": "59800",
       "vs_normalized": 56.43,
       "donation_normalized": 64.26,
-      "random": 45.55,
-      "final": 55.52
+      "random": 87.89,
+      "final": 68.22
     },
     {
       "name": "Crashley86",
@@ -273,8 +273,8 @@
       "donations": "53500",
       "vs_normalized": 13.91,
       "donation_normalized": 57.49,
-      "random": 67.56,
-      "final": 43.08
+      "random": 84.15,
+      "final": 48.06
     },
     {
       "name": "Dewtrx",
@@ -283,8 +283,8 @@
       "donations": "60850",
       "vs_normalized": 16.52,
       "donation_normalized": 65.39,
-      "random": 61.89,
-      "final": 44.79
+      "random": 29.84,
+      "final": 35.18
     },
     {
       "name": "Dolly Dragonfruit",
@@ -293,8 +293,8 @@
       "donations": "31200",
       "vs_normalized": 24.88,
       "donation_normalized": 33.53,
-      "random": 17.97,
-      "final": 25.4
+      "random": 13.77,
+      "final": 24.14
     },
     {
       "name": "Dragonètte",
@@ -303,8 +303,8 @@
       "donations": "35550",
       "vs_normalized": 23.23,
       "donation_normalized": 38.2,
-      "random": 84.3,
-      "final": 46.04
+      "random": 5.63,
+      "final": 22.44
     },
     {
       "name": "DubleDee",
@@ -313,8 +313,8 @@
       "donations": "33750",
       "vs_normalized": 13.46,
       "donation_normalized": 36.27,
-      "random": 49.3,
-      "final": 31.05
+      "random": 56.57,
+      "final": 33.24
     },
     {
       "name": "FIREHEART10",
@@ -323,8 +323,8 @@
       "donations": "47050",
       "vs_normalized": 11.85,
       "donation_normalized": 50.56,
-      "random": 33.05,
-      "final": 29.82
+      "random": 76.03,
+      "final": 42.72
     },
     {
       "name": "Field Marshal Ro V",
@@ -333,8 +333,8 @@
       "donations": "45100",
       "vs_normalized": 22.61,
       "donation_normalized": 48.46,
-      "random": 73.93,
-      "final": 45.76
+      "random": 80.92,
+      "final": 47.86
     },
     {
       "name": "Freddyfrick",
@@ -343,8 +343,8 @@
       "donations": "73900",
       "vs_normalized": 9.85,
       "donation_normalized": 79.41,
-      "random": 15.88,
-      "final": 32.53
+      "random": 62.58,
+      "final": 46.54
     },
     {
       "name": "GRNDDGR",
@@ -353,8 +353,8 @@
       "donations": "48300",
       "vs_normalized": 43.86,
       "donation_normalized": 51.9,
-      "random": 65.81,
-      "final": 52.86
+      "random": 25.2,
+      "final": 40.67
     },
     {
       "name": "General dynamite",
@@ -363,8 +363,8 @@
       "donations": "38550",
       "vs_normalized": 14.89,
       "donation_normalized": 41.42,
-      "random": 27.38,
-      "final": 26.6
+      "random": 3.03,
+      "final": 19.29
     },
     {
       "name": "Go No Go",
@@ -373,8 +373,8 @@
       "donations": "46150",
       "vs_normalized": 24.41,
       "donation_normalized": 49.59,
-      "random": 1.93,
-      "final": 25.22
+      "random": 45.42,
+      "final": 38.27
     },
     {
       "name": "GoHuskers",
@@ -383,8 +383,8 @@
       "donations": "41150",
       "vs_normalized": 14,
       "donation_normalized": 44.22,
-      "random": 24.35,
-      "final": 26.17
+      "random": 51.72,
+      "final": 34.38
     },
     {
       "name": "H20MAN",
@@ -393,8 +393,8 @@
       "donations": "36700",
       "vs_normalized": 37.84,
       "donation_normalized": 39.44,
-      "random": 73.6,
-      "final": 49.05
+      "random": 36.56,
+      "final": 37.94
     },
     {
       "name": "HoneyCakes",
@@ -403,8 +403,8 @@
       "donations": "42450",
       "vs_normalized": 13.44,
       "donation_normalized": 45.62,
-      "random": 29.67,
-      "final": 27.96
+      "random": 94.75,
+      "final": 47.49
     },
     {
       "name": "Hybriddom1",
@@ -413,8 +413,8 @@
       "donations": "41650",
       "vs_normalized": 28.69,
       "donation_normalized": 44.76,
-      "random": 66.64,
-      "final": 44.9
+      "random": 82.36,
+      "final": 49.61
     },
     {
       "name": "IcePrincessSnaggy",
@@ -423,8 +423,8 @@
       "donations": "34000",
       "vs_normalized": 15.26,
       "donation_normalized": 36.53,
-      "random": 18.06,
-      "final": 22.48
+      "random": 73.16,
+      "final": 39.01
     },
     {
       "name": "JacksD7",
@@ -433,8 +433,8 @@
       "donations": "36050",
       "vs_normalized": 13.68,
       "donation_normalized": 38.74,
-      "random": 59.4,
-      "final": 34.91
+      "random": 40.52,
+      "final": 29.25
     },
     {
       "name": "Jancar777",
@@ -443,8 +443,8 @@
       "donations": "44150",
       "vs_normalized": 19.92,
       "donation_normalized": 47.44,
-      "random": 52.93,
-      "final": 38.08
+      "random": 44.56,
+      "final": 35.57
     },
     {
       "name": "Jhonathan9",
@@ -453,8 +453,8 @@
       "donations": "40200",
       "vs_normalized": 5.86,
       "donation_normalized": 43.2,
-      "random": 7,
-      "final": 17.4
+      "random": 38.13,
+      "final": 26.74
     },
     {
       "name": "JohnnyW1ld",
@@ -463,8 +463,8 @@
       "donations": "54300",
       "vs_normalized": 27.9,
       "donation_normalized": 58.35,
-      "random": 50.1,
-      "final": 43.7
+      "random": 56.09,
+      "final": 45.49
     },
     {
       "name": "JudgyJudy",
@@ -473,8 +473,8 @@
       "donations": "41700",
       "vs_normalized": 34.63,
       "donation_normalized": 44.81,
-      "random": 66.54,
-      "final": 47.26
+      "random": 25.27,
+      "final": 34.88
     },
     {
       "name": "Kcon1225",
@@ -483,8 +483,8 @@
       "donations": "71600",
       "vs_normalized": 27.58,
       "donation_normalized": 76.94,
-      "random": 75.33,
-      "final": 56.71
+      "random": 28.14,
+      "final": 42.56
     },
     {
       "name": "Keetja",
@@ -493,8 +493,8 @@
       "donations": "45400",
       "vs_normalized": 16.42,
       "donation_normalized": 48.79,
-      "random": 70.23,
-      "final": 42.27
+      "random": 47.83,
+      "final": 35.55
     },
     {
       "name": "KencityXX",
@@ -503,8 +503,8 @@
       "donations": "85000",
       "vs_normalized": 17.14,
       "donation_normalized": 91.34,
-      "random": 75.56,
-      "final": 56.93
+      "random": 9.56,
+      "final": 37.13
     },
     {
       "name": "King Bubbah Jay",
@@ -513,8 +513,8 @@
       "donations": "60150",
       "vs_normalized": 8.74,
       "donation_normalized": 64.64,
-      "random": 12.1,
-      "final": 26.52
+      "random": 46.47,
+      "final": 36.83
     },
     {
       "name": "LetBim",
@@ -523,8 +523,8 @@
       "donations": "46100",
       "vs_normalized": 32.26,
       "donation_normalized": 49.54,
-      "random": 8.18,
-      "final": 30.22
+      "random": 93.78,
+      "final": 55.9
     },
     {
       "name": "Lord  Dark  Helmet",
@@ -533,8 +533,8 @@
       "donations": "44900",
       "vs_normalized": 17.76,
       "donation_normalized": 48.25,
-      "random": 47.65,
-      "final": 35.87
+      "random": 89.31,
+      "final": 48.37
     },
     {
       "name": "Loudog90",
@@ -543,8 +543,8 @@
       "donations": "55950",
       "vs_normalized": 16.14,
       "donation_normalized": 60.12,
-      "random": 17.28,
-      "final": 29.68
+      "random": 65.3,
+      "final": 44.08
     },
     {
       "name": "LuckyCharms23",
@@ -553,8 +553,8 @@
       "donations": "45750",
       "vs_normalized": 21.42,
       "donation_normalized": 49.16,
-      "random": 53.62,
-      "final": 39.4
+      "random": 2.09,
+      "final": 23.94
     },
     {
       "name": "MJArmy",
@@ -563,8 +563,8 @@
       "donations": "42100",
       "vs_normalized": 53.28,
       "donation_normalized": 45.24,
-      "random": 3.59,
-      "final": 35.96
+      "random": 62.13,
+      "final": 53.52
     },
     {
       "name": "MVP BigFoot",
@@ -573,8 +573,8 @@
       "donations": "44800",
       "vs_normalized": 32.54,
       "donation_normalized": 48.14,
-      "random": 88.11,
-      "final": 53.89
+      "random": 50.44,
+      "final": 42.59
     },
     {
       "name": "Ma7eruix",
@@ -583,8 +583,8 @@
       "donations": "39000",
       "vs_normalized": 12.87,
       "donation_normalized": 41.91,
-      "random": 24.1,
-      "final": 24.95
+      "random": 62.88,
+      "final": 36.58
     },
     {
       "name": "McDirick",
@@ -593,8 +593,8 @@
       "donations": "49050",
       "vs_normalized": 36.73,
       "donation_normalized": 52.71,
-      "random": 42.8,
-      "final": 43.34
+      "random": 4.71,
+      "final": 31.92
     },
     {
       "name": "Milner14",
@@ -603,8 +603,8 @@
       "donations": "42050",
       "vs_normalized": 53.28,
       "donation_normalized": 45.19,
-      "random": 87.27,
-      "final": 61.05
+      "random": 82.6,
+      "final": 59.65
     },
     {
       "name": "Mmarronn",
@@ -613,8 +613,8 @@
       "donations": "61150",
       "vs_normalized": 16.05,
       "donation_normalized": 65.71,
-      "random": 9.54,
-      "final": 28.99
+      "random": 74.45,
+      "final": 48.47
     },
     {
       "name": "Mulekezord",
@@ -623,8 +623,8 @@
       "donations": "64200",
       "vs_normalized": 32.71,
       "donation_normalized": 68.99,
-      "random": 99.55,
-      "final": 63.65
+      "random": 10.26,
+      "final": 36.86
     },
     {
       "name": "Myosin",
@@ -633,8 +633,8 @@
       "donations": "49250",
       "vs_normalized": 26.53,
       "donation_normalized": 52.92,
-      "random": 10.94,
-      "final": 29.77
+      "random": 92.78,
+      "final": 54.32
     },
     {
       "name": "Omn Setty",
@@ -643,8 +643,8 @@
       "donations": "46800",
       "vs_normalized": 16.01,
       "donation_normalized": 50.29,
-      "random": 89.48,
-      "final": 48.34
+      "random": 7.18,
+      "final": 23.64
     },
     {
       "name": "PlotTwisT",
@@ -653,8 +653,8 @@
       "donations": "47350",
       "vs_normalized": 91.69,
       "donation_normalized": 50.88,
-      "random": 64.5,
-      "final": 71.29
+      "random": 70.18,
+      "final": 72.99
     },
     {
       "name": "Pourdecisions",
@@ -663,8 +663,8 @@
       "donations": "93050",
       "vs_normalized": 15.43,
       "donation_normalized": 100,
-      "random": 51.4,
-      "final": 51.59
+      "random": 13.41,
+      "final": 40.19
     },
     {
       "name": "Pøison Ivy",
@@ -673,8 +673,8 @@
       "donations": "44650",
       "vs_normalized": 5.63,
       "donation_normalized": 47.98,
-      "random": 68.13,
-      "final": 37.08
+      "random": 27.11,
+      "final": 24.78
     },
     {
       "name": "SSStealth",
@@ -683,18 +683,8 @@
       "donations": "43350",
       "vs_normalized": 23.69,
       "donation_normalized": 46.58,
-      "random": 79.58,
-      "final": 47.32
-    },
-    {
-      "name": "Sadaji",
-      "status": "ELIGIBLE",
-      "vs": "49098405",
-      "donations": "50600",
-      "vs_normalized": 86.91,
-      "donation_normalized": 54.37,
-      "random": 68.75,
-      "final": 71.7
+      "random": 81.87,
+      "final": 48.01
     },
     {
       "name": "Sammy828",
@@ -703,8 +693,8 @@
       "donations": "30300",
       "vs_normalized": 25.21,
       "donation_normalized": 32.56,
-      "random": 6.07,
-      "final": 21.67
+      "random": 11.45,
+      "final": 23.29
     },
     {
       "name": "Skiff1980",
@@ -713,8 +703,8 @@
       "donations": "55800",
       "vs_normalized": 72.37,
       "donation_normalized": 59.96,
-      "random": 97.26,
-      "final": 76.11
+      "random": 11.7,
+      "final": 50.45
     },
     {
       "name": "Sniperbird",
@@ -723,8 +713,8 @@
       "donations": "67050",
       "vs_normalized": 70.32,
       "donation_normalized": 72.05,
-      "random": 99.92,
-      "final": 79.72
+      "random": 96.86,
+      "final": 78.8
     },
     {
       "name": "SnowFOX",
@@ -733,8 +723,8 @@
       "donations": "43400",
       "vs_normalized": 20.04,
       "donation_normalized": 46.64,
-      "random": 58.3,
-      "final": 39.5
+      "random": 1.37,
+      "final": 22.42
     },
     {
       "name": "Soul Tiller",
@@ -743,8 +733,8 @@
       "donations": "33850",
       "vs_normalized": 21.63,
       "donation_normalized": 36.37,
-      "random": 31.13,
-      "final": 28.9
+      "random": 36.06,
+      "final": 30.38
     },
     {
       "name": "SpareParts709",
@@ -753,8 +743,8 @@
       "donations": "50050",
       "vs_normalized": 24.65,
       "donation_normalized": 53.78,
-      "random": 97.93,
-      "final": 55.37
+      "random": 57.84,
+      "final": 43.35
     },
     {
       "name": "Stocktonator",
@@ -763,8 +753,8 @@
       "donations": "89050",
       "vs_normalized": 11.72,
       "donation_normalized": 95.7,
-      "random": 68.72,
-      "final": 54.01
+      "random": 68.37,
+      "final": 53.91
     },
     {
       "name": "Super JuNiOr",
@@ -773,8 +763,8 @@
       "donations": "45800",
       "vs_normalized": 24.12,
       "donation_normalized": 49.22,
-      "random": 24.48,
-      "final": 31.76
+      "random": 79.3,
+      "final": 48.2
     },
     {
       "name": "The OWl",
@@ -783,8 +773,8 @@
       "donations": "54350",
       "vs_normalized": 8.18,
       "donation_normalized": 58.4,
-      "random": 16.57,
-      "final": 25.76
+      "random": 88.16,
+      "final": 47.24
     },
     {
       "name": "The real DSA",
@@ -793,8 +783,8 @@
       "donations": "31800",
       "vs_normalized": 14.83,
       "donation_normalized": 34.17,
-      "random": 25.16,
-      "final": 23.73
+      "random": 9.46,
+      "final": 19.02
     },
     {
       "name": "TomRhodes",
@@ -803,8 +793,8 @@
       "donations": "50400",
       "vs_normalized": 6.43,
       "donation_normalized": 54.16,
-      "random": 77.53,
-      "final": 42.08
+      "random": 68.21,
+      "final": 39.28
     },
     {
       "name": "TruPtGard",
@@ -813,8 +803,8 @@
       "donations": "53300",
       "vs_normalized": 100,
       "donation_normalized": 57.28,
-      "random": 23.65,
-      "final": 64.28
+      "random": 45.26,
+      "final": 70.76
     },
     {
       "name": "Vordon888",
@@ -823,8 +813,8 @@
       "donations": "35300",
       "vs_normalized": 21.35,
       "donation_normalized": 37.93,
-      "random": 89.85,
-      "final": 46.87
+      "random": 89.07,
+      "final": 46.64
     },
     {
       "name": "Weeks304",
@@ -833,8 +823,8 @@
       "donations": "48650",
       "vs_normalized": 79.3,
       "donation_normalized": 52.28,
-      "random": 78.44,
-      "final": 70.94
+      "random": 25.53,
+      "final": 55.06
     },
     {
       "name": "WpgLos",
@@ -843,8 +833,8 @@
       "donations": "55200",
       "vs_normalized": 17.22,
       "donation_normalized": 59.32,
-      "random": 90.03,
-      "final": 51.69
+      "random": 90.08,
+      "final": 51.71
     },
     {
       "name": "combat sniper",
@@ -853,8 +843,8 @@
       "donations": "42650",
       "vs_normalized": 16.49,
       "donation_normalized": 45.83,
-      "random": 79.06,
-      "final": 44.06
+      "random": 13.37,
+      "final": 24.36
     },
     {
       "name": "commanderbigdawg",
@@ -863,8 +853,8 @@
       "donations": "40800",
       "vs_normalized": 19.24,
       "donation_normalized": 43.84,
-      "random": 76.14,
-      "final": 43.69
+      "random": 46.98,
+      "final": 34.94
     },
     {
       "name": "db666",
@@ -873,8 +863,8 @@
       "donations": "36450",
       "vs_normalized": 11.54,
       "donation_normalized": 39.17,
-      "random": 97.76,
-      "final": 45.69
+      "random": 69.35,
+      "final": 37.17
     },
     {
       "name": "ghostdog203",
@@ -883,8 +873,8 @@
       "donations": "42350",
       "vs_normalized": 6.89,
       "donation_normalized": 45.51,
-      "random": 40.16,
-      "final": 28.46
+      "random": 29.94,
+      "final": 25.39
     },
     {
       "name": "gyu 규규0",
@@ -893,8 +883,8 @@
       "donations": "52550",
       "vs_normalized": 16.24,
       "donation_normalized": 56.47,
-      "random": 17.41,
-      "final": 28.66
+      "random": 61.91,
+      "final": 42.01
     },
     {
       "name": "t ǝ c ᵷ r Ɩ",
@@ -903,8 +893,8 @@
       "donations": "41850",
       "vs_normalized": 17.97,
       "donation_normalized": 44.97,
-      "random": 58.41,
-      "final": 38.2
+      "random": 32.87,
+      "final": 30.54
     }
   ]
 }
