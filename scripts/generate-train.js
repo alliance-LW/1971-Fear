@@ -163,6 +163,18 @@ async function generate() {
 
   console.log(`Active members: ${activeMembers.length}`);
 
+  // Publish only the minimum public roster data needed by the Members login page.
+  // Never publish the FarmOps API key or full FarmOps member records.
+  fs.writeFileSync(
+    "data/members.json",
+    JSON.stringify({
+      schema_version: 1,
+      generated_at: new Date().toISOString(),
+      alliance: alliance.name || "FEAR",
+      members: activeMembers.map(member => ({ name: member.name }))
+    }, null, 2) + "\n"
+  );
+
   // --------------------------------------------------
   // FIND CURRENT WEEK FROM FARMOPS DONATION DATA
   // --------------------------------------------------
