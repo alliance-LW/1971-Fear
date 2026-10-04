@@ -673,7 +673,8 @@ async function generate() {
     return member;
   };
 
-  // FEAR Train week runs Sunday through Saturday. FarmOps weekEnd is Sunday, so Day 1 starts on weekEnd.\n  const scheduleStart = weekEnd;
+  // FEAR Train week runs Sunday through Saturday. FarmOps weekEnd is Sunday, so Day 1 starts on weekEnd.
+  const scheduleStart = weekEnd;
   const days = [];
 
   for (let i = 0; i < 7; i++) {
