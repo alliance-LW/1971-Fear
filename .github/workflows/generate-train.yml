@@ -2,6 +2,9 @@ name: Generate Train Roster
 
 on:
   workflow_dispatch:
+  schedule:
+    # Last War server reset: Saturday 9:00 PM Central = Sunday 02:00 UTC during CDT.
+    - cron: "5 2 * * 0"
 
 permissions:
   contents: write
