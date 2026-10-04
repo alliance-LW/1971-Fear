@@ -1,28 +1,70 @@
 {
   "schema_version": 1,
   "status": "LOCKED",
-  "source": "FarmOps API via GitHub Actions",
+  "source": "FarmOps API via GitHub",
   "source_week": "2026-09-28 to 2026-10-04",
-  "schedule_week": "2026-10-05 to 2026-10-11",
-  "generated_at": "2026-10-04T02:12:07.825Z",
+  "schedule_week": "2026-10-03 to 2026-10-09",
+  "generated_at": "2026-10-04T02:14:03.563Z",
   "days": [
     {
-      "date": "2026-10-05",
+      "date": "2026-10-03",
       "conductor": {
-        "primary": "Skiff1980",
-        "score": 74.62,
-        "alternates": [
-          "Weeks304",
-          "TruPtGard",
-          "MJArmy"
-        ]
-      },
-      "vip": {
         "primary": "PlotTwisT",
         "score": 75.98,
         "alternates": [
+          "TruPtGard",
           "Ashallayn Darkmyr",
+          "Weeks304"
+        ]
+      },
+      "vip": {
+        "primary": "Skiff1980",
+        "score": 74.62,
+        "alternates": [
+          "Sniperbird",
           "ArmyArmy",
+          "MJArmy"
+        ]
+      }
+    },
+    {
+      "date": "2026-10-04",
+      "conductor": {
+        "primary": "TruPtGard",
+        "score": 71.7,
+        "alternates": [
+          "Weeks304",
+          "Sniperbird",
+          "ArmyArmy"
+        ]
+      },
+      "vip": {
+        "primary": "Ashallayn Darkmyr",
+        "score": 65.29,
+        "alternates": [
+          "MJArmy",
+          "Kcon1225",
+          "Sadaji"
+        ]
+      }
+    },
+    {
+      "date": "2026-10-05",
+      "conductor": {
+        "primary": "Weeks304",
+        "score": 64.97,
+        "alternates": [
+          "ArmyArmy",
+          "MJArmy",
+          "Kcon1225"
+        ]
+      },
+      "vip": {
+        "primary": "Sniperbird",
+        "score": 63.75,
+        "alternates": [
+          "Sadaji",
+          "SpareParts709",
           "BoostedT70"
         ]
       }
@@ -30,62 +72,62 @@
     {
       "date": "2026-10-06",
       "conductor": {
-        "primary": "Weeks304",
-        "score": 64.97,
+        "primary": "ArmyArmy",
+        "score": 61.98,
         "alternates": [
-          "MJArmy",
-          "Ashallayn Darkmyr",
-          "ArmyArmy"
+          "Kcon1225",
+          "Sadaji",
+          "SpareParts709"
         ]
       },
       "vip": {
-        "primary": "TruPtGard",
-        "score": 71.7,
+        "primary": "MJArmy",
+        "score": 61.2,
         "alternates": [
           "BoostedT70",
-          "Sniperbird",
-          "LetBim"
+          "H20MAN",
+          "Commandant Chewie"
         ]
       }
     },
     {
       "date": "2026-10-07",
       "conductor": {
-        "primary": "MJArmy",
-        "score": 61.2,
+        "primary": "Kcon1225",
+        "score": 60.07,
         "alternates": [
-          "ArmyArmy",
+          "SpareParts709",
           "BoostedT70",
-          "Sniperbird"
+          "H20MAN"
         ]
       },
       "vip": {
-        "primary": "Ashallayn Darkmyr",
-        "score": 65.29,
+        "primary": "Sadaji",
+        "score": 58.82,
         "alternates": [
-          "LetBim",
-          "Sadaji",
-          "H20MAN"
+          "Commandant Chewie",
+          "Field Marshal Ro V",
+          "Stocktonator"
         ]
       }
     },
     {
       "date": "2026-10-08",
       "conductor": {
-        "primary": "ArmyArmy",
-        "score": 61.98,
+        "primary": "SpareParts709",
+        "score": 55.8,
         "alternates": [
-          "Sniperbird",
-          "LetBim",
-          "Sadaji"
+          "H20MAN",
+          "Commandant Chewie",
+          "Field Marshal Ro V"
         ]
       },
       "vip": {
         "primary": "BoostedT70",
         "score": 54.64,
         "alternates": [
-          "H20MAN",
-          "SpareParts709",
+          "Stocktonator",
+          "Milner14",
           "Commander MDK"
         ]
       }
@@ -93,63 +135,21 @@
     {
       "date": "2026-10-09",
       "conductor": {
-        "primary": "Sniperbird",
-        "score": 63.75,
-        "alternates": [
-          "Sadaji",
-          "H20MAN",
-          "SpareParts709"
-        ]
-      },
-      "vip": {
-        "primary": "LetBim",
-        "score": 46.69,
-        "alternates": [
-          "Commander MDK",
-          "Kcon1225",
-          "BoneSaw802"
-        ]
-      }
-    },
-    {
-      "date": "2026-10-10",
-      "conductor": {
-        "primary": "Sadaji",
-        "score": 58.82,
-        "alternates": [
-          "SpareParts709",
-          "Commander MDK",
-          "Kcon1225"
-        ]
-      },
-      "vip": {
         "primary": "H20MAN",
         "score": 54.17,
         "alternates": [
-          "BoneSaw802",
-          "Commandant Chewie",
-          "Stocktonator"
-        ]
-      }
-    },
-    {
-      "date": "2026-10-11",
-      "conductor": {
-        "primary": "SpareParts709",
-        "score": 55.8,
-        "alternates": [
-          "Kcon1225",
-          "BoneSaw802",
-          "Commandant Chewie"
+          "Field Marshal Ro V",
+          "Stocktonator",
+          "Milner14"
         ]
       },
       "vip": {
-        "primary": "Commander MDK",
-        "score": 50.51,
+        "primary": "Commandant Chewie",
+        "score": 53.37,
         "alternates": [
-          "Stocktonator",
-          "Milner14",
-          "Loudog90"
+          "Commander MDK",
+          "Super JuNiOr",
+          "GRNDDGR"
         ]
       }
     }
