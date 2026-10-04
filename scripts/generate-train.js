@@ -144,14 +144,12 @@ async function generate() {
     members,
     dailyDuels,
     donations,
-    fullExport
-  ] = await Promise.all([
+    fullExport,\n    powerRows,\n    killRows,\n    thpRows\n  ] = await Promise.all([
     farmOps("/alliance"),
     farmOps("/alliance/members"),
     farmOps("/alliance/members/duels"),
     farmOps("/alliance/members/donations"),
-    farmOps("/alliance/export")
-  ]);
+    farmOps("/alliance/export"),\n    farmOps("/alliance/members/power"),\n    farmOps("/alliance/members/kills"),\n    farmOps("/alliance/members/thp")\n  ]);
 
   const activeMembers = members.filter(
     member => member.status === "ACTIVE"
