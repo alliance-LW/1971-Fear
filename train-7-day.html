@@ -8,7 +8,7 @@
 *{box-sizing:border-box}body{margin:0;background:linear-gradient(#0a0e11,#07090b);color:var(--text);font-family:Arial,sans-serif}.wrap{width:min(1120px,92%);margin:auto}
 nav{background:#090c0ff2;border-bottom:1px solid var(--line);padding:20px 0}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.brand{font-size:24px;font-weight:900}.brand b{color:var(--red)}a{color:var(--gold)}
 header{padding:55px 0 30px}.tag{color:var(--gold);font-size:11px;font-weight:900;letter-spacing:1.5px}h1{font-size:clamp(38px,7vw,70px);margin:8px 0}.muted{color:var(--muted);line-height:1.6}
-.actions{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.btn{border:0;border-radius:5px;padding:12px 16px;font-weight:900;cursor:pointer;background:var(--red);color:white}.btn.alt{background:#263238}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.btn{border:0;border-radius:5px;padding:12px 16px;font-weight:900;cursor:pointer;background:var(--red);color:white}.btn:disabled{opacity:.45;cursor:not-allowed}.btn.alt{background:#263238}
 .status{padding:16px;border:1px solid #705b2b;background:#17150f;margin:20px 0;color:#decda4}
 .grid{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;padding-bottom:45px}.day{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--red);padding:16px;min-height:260px}.day h2{font-size:17px;margin:5px 0;color:var(--gold)}.date{font-size:12px;color:var(--muted);margin-bottom:18px}.role{font-size:10px;color:#8f9ba1;font-weight:900;letter-spacing:1px;margin-top:14px}.name{font-size:17px;font-weight:900;margin:4px 0}.alts{font-size:12px;color:var(--muted);line-height:1.5}.score{font-size:11px;color:#8f9ba1}
 .note{border:1px solid var(--line);background:#0e1215;padding:20px;margin-bottom:40px}.error{color:#ff9b9b}
@@ -25,7 +25,10 @@ let source=null;
 const $=id=>document.getElementById(id);
 function dateLabel(offset){const d=new Date();d.setDate(d.getDate()+offset);return {day:d.toLocaleDateString(undefined,{weekday:"long"}),date:d.toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"})};}
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function isSundayMorning(){const d=new Date();return d.getDay()===0&&d.getHours()<12;}
+function generationLocked(){return !isSundayMorning();}
 function generate(){
+ if(generationLocked()){$("status").innerHTML='<strong>GENERATION LOCKED:</strong> The 7-day Train schedule can only be generated Sunday morning (12:00 AM–11:59 AM in your device time).';return;}
  if(!source)return;
  const eligible=(source.audit||[]).filter(x=>x.status==="ELIGIBLE").sort((a,b)=>(b.final||0)-(a.final||0));
  if(eligible.length<14){$("status").innerHTML='<span class="error">Not enough eligible members to build seven unique Conductor/VIP days.</span>';return;}
@@ -42,6 +45,6 @@ function generate(){
  $("schedule").innerHTML=cards.join("");
  $("status").innerHTML="<strong>7-DAY PROPOSAL GENERATED.</strong> "+eligible.length+" eligible members available • Source week: "+(source.week||"current")+" • Generated locally: "+new Date().toLocaleString();
 }
-async function load(){try{const r=await fetch("data/train-results.json?ts="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("Train results unavailable");source=await r.json();$("status").textContent="Latest Train data loaded. Click Generate 7-Day Schedule.";generate();}catch(e){$("status").innerHTML='<span class="error">Could not load data/train-results.json. Run the Train workflow first.</span>';}}
+async function load(){try{const r=await fetch("data/train-results.json?ts="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("Train results unavailable");source=await r.json();const btn=$("generate");if(generationLocked()){btn.disabled=true;$("status").innerHTML="<strong>GENERATION LOCKED:</strong> Available Sunday morning from 12:00 AM through 11:59 AM in your device time.";}else{btn.disabled=false;$("status").textContent="Sunday generation window is open. Click Generate 7-Day Schedule.";}}catch(e){$("status").innerHTML='<span class="error">Could not load data/train-results.json. Run the Train workflow first.</span>';}}
 $("generate").addEventListener("click",generate);load();
 </script></body></html>
