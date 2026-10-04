@@ -1,5 +1,6 @@
 {
   "schema_version": 1,
+  "generated_at": "2026-10-04T02:12:07.822Z",
   "alliance": "The Dark Side",
   "members": [
     {
@@ -16,6 +17,9 @@
     },
     {
       "name": "Ashallayn Darkmyr"
+    },
+    {
+      "name": "BUCK 5516"
     },
     {
       "name": "BeFE"
@@ -39,25 +43,13 @@
       "name": "BriVado"
     },
     {
-      "name": "BUCK 5516"
-    },
-    {
-      "name": "combat sniper"
-    },
-    {
       "name": "Commandant Chewie"
     },
     {
       "name": "Commander MDK"
     },
     {
-      "name": "commanderbigdawg"
-    },
-    {
       "name": "Crashley86"
-    },
-    {
-      "name": "db666"
     },
     {
       "name": "Dewtrx"
@@ -78,31 +70,25 @@
       "name": "Ember Dragon"
     },
     {
-      "name": "Field Marshal Ro V"
+      "name": "FIREHEART10"
     },
     {
-      "name": "FIREHEART10"
+      "name": "Field Marshal Ro V"
     },
     {
       "name": "Freddyfrick"
     },
     {
-      "name": "General dynamite"
+      "name": "GRNDDGR"
     },
     {
-      "name": "ghostdog203"
+      "name": "General dynamite"
     },
     {
       "name": "Go No Go"
     },
     {
       "name": "GoHuskers"
-    },
-    {
-      "name": "GRNDDGR"
-    },
-    {
-      "name": "gyu 규규0"
     },
     {
       "name": "H20MAN"
@@ -150,9 +136,6 @@
       "name": "King Bubbah Jay"
     },
     {
-      "name": "kizzle kizzle"
-    },
-    {
       "name": "LetBim"
     },
     {
@@ -165,13 +148,16 @@
       "name": "LuckyCharms23"
     },
     {
+      "name": "MJArmy"
+    },
+    {
+      "name": "MVP BigFoot"
+    },
+    {
       "name": "Ma7eruix"
     },
     {
       "name": "McDirick"
-    },
-    {
-      "name": "milllaaaaa"
     },
     {
       "name": "Milner14"
@@ -180,16 +166,10 @@
       "name": "Mini Atom"
     },
     {
-      "name": "MJArmy"
-    },
-    {
       "name": "Mmarronn"
     },
     {
       "name": "Mulekezord"
-    },
-    {
-      "name": "MVP BigFoot"
     },
     {
       "name": "Myosin"
@@ -201,10 +181,13 @@
       "name": "PlotTwisT"
     },
     {
+      "name": "Pourdecisions"
+    },
+    {
       "name": "Pøison Ivy"
     },
     {
-      "name": "Pourdecisions"
+      "name": "SSStealth"
     },
     {
       "name": "Sadaji"
@@ -234,16 +217,10 @@
       "name": "SpareParts709"
     },
     {
-      "name": "SSStealth"
-    },
-    {
       "name": "Stocktonator"
     },
     {
       "name": "Super JuNiOr"
-    },
-    {
-      "name": "t ǝ c ᵷ r Ɩ"
     },
     {
       "name": "The OWl"
@@ -265,6 +242,30 @@
     },
     {
       "name": "WpgLos"
+    },
+    {
+      "name": "combat sniper"
+    },
+    {
+      "name": "commanderbigdawg"
+    },
+    {
+      "name": "db666"
+    },
+    {
+      "name": "ghostdog203"
+    },
+    {
+      "name": "gyu 규규0"
+    },
+    {
+      "name": "kizzle kizzle"
+    },
+    {
+      "name": "milllaaaaa"
+    },
+    {
+      "name": "t ǝ c ᵷ r Ɩ"
     }
   ]
 }
