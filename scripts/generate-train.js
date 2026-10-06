@@ -228,12 +228,45 @@ async function generate() {
   const killMap = latestMetric(killRows, ["kills", "killCount", "totalKills", "value"]);
   const thpMap = latestMetric(thpRows, ["thp", "totalHeroPower", "heroPower", "value"]);
 
+  // VS details for the member dashboard: yesterday plus the current Monday-Sunday week.
+  const now = new Date();
+  const yesterdayDateObj = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+  yesterdayDateObj.setUTCDate(yesterdayDateObj.getUTCDate() - 1);
+  const yesterdayDate = yesterdayDateObj.toISOString().slice(0, 10);
+
+  const currentDateObj = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+  const dayOfWeek = currentDateObj.getUTCDay();
+  const daysSinceMonday = (dayOfWeek + 6) % 7;
+  const currentVsWeekStartObj = new Date(currentDateObj);
+  currentVsWeekStartObj.setUTCDate(currentVsWeekStartObj.getUTCDate() - daysSinceMonday);
+  const currentVsWeekStart = currentVsWeekStartObj.toISOString().slice(0, 10);
+  const currentVsWeekEnd = addDays(currentVsWeekStart, 6);
+
+  const yesterdayVsMap = new Map();
+  const weeklyVsMap = new Map();
+
+  for (const row of Array.isArray(dailyDuels) ? dailyDuels : []) {
+    if (!activeIds.has(row.memberId)) continue;
+    const scoredOn = String(row.scoredOn || row.scored_on || "").slice(0, 10);
+    const score = toBigInt(row.score);
+
+    if (scoredOn === yesterdayDate) {
+      yesterdayVsMap.set(row.memberId, (yesterdayVsMap.get(row.memberId) || 0n) + score);
+    }
+
+    if (scoredOn >= currentVsWeekStart && scoredOn <= currentVsWeekEnd) {
+      weeklyVsMap.set(row.memberId, (weeklyVsMap.get(row.memberId) || 0n) + score);
+    }
+  }
+
   const dashboardMembers = activeMembers.map(member => ({
     name: member.name,
     power: powerMap.get(member.id)?.value || null,
     thp: thpMap.get(member.id)?.value || null,
     kills: killMap.get(member.id)?.value || null,
-    hq: member.hqLevel ?? member.hq ?? member.headquartersLevel ?? member.headquarters ?? null
+    hq: member.hqLevel ?? member.hq ?? member.headquartersLevel ?? member.headquarters ?? null,
+    yesterdayVs: (yesterdayVsMap.get(member.id) || 0n).toString(),
+    weeklyVs: (weeklyVsMap.get(member.id) || 0n).toString()
   }));
 
   fs.writeFileSync(
@@ -243,12 +276,15 @@ async function generate() {
       generated_at: new Date().toISOString(),
       source: "FarmOps API",
       alliance: alliance.name || "FEAR",
+      yesterday_date: yesterdayDate,
+      vs_week_start: currentVsWeekStart,
+      vs_week_end: currentVsWeekEnd,
       members: dashboardMembers
     }, null, 2) + "\n"
   );
 
   console.log(
-    `Dashboard metrics: power=${powerMap.size}, thp=${thpMap.size}, kills=${killMap.size}, hq=${dashboardMembers.filter(member => member.hq !== null).length}`
+    `Dashboard metrics: power=${powerMap.size}, thp=${thpMap.size}, kills=${killMap.size}, hq=${dashboardMembers.filter(member => member.hq !== null).length}, yesterdayVS=${yesterdayVsMap.size}, weeklyVS=${weeklyVsMap.size}`
   );
 
   if (membersOnly) {
