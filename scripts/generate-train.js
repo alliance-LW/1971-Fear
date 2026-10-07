@@ -577,7 +577,7 @@ async function generate() {
     );
 
   // --------------------------------------------------
-  // 40 / 30 / 30 FORMULA
+  // 70 / 30 FORMULA
   // --------------------------------------------------
 
   for (const member of eligible) {
@@ -593,13 +593,9 @@ async function generate() {
         maximumDonations
       );
 
-    const randomScore =
-      crypto.randomInt(0, 10001) / 100;
-
     const finalScore =
-      (vsNormalized * 0.40) +
-      (donationNormalized * 0.30) +
-      (randomScore * 0.30);
+      (vsNormalized * 0.70) +
+      (donationNormalized * 0.30);
 
     member.finalScore = finalScore;
 
@@ -613,8 +609,6 @@ async function generate() {
         Number(vsNormalized.toFixed(2)),
       donation_normalized:
         Number(donationNormalized.toFixed(2)),
-      random:
-        Number(randomScore.toFixed(2)),
       final:
         Number(finalScore.toFixed(2))
     });
@@ -673,9 +667,9 @@ async function generate() {
     formula: {
       minimum_donations:
         MIN_DONATIONS,
-      vs_weight: 0.40,
+      vs_weight: 0.70,
       donation_weight: 0.30,
-      random_weight: 0.30,
+      random_weight: 0.00,
       cooldown:
         "Anyone actually assigned Conductor or VIP in the previous week is excluded."
     },
@@ -702,11 +696,7 @@ async function generate() {
   const schedulePool = audit
     .filter(item => item.status === "ELIGIBLE")
     .map(item => ({ ...item }))
-    .sort((a, b) => {
-      const aWeighted = (a.final || 0) + crypto.randomInt(0, 2001) / 100;
-      const bWeighted = (b.final || 0) + crypto.randomInt(0, 2001) / 100;
-      return bWeighted - aWeighted;
-    });
+    .sort((a, b) => (b.final || 0) - (a.final || 0));
 
   if (schedulePool.length < 14) {
     throw new Error("Need at least 14 eligible members to create the 7-day schedule.");
