@@ -665,11 +665,21 @@ async function generate() {
       new Date().toISOString(),
 
     formula: {
-      minimum_donations:
-        MIN_DONATIONS,
+      minimum_donations: MIN_DONATIONS,
       vs_weight: 0.70,
       donation_weight: 0.30,
       random_weight: 0.00,
+      rule_order: [
+        "Member must be ACTIVE in FarmOps and not manually excluded.",
+        "Member must have at least 30,000 weekly Tech Donations.",
+        "Member must have imported VS points for the scoring week.",
+        "Member must not be marked unavailable.",
+        "Anyone actually assigned Conductor or VIP in the previous week is excluded.",
+        "Eligible members are ranked by 70% normalized VS performance plus 30% normalized Tech Donations.",
+        "The 14 highest-ranked unique eligible members fill the 7 daily Conductor/VIP primary positions.",
+        "A member can hold only one primary Train position in the generated week.",
+        "Alternates are the next highest-ranked eligible members not already used as a primary at that point."
+      ],
       cooldown:
         "Anyone actually assigned Conductor or VIP in the previous week is excluded."
     },
@@ -738,6 +748,7 @@ async function generate() {
     schema_version: 1,
     status: "LOCKED",
     source: "FarmOps API via GitHub Actions",
+    selection_method: "Eligibility rules first, then deterministic 70% VS / 30% Tech Donations ranking; no random component.",
     source_week: `${weekStart} to ${weekEnd}`,
     schedule_week: `${scheduleStart} to ${addDays(scheduleStart, 6)}`,
     generated_at: new Date().toISOString(),
