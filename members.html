@@ -87,7 +87,7 @@ function updateDragonetteDailyBanner(){
  const day=new Intl.DateTimeFormat("en-CA",{timeZone:"America/New_York",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
  const parts=day.match(/\d+/g);if(!parts||parts.length!==3)return;
  const ordinal=Math.floor(Date.UTC(+parts[0],+parts[1]-1,+parts[2])/86400000);
- el.textContent=DRAGONETTE_DAILY_MESSAGES[((ordinal%DRAGONETTE_DAILY_MESSAGES.length)+DRAGONETTE_DAILY_MESSAGES.length)%DRAGONETTE_DAILY_MESSAGES.length];
+ el.textContent=day<"2026-10-11"?"❤️ DSA is crushing on you!!!! 💕 You got this! ✨ and all things are possible with Faith!!!! 🌟 Be Positive":DRAGONETTE_DAILY_MESSAGES[((ordinal%DRAGONETTE_DAILY_MESSAGES.length)+DRAGONETTE_DAILY_MESSAGES.length)%DRAGONETTE_DAILY_MESSAGES.length];
 }
 updateDragonetteDailyBanner();
 setInterval(updateDragonetteDailyBanner,30000);
