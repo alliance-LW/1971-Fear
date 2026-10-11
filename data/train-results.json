@@ -4,7 +4,7 @@
   "source": "FarmOps API",
   "alliance": "The Dark Side",
   "week": "2026-10-05 to 2026-10-11",
-  "generated_at": "2026-10-11T13:23:01.566Z",
+  "generated_at": "2026-10-11T13:25:53.956Z",
   "formula": {
     "minimum_donations": 30000,
     "vs_weight": 0.7,
@@ -24,8 +24,8 @@
     "cooldown": "Anyone actually assigned Conductor or VIP in the previous week is excluded."
   },
   "data_summary": {
-    "active_members": 87,
-    "eligible_members": 80
+    "active_members": 86,
+    "eligible_members": 79
   },
   "selections": {
     "conductor": {

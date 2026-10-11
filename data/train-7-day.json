@@ -5,7 +5,7 @@
   "selection_method": "Eligibility rules first, then deterministic 70% VS / 30% Tech Donations ranking; no random component.",
   "source_week": "2026-10-05 to 2026-10-11",
   "schedule_week": "2026-10-11 to 2026-10-17",
-  "generated_at": "2026-10-11T13:23:01.566Z",
+  "generated_at": "2026-10-11T13:25:53.956Z",
   "days": [
     {
       "date": "2026-10-11",
@@ -44,7 +44,8 @@
         "score": 55.56,
         "alternates": [
           "ssDewm",
-          "McDirick"
+          "McDirick",
+          "Ma7eruix"
         ]
       }
     },
@@ -55,16 +56,17 @@
         "score": 54.47,
         "alternates": [
           "Pourdecisions",
-          "ssDewm"
+          "ssDewm",
+          "McDirick"
         ]
       },
       "vip": {
         "primary": "BriVado",
         "score": 54.1,
         "alternates": [
-          "McDirick",
           "Ma7eruix",
-          "WpgLos"
+          "WpgLos",
+          "Keetja"
         ]
       }
     },
@@ -75,79 +77,80 @@
         "score": 52.89,
         "alternates": [
           "McDirick",
-          "Ma7eruix"
+          "Ma7eruix",
+          "WpgLos"
         ]
       },
       "vip": {
         "primary": "ssDewm",
         "score": 51.11,
         "alternates": [
-          "WpgLos",
           "Keetja",
-          "TomRhodes"
+          "TomRhodes",
+          "Skiff1980"
         ]
       }
     },
     {
       "date": "2026-10-15",
       "conductor": {
-        "primary": null,
-        "score": 50.69,
-        "alternates": [
-          "Ma7eruix",
-          "WpgLos",
-          "Keetja"
-        ]
-      },
-      "vip": {
         "primary": "McDirick",
         "score": 50.55,
         "alternates": [
-          "TomRhodes",
+          "WpgLos",
+          "Keetja",
+          "TomRhodes"
+        ]
+      },
+      "vip": {
+        "primary": "Ma7eruix",
+        "score": 49.4,
+        "alternates": [
           "Skiff1980",
-          "LetBim"
+          "LetBim",
+          "Loudog90"
         ]
       }
     },
     {
       "date": "2026-10-16",
       "conductor": {
-        "primary": "Ma7eruix",
-        "score": 49.4,
-        "alternates": [
-          "Keetja",
-          "TomRhodes",
-          "Skiff1980"
-        ]
-      },
-      "vip": {
         "primary": "WpgLos",
         "score": 48.6,
         "alternates": [
-          "LetBim",
+          "TomRhodes",
+          "Skiff1980",
+          "LetBim"
+        ]
+      },
+      "vip": {
+        "primary": "Keetja",
+        "score": 47.95,
+        "alternates": [
           "Loudog90",
-          "MVP BigFoot"
+          "MVP BigFoot",
+          "Crashley86"
         ]
       }
     },
     {
       "date": "2026-10-17",
       "conductor": {
-        "primary": "Keetja",
-        "score": 47.95,
-        "alternates": [
-          "Skiff1980",
-          "LetBim",
-          "Loudog90"
-        ]
-      },
-      "vip": {
         "primary": "TomRhodes",
         "score": 46.95,
         "alternates": [
-          "MVP BigFoot",
+          "LetBim",
+          "Loudog90",
+          "MVP BigFoot"
+        ]
+      },
+      "vip": {
+        "primary": "Skiff1980",
+        "score": 46.76,
+        "alternates": [
           "Crashley86",
-          "Super JuNiOr"
+          "Super JuNiOr",
+          "The OWl"
         ]
       }
     }

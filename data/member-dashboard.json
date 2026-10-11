@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-11T13:23:01.565Z",
+  "generated_at": "2026-10-11T13:25:53.955Z",
   "source": "FarmOps API",
   "alliance": "The Dark Side",
   "yesterday_date": "2026-10-10",
@@ -402,15 +402,6 @@
       "hq": null,
       "yesterdayVs": "9624302",
       "weeklyVs": "114484736"
-    },
-    {
-      "name": "Lord  Dark  Helmet",
-      "power": "166367825",
-      "thp": "113517287",
-      "kills": "814743",
-      "hq": null,
-      "yesterdayVs": "20510560",
-      "weeklyVs": "100463031"
     },
     {
       "name": "Loudog90",
