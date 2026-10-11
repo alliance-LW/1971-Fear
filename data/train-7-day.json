@@ -44,7 +44,6 @@
         "score": 55.56,
         "alternates": [
           "ssDewm",
-          "Lord  Dark  Helmet",
           "McDirick"
         ]
       }
@@ -56,8 +55,7 @@
         "score": 54.47,
         "alternates": [
           "Pourdecisions",
-          "ssDewm",
-          "Lord  Dark  Helmet"
+          "ssDewm"
         ]
       },
       "vip": {
@@ -76,7 +74,6 @@
         "primary": "Pourdecisions",
         "score": 52.89,
         "alternates": [
-          "Lord  Dark  Helmet",
           "McDirick",
           "Ma7eruix"
         ]
@@ -94,7 +91,7 @@
     {
       "date": "2026-10-15",
       "conductor": {
-        "primary": "Lord  Dark  Helmet",
+        "primary": null,
         "score": 50.69,
         "alternates": [
           "Ma7eruix",
