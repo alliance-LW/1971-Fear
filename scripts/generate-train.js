@@ -160,10 +160,10 @@ async function generate() {
   ]);
 
   // Manual exclusions override FarmOps when a departed member is still reported ACTIVE.
-  const MANUAL_EXCLUSIONS = new Set(["Sadaji"]);
+  const MANUAL_EXCLUSIONS = new Set(["sadaji", "lord dark helmet"]);
 
   const activeMembers = members.filter(
-    member => member.status === "ACTIVE" && !MANUAL_EXCLUSIONS.has(member.name)
+    member => member.status === "ACTIVE" && !MANUAL_EXCLUSIONS.has(String(member.name || "").replace(/\s+/g, " ").trim().toLowerCase())
   );
 
   const activeIds = new Set(
