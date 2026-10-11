@@ -464,15 +464,17 @@ async function generate() {
     )
   );
 
-  const previousWeek =
-    history.weeks?.length
-      ? history.weeks[history.weeks.length - 1]
-      : null;
-
+  const normalizeName = value => String(value || "").replace(/\\s+/g, " ").trim().toLowerCase();
+  const currentScheduleStart = weekEnd;
+  const previousScheduleStart = addDays(currentScheduleStart, -7);
+  const previousWeek = (history.weeks || []).find(item =>
+    String(item.schedule_week || "").startsWith(previousScheduleStart + " to ")
+  );
+  if (!previousWeek) throw new Error("Previous week's train assignments are missing; refusing to generate a schedule without cooldown history.");
   const previousAssignments = new Set([
-    ...(previousWeek?.assigned?.conductor || []),
-    ...(previousWeek?.assigned?.vip || [])
-  ]);
+    ...(previousWeek.assigned?.conductor || []),
+    ...(previousWeek.assigned?.vip || [])
+  ].map(normalizeName));
 
   const unavailable = new Set(
     (overrides.unavailable || []).map(item =>
@@ -508,7 +510,7 @@ async function generate() {
     }
 
     if (
-      previousAssignments.has(member.name)
+      previousAssignments.has(normalizeName(member.name))
     ) {
       reasons.push(
         "Conductor/VIP assigned previous week"
@@ -759,6 +761,18 @@ async function generate() {
     "data/train-7-day.json",
     JSON.stringify(weeklySchedule, null, 2) + "\n"
   );
+
+  // Persist the actual primary assignments so next week's cooldown works.
+  history.weeks = (history.weeks || []).filter(item => item.schedule_week !== weeklySchedule.schedule_week);
+  history.weeks.push({
+    schedule_week: weeklySchedule.schedule_week,
+    assigned: {
+      conductor: days.map(day => day.conductor.primary),
+      vip: days.map(day => day.vip.primary)
+    }
+  });
+  history.weeks.sort((a, b) => a.schedule_week.localeCompare(b.schedule_week));
+  fs.writeFileSync("data/train-history.json", JSON.stringify(history, null, 2) + "\\n");
 
   fs.writeFileSync(
     "data/train-results.json",
