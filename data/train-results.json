@@ -4,7 +4,7 @@
   "source": "FarmOps API",
   "alliance": "The Dark Side",
   "week": "2026-10-05 to 2026-10-11",
-  "generated_at": "2026-10-11T13:27:14.181Z",
+  "generated_at": "2026-10-11T13:33:04.042Z",
   "formula": {
     "minimum_donations": 30000,
     "vs_weight": 0.7,
@@ -25,23 +25,23 @@
   },
   "data_summary": {
     "active_members": 86,
-    "eligible_members": 79
+    "eligible_members": 67
   },
   "selections": {
     "conductor": {
       "primary": "JohnnyW1ld",
       "alternates": [
-        "Mulekezord",
         "Kcon1225",
-        "H20MAN"
+        "H20MAN",
+        "BriVado"
       ]
     },
     "vip": {
-      "primary": "Milner14",
+      "primary": "Mulekezord",
       "alternates": [
-        "BriVado",
         "Pourdecisions",
-        "ssDewm"
+        "ssDewm",
+        "McDirick"
       ]
     }
   },
@@ -130,12 +130,15 @@
     },
     {
       "name": "ArmyArmy",
-      "status": "ELIGIBLE",
+      "status": "INELIGIBLE",
       "vs": "71769217",
       "donations": "35050",
       "vs_normalized": 35.24,
       "donation_normalized": 27.46,
-      "final": 32.91
+      "final": 32.91,
+      "reasons": [
+        "Conductor/VIP assigned previous week"
+      ]
     },
     {
       "name": "Ashallayn Darkmyr",
@@ -157,12 +160,15 @@
     },
     {
       "name": "BeFE",
-      "status": "ELIGIBLE",
+      "status": "INELIGIBLE",
       "vs": "83421184",
       "donations": "59450",
       "vs_normalized": 40.96,
       "donation_normalized": 46.59,
-      "final": 42.65
+      "final": 42.65,
+      "reasons": [
+        "Conductor/VIP assigned previous week"
+      ]
     },
     {
       "name": "Big Horse 96",
@@ -220,12 +226,15 @@
     },
     {
       "name": "Commander MDK",
-      "status": "ELIGIBLE",
+      "status": "INELIGIBLE",
       "vs": "73816810",
       "donations": "57300",
       "vs_normalized": 36.24,
       "donation_normalized": 44.9,
-      "final": 38.84
+      "final": 38.84,
+      "reasons": [
+        "Conductor/VIP assigned previous week"
+      ]
     },
     {
       "name": "Crashley86",
@@ -472,12 +481,15 @@
     },
     {
       "name": "LetBim",
-      "status": "ELIGIBLE",
+      "status": "INELIGIBLE",
       "vs": "114484736",
       "donations": "30550",
       "vs_normalized": 56.21,
       "donation_normalized": 23.94,
-      "final": 46.53
+      "final": 46.53,
+      "reasons": [
+        "Conductor/VIP assigned previous week"
+      ]
     },
     {
       "name": "Loudog90",
@@ -499,12 +511,15 @@
     },
     {
       "name": "MJArmy",
-      "status": "ELIGIBLE",
+      "status": "INELIGIBLE",
       "vs": "44900570",
       "donations": "49700",
       "vs_normalized": 22.04,
       "donation_normalized": 38.94,
-      "final": 27.11
+      "final": 27.11,
+      "reasons": [
+        "Conductor/VIP assigned previous week"
+      ]
     },
     {
       "name": "MVP BigFoot",
@@ -535,12 +550,15 @@
     },
     {
       "name": "Milner14",
-      "status": "ELIGIBLE",
+      "status": "INELIGIBLE",
       "vs": "76026247",
       "donations": "120550",
       "vs_normalized": 37.33,
       "donation_normalized": 94.47,
-      "final": 54.47
+      "final": 54.47,
+      "reasons": [
+        "Conductor/VIP assigned previous week"
+      ]
     },
     {
       "name": "Mmarronn",
@@ -580,12 +598,15 @@
     },
     {
       "name": "PlotTwisT",
-      "status": "ELIGIBLE",
+      "status": "INELIGIBLE",
       "vs": "63084115",
       "donations": "48650",
       "vs_normalized": 30.97,
       "donation_normalized": 38.12,
-      "final": 33.11
+      "final": 33.11,
+      "reasons": [
+        "Conductor/VIP assigned previous week"
+      ]
     },
     {
       "name": "Pourdecisions",
@@ -652,12 +673,15 @@
     },
     {
       "name": "Sniperbird",
-      "status": "ELIGIBLE",
+      "status": "INELIGIBLE",
       "vs": "42904849",
       "donations": "50000",
       "vs_normalized": 21.06,
       "donation_normalized": 39.18,
-      "final": 26.5
+      "final": 26.5,
+      "reasons": [
+        "Conductor/VIP assigned previous week"
+      ]
     },
     {
       "name": "SnowFOX",
@@ -688,21 +712,27 @@
     },
     {
       "name": "Stocktonator",
-      "status": "ELIGIBLE",
+      "status": "INELIGIBLE",
       "vs": "54771667",
       "donations": "51500",
       "vs_normalized": 26.89,
       "donation_normalized": 40.36,
-      "final": 30.93
+      "final": 30.93,
+      "reasons": [
+        "Conductor/VIP assigned previous week"
+      ]
     },
     {
       "name": "Super JuNiOr",
-      "status": "ELIGIBLE",
+      "status": "INELIGIBLE",
       "vs": "99225825",
       "donations": "43400",
       "vs_normalized": 48.72,
       "donation_normalized": 34.01,
-      "final": 44.31
+      "final": 44.31,
+      "reasons": [
+        "Conductor/VIP assigned previous week"
+      ]
     },
     {
       "name": "The OWl",
@@ -724,21 +754,27 @@
     },
     {
       "name": "TruPtGard",
-      "status": "ELIGIBLE",
+      "status": "INELIGIBLE",
       "vs": "68541807",
       "donations": "54550",
       "vs_normalized": 33.65,
       "donation_normalized": 42.75,
-      "final": 36.38
+      "final": 36.38,
+      "reasons": [
+        "Conductor/VIP assigned previous week"
+      ]
     },
     {
       "name": "Vordon888",
-      "status": "ELIGIBLE",
+      "status": "INELIGIBLE",
       "vs": "70630655",
       "donations": "37000",
       "vs_normalized": 34.68,
       "donation_normalized": 28.99,
-      "final": 32.97
+      "final": 32.97,
+      "reasons": [
+        "Conductor/VIP assigned previous week"
+      ]
     },
     {
       "name": "Weeks304",
