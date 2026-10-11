@@ -2,5 +2,54 @@
   "schema_version": 1,
   "alliance": "FEAR",
   "server": 1971,
-  "weeks": []
+  "weeks": [
+    {
+      "schedule_week": "2026-10-04 to 2026-10-10",
+      "assigned": {
+        "conductor": [
+          "Sniperbird",
+          "TruPtGard",
+          "ArmyArmy",
+          "Lord  Dark  Helmet",
+          "Milner14",
+          "Vordon888",
+          "Super JuNiOr"
+        ],
+        "vip": [
+          "PlotTwisT",
+          "Commander MDK",
+          "MJArmy",
+          "LetBim",
+          "BUCK 5516",
+          "BeFE",
+          "Stocktonator"
+        ]
+      },
+      "source": "Recovered from GitHub schedule commit da7ac678"
+    },
+    {
+      "schedule_week": "2026-10-11 to 2026-10-17",
+      "assigned": {
+        "conductor": [
+          "JohnnyW1ld",
+          "Kcon1225",
+          "BriVado",
+          "ssDewm",
+          "Ma7eruix",
+          "Keetja",
+          "Skiff1980"
+        ],
+        "vip": [
+          "Mulekezord",
+          "H20MAN",
+          "Pourdecisions",
+          "McDirick",
+          "WpgLos",
+          "TomRhodes",
+          "Loudog90"
+        ]
+      },
+      "source": "Corrected cooldown schedule"
+    }
+  ]
 }
