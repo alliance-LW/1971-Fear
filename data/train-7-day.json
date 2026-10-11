@@ -2,154 +2,155 @@
   "schema_version": 1,
   "status": "LOCKED",
   "source": "FarmOps API via GitHub Actions",
-  "source_week": "2026-09-28 to 2026-10-04",
-  "schedule_week": "2026-10-04 to 2026-10-10",
-  "generated_at": "2026-10-04T16:45:24.782Z",
+  "selection_method": "Eligibility rules first, then deterministic 70% VS / 30% Tech Donations ranking; no random component.",
+  "source_week": "2026-10-05 to 2026-10-11",
+  "schedule_week": "2026-10-11 to 2026-10-17",
+  "generated_at": "2026-10-11T02:22:17.524Z",
   "days": [
     {
-      "date": "2026-10-04",
+      "date": "2026-10-11",
       "conductor": {
-        "primary": "Sniperbird",
-        "score": 78.8,
+        "primary": "JohnnyW1ld",
+        "score": 85.52,
         "alternates": [
-          "TruPtGard",
-          "Commander MDK",
-          "ArmyArmy"
+          "Kcon1225",
+          "H20MAN",
+          "Milner14"
         ]
       },
       "vip": {
-        "primary": "PlotTwisT",
-        "score": 72.99,
+        "primary": "Mulekezord",
+        "score": 66.71,
         "alternates": [
-          "MJArmy",
+          "BriVado",
+          "Pourdecisions",
+          "ssDewm"
+        ]
+      }
+    },
+    {
+      "date": "2026-10-12",
+      "conductor": {
+        "primary": "Kcon1225",
+        "score": 61.55,
+        "alternates": [
+          "Milner14",
+          "BriVado",
+          "Pourdecisions"
+        ]
+      },
+      "vip": {
+        "primary": "H20MAN",
+        "score": 55.56,
+        "alternates": [
+          "ssDewm",
           "Lord  Dark  Helmet",
+          "McDirick"
+        ]
+      }
+    },
+    {
+      "date": "2026-10-13",
+      "conductor": {
+        "primary": "Milner14",
+        "score": 54.47,
+        "alternates": [
+          "Pourdecisions",
+          "ssDewm",
+          "Lord  Dark  Helmet"
+        ]
+      },
+      "vip": {
+        "primary": "BriVado",
+        "score": 54.1,
+        "alternates": [
+          "McDirick",
+          "Ma7eruix",
+          "WpgLos"
+        ]
+      }
+    },
+    {
+      "date": "2026-10-14",
+      "conductor": {
+        "primary": "Pourdecisions",
+        "score": 52.89,
+        "alternates": [
+          "Lord  Dark  Helmet",
+          "McDirick",
+          "Ma7eruix"
+        ]
+      },
+      "vip": {
+        "primary": "ssDewm",
+        "score": 51.11,
+        "alternates": [
+          "WpgLos",
+          "Keetja",
+          "TomRhodes"
+        ]
+      }
+    },
+    {
+      "date": "2026-10-15",
+      "conductor": {
+        "primary": "Lord  Dark  Helmet",
+        "score": 50.69,
+        "alternates": [
+          "Ma7eruix",
+          "WpgLos",
+          "Keetja"
+        ]
+      },
+      "vip": {
+        "primary": "McDirick",
+        "score": 50.55,
+        "alternates": [
+          "TomRhodes",
+          "Skiff1980",
           "LetBim"
         ]
       }
     },
     {
-      "date": "2026-10-05",
+      "date": "2026-10-16",
       "conductor": {
-        "primary": "TruPtGard",
-        "score": 70.76,
+        "primary": "Ma7eruix",
+        "score": 49.4,
         "alternates": [
-          "ArmyArmy",
-          "MJArmy",
-          "Lord  Dark  Helmet"
-        ]
-      },
-      "vip": {
-        "primary": "Commander MDK",
-        "score": 68.22,
-        "alternates": [
-          "LetBim",
-          "Milner14",
-          "BUCK 5516"
-        ]
-      }
-    },
-    {
-      "date": "2026-10-06",
-      "conductor": {
-        "primary": "ArmyArmy",
-        "score": 55.73,
-        "alternates": [
-          "Lord  Dark  Helmet",
-          "LetBim",
-          "Milner14"
-        ]
-      },
-      "vip": {
-        "primary": "MJArmy",
-        "score": 53.52,
-        "alternates": [
-          "BUCK 5516",
-          "Vordon888",
-          "BeFE"
-        ]
-      }
-    },
-    {
-      "date": "2026-10-07",
-      "conductor": {
-        "primary": "Lord  Dark  Helmet",
-        "score": 48.37,
-        "alternates": [
-          "Milner14",
-          "BUCK 5516",
-          "Vordon888"
-        ]
-      },
-      "vip": {
-        "primary": "LetBim",
-        "score": 55.9,
-        "alternates": [
-          "BeFE",
-          "Skiff1980",
-          "Stocktonator"
-        ]
-      }
-    },
-    {
-      "date": "2026-10-08",
-      "conductor": {
-        "primary": "Milner14",
-        "score": 59.65,
-        "alternates": [
-          "Vordon888",
-          "BeFE",
+          "Keetja",
+          "TomRhodes",
           "Skiff1980"
         ]
       },
       "vip": {
-        "primary": "BUCK 5516",
-        "score": 47.93,
+        "primary": "WpgLos",
+        "score": 48.6,
         "alternates": [
-          "Stocktonator",
-          "Weeks304",
+          "LetBim",
+          "Loudog90",
           "MVP BigFoot"
         ]
       }
     },
     {
-      "date": "2026-10-09",
+      "date": "2026-10-17",
       "conductor": {
-        "primary": "Vordon888",
-        "score": 46.64,
+        "primary": "Keetja",
+        "score": 47.95,
         "alternates": [
           "Skiff1980",
-          "Stocktonator",
-          "Weeks304"
+          "LetBim",
+          "Loudog90"
         ]
       },
       "vip": {
-        "primary": "BeFE",
-        "score": 52.28,
+        "primary": "TomRhodes",
+        "score": 46.95,
         "alternates": [
           "MVP BigFoot",
-          "Mmarronn",
-          "Myosin"
-        ]
-      }
-    },
-    {
-      "date": "2026-10-10",
-      "conductor": {
-        "primary": "Super JuNiOr",
-        "score": 50.45,
-        "alternates": [
-          "Weeks304",
-          "MVP BigFoot",
-          "Mmarronn"
-        ]
-      },
-      "vip": {
-        "primary": "Stocktonator",
-        "score": 53.91,
-        "alternates": [
-          "Myosin",
-          "6 0 2 K",
-          "Freddyfrick"
+          "Crashley86",
+          "Super JuNiOr"
         ]
       }
     }
