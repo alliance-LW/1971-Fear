@@ -464,7 +464,7 @@ async function generate() {
     )
   );
 
-  const normalizeName = value => String(value || "").replace(/\\s+/g, " ").trim().toLowerCase();
+  const normalizeName = value => String(value || "").replace(/\s+/g, " ").trim().toLowerCase();
   const currentScheduleStart = weekEnd;
   const previousScheduleStart = addDays(currentScheduleStart, -7);
   const previousWeek = (history.weeks || []).find(item =>
@@ -772,7 +772,7 @@ async function generate() {
     }
   });
   history.weeks.sort((a, b) => a.schedule_week.localeCompare(b.schedule_week));
-  fs.writeFileSync("data/train-history.json", JSON.stringify(history, null, 2) + "\\n");
+  fs.writeFileSync("data/train-history.json", JSON.stringify(history, null, 2) + "\n");
 
   fs.writeFileSync(
     "data/train-results.json",
