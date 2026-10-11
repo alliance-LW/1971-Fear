@@ -2,10 +2,10 @@
   "schema_version": 1,
   "status": "LOCKED",
   "source": "FarmOps API via GitHub Actions",
-  "selection_method": "Eligibility rules first, then deterministic 70% VS / 30% Tech Donations ranking; no random component.",
+  "selection_method": "Eligibility rules first, then deterministic 70% VS / 30% Tech Donations ranking; no random component. Previous week's assigned Conductor/VIP excluded.",
   "source_week": "2026-10-05 to 2026-10-11",
   "schedule_week": "2026-10-11 to 2026-10-17",
-  "generated_at": "2026-10-11T13:27:14.182Z",
+  "generated_at": "2026-10-11T13:33:04.042Z",
   "days": [
     {
       "date": "2026-10-11",
@@ -15,16 +15,16 @@
         "alternates": [
           "Kcon1225",
           "H20MAN",
-          "Milner14"
+          "BriVado"
         ]
       },
       "vip": {
         "primary": "Mulekezord",
         "score": 66.71,
         "alternates": [
-          "BriVado",
           "Pourdecisions",
-          "ssDewm"
+          "ssDewm",
+          "McDirick"
         ]
       }
     },
@@ -34,98 +34,77 @@
         "primary": "Kcon1225",
         "score": 61.55,
         "alternates": [
-          "Milner14",
           "BriVado",
-          "Pourdecisions"
+          "Pourdecisions",
+          "ssDewm"
         ]
       },
       "vip": {
         "primary": "H20MAN",
         "score": 55.56,
         "alternates": [
-          "ssDewm",
           "McDirick",
-          "Ma7eruix"
+          "Ma7eruix",
+          "WpgLos"
         ]
       }
     },
     {
       "date": "2026-10-13",
       "conductor": {
-        "primary": "Milner14",
-        "score": 54.47,
-        "alternates": [
-          "Pourdecisions",
-          "ssDewm",
-          "McDirick"
-        ]
-      },
-      "vip": {
         "primary": "BriVado",
         "score": 54.1,
         "alternates": [
-          "Ma7eruix",
+          "ssDewm",
+          "McDirick",
+          "Ma7eruix"
+        ]
+      },
+      "vip": {
+        "primary": "Pourdecisions",
+        "score": 52.89,
+        "alternates": [
           "WpgLos",
-          "Keetja"
+          "Keetja",
+          "TomRhodes"
         ]
       }
     },
     {
       "date": "2026-10-14",
       "conductor": {
-        "primary": "Pourdecisions",
-        "score": 52.89,
-        "alternates": [
-          "McDirick",
-          "Ma7eruix",
-          "WpgLos"
-        ]
-      },
-      "vip": {
         "primary": "ssDewm",
         "score": 51.11,
         "alternates": [
-          "Keetja",
+          "Ma7eruix",
+          "WpgLos",
+          "Keetja"
+        ]
+      },
+      "vip": {
+        "primary": "McDirick",
+        "score": 50.55,
+        "alternates": [
           "TomRhodes",
-          "Skiff1980"
+          "Skiff1980",
+          "Loudog90"
         ]
       }
     },
     {
       "date": "2026-10-15",
       "conductor": {
-        "primary": "McDirick",
-        "score": 50.55,
-        "alternates": [
-          "WpgLos",
-          "Keetja",
-          "TomRhodes"
-        ]
-      },
-      "vip": {
         "primary": "Ma7eruix",
         "score": 49.4,
         "alternates": [
-          "Skiff1980",
-          "LetBim",
-          "Loudog90"
-        ]
-      }
-    },
-    {
-      "date": "2026-10-16",
-      "conductor": {
-        "primary": "WpgLos",
-        "score": 48.6,
-        "alternates": [
+          "Keetja",
           "TomRhodes",
-          "Skiff1980",
-          "LetBim"
+          "Skiff1980"
         ]
       },
       "vip": {
-        "primary": "Keetja",
-        "score": 47.95,
+        "primary": "WpgLos",
+        "score": 48.6,
         "alternates": [
           "Loudog90",
           "MVP BigFoot",
@@ -134,23 +113,44 @@
       }
     },
     {
-      "date": "2026-10-17",
+      "date": "2026-10-16",
       "conductor": {
-        "primary": "TomRhodes",
-        "score": 46.95,
+        "primary": "Keetja",
+        "score": 47.95,
         "alternates": [
-          "LetBim",
+          "Skiff1980",
           "Loudog90",
           "MVP BigFoot"
         ]
       },
       "vip": {
+        "primary": "TomRhodes",
+        "score": 46.95,
+        "alternates": [
+          "Crashley86",
+          "The OWl",
+          "KencityXX"
+        ]
+      }
+    },
+    {
+      "date": "2026-10-17",
+      "conductor": {
         "primary": "Skiff1980",
         "score": 46.76,
         "alternates": [
+          "MVP BigFoot",
           "Crashley86",
-          "Super JuNiOr",
           "The OWl"
+        ]
+      },
+      "vip": {
+        "primary": "Loudog90",
+        "score": 46.47,
+        "alternates": [
+          "KencityXX",
+          "Freddyfrick",
+          "Myosin"
         ]
       }
     }
