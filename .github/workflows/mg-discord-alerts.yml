@@ -1,0 +1,67 @@
+name: FEAR MG Discord Alerts
+
+on:
+  workflow_dispatch:
+    inputs:
+      alert:
+        description: "Test or scheduled alert to send"
+        type: choice
+        required: true
+        default: test
+        options:
+          - test
+          - prep
+          - ten_min
+          - start
+  # Last War server clock inferred as UTC-2: 00:00 server = 02:00 UTC.
+  # Tuesday/Thursday server dates; GitHub schedules use UTC.
+  schedule:
+    - cron: '0 2 * * 2,4'
+    - cron: '20 2 * * 2,4'
+    - cron: '30 2 * * 2,4'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fear-mg-discord-${{ github.event.schedule || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    env:
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      ALERT_CHOICE: ${{ inputs.alert }}
+      EVENT_SCHEDULE: ${{ github.event.schedule }}
+    steps:
+      - name: Send Discord notification
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import os, json, urllib.request, sys
+          url = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()
+          if not url:
+              print("DISCORD_WEBHOOK_URL secret is missing; no message sent.")
+              sys.exit(1)
+          choice = os.environ.get("ALERT_CHOICE") or {
+              "0 2 * * 2,4": "prep",
+              "20 2 * * 2,4": "ten_min",
+              "30 2 * * 2,4": "start",
+          }.get(os.environ.get("EVENT_SCHEDULE"), "test")
+          messages = {
+              "test": "🧪 **1971 FEAR MG TEST** — Discord automation connected. No action required.",
+              "prep": "🔔 **1971 FEAR MG PREPARATION** — MG begins at 00:30 server time (30 minutes). Prepare squads.",
+              "ten_min": "🚨 **1971 FEAR MG IN 10 MINUTES** — MG starts at 00:30 server time. Get ready!",
+              "start": "⚔️ **1971 FEAR MG STARTS NOW** — 00:30 server time. Rally up!",
+          }
+          payload = json.dumps({"username":"1971 FEAR MG Alerts", "content": messages[choice], "allowed_mentions":{"parse":[]}}).encode()
+          req = urllib.request.Request(url + ("&" if "?" in url else "?") + "wait=true", data=payload, headers={"Content-Type":"application/json", "User-Agent":"1971-FEAR-MG-Alerts/1.0"}, method="POST")
+          try:
+              with urllib.request.urlopen(req, timeout=20) as response:
+                  data = json.load(response)
+                  print("Discord accepted message; message ID:", data.get("id"))
+          except Exception as e:
+              print("Discord notification failed:", type(e).__name__)
+              sys.exit(1)
+          PY
