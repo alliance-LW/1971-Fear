@@ -34,6 +34,8 @@ jobs:
       DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
       ALERT_CHOICE: ${{ inputs.alert }}
       EVENT_SCHEDULE: ${{ github.event.schedule }}
+      DISCORD_USER_ID: ${{ secrets.DISCORD_USER_ID }}
+      MENTION_MODE: ${{ vars.MG_MENTION_MODE || 'user' }}
     steps:
       - name: Send Discord notification
         shell: bash
@@ -55,7 +57,24 @@ jobs:
               "ten_min": "🚨 **1971 FEAR MG IN 10 MINUTES** — MG starts at 00:30 server time. Get ready!",
               "start": "⚔️ **1971 FEAR MG STARTS NOW** — 00:30 server time. Rally up!",
           }
-          payload = json.dumps({"username":"1971 FEAR MG Alerts", "content": messages[choice], "allowed_mentions":{"parse":[]}}).encode()
+          mode = os.environ.get("MENTION_MODE", "user").strip().lower()
+          uid = os.environ.get("DISCORD_USER_ID", "").strip()
+          if mode == "everyone":
+              mention = "@everyone"
+              allowed = {"parse":["everyone"]}
+          elif mode == "user":
+              if not uid.isdigit():
+                  print("DISCORD_USER_ID secret must be set to your numeric Discord user ID.")
+                  sys.exit(1)
+              mention = "<@" + uid + ">"
+              allowed = {"parse":[], "users":[uid]}
+          elif mode == "none":
+              mention = ""
+              allowed = {"parse":[]}
+          else:
+              print("Invalid MG_MENTION_MODE; choose user, everyone, or none.")
+              sys.exit(1)
+          payload = json.dumps({"username":"1971 FEAR MG Alerts", "content": (mention + " " + messages[choice]).strip(), "allowed_mentions":allowed}).encode()
           req = urllib.request.Request(url + ("&" if "?" in url else "?") + "wait=true", data=payload, headers={"Content-Type":"application/json", "User-Agent":"1971-FEAR-MG-Alerts/1.0"}, method="POST")
           try:
               with urllib.request.urlopen(req, timeout=20) as response:
