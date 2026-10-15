@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-14T00:31:22.699Z",
+  "generated_at": "2026-10-15T00:31:03.811Z",
   "alliance": "The Dark Side",
   "members": [
     {
@@ -158,6 +158,9 @@
     },
     {
       "name": "Mmarronn"
+    },
+    {
+      "name": "Mr Krinkles"
     },
     {
       "name": "Mulekezord"
