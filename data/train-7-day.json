@@ -2,155 +2,155 @@
   "schema_version": 1,
   "status": "LOCKED",
   "source": "FarmOps API via GitHub Actions",
-  "selection_method": "Eligibility rules first, then deterministic 70% VS / 30% Tech Donations ranking; no random component. Previous week's assigned Conductor/VIP excluded.",
-  "source_week": "2026-10-05 to 2026-10-11",
-  "schedule_week": "2026-10-11 to 2026-10-17",
-  "generated_at": "2026-10-11T13:33:04.042Z",
+  "selection_method": "Eligibility rules first, then deterministic 70% VS / 30% Tech Donations ranking; no random component.",
+  "source_week": "2026-10-12 to 2026-10-18",
+  "schedule_week": "2026-10-18 to 2026-10-24",
+  "generated_at": "2026-10-17T20:36:11.569Z",
   "days": [
     {
-      "date": "2026-10-11",
+      "date": "2026-10-18",
       "conductor": {
-        "primary": "JohnnyW1ld",
-        "score": 85.52,
+        "primary": "Super JuNiOr",
+        "score": 84.1,
         "alternates": [
-          "Kcon1225",
-          "H20MAN",
-          "BriVado"
-        ]
-      },
-      "vip": {
-        "primary": "Mulekezord",
-        "score": 66.71,
-        "alternates": [
-          "Pourdecisions",
-          "ssDewm",
-          "McDirick"
-        ]
-      }
-    },
-    {
-      "date": "2026-10-12",
-      "conductor": {
-        "primary": "Kcon1225",
-        "score": 61.55,
-        "alternates": [
-          "BriVado",
-          "Pourdecisions",
-          "ssDewm"
-        ]
-      },
-      "vip": {
-        "primary": "H20MAN",
-        "score": 55.56,
-        "alternates": [
-          "McDirick",
-          "Ma7eruix",
-          "WpgLos"
-        ]
-      }
-    },
-    {
-      "date": "2026-10-13",
-      "conductor": {
-        "primary": "BriVado",
-        "score": 54.1,
-        "alternates": [
-          "ssDewm",
-          "McDirick",
-          "Ma7eruix"
-        ]
-      },
-      "vip": {
-        "primary": "Pourdecisions",
-        "score": 52.89,
-        "alternates": [
-          "WpgLos",
-          "Keetja",
-          "TomRhodes"
-        ]
-      }
-    },
-    {
-      "date": "2026-10-14",
-      "conductor": {
-        "primary": "ssDewm",
-        "score": 51.11,
-        "alternates": [
-          "Ma7eruix",
-          "WpgLos",
-          "Keetja"
-        ]
-      },
-      "vip": {
-        "primary": "McDirick",
-        "score": 50.55,
-        "alternates": [
-          "TomRhodes",
-          "Skiff1980",
-          "Loudog90"
-        ]
-      }
-    },
-    {
-      "date": "2026-10-15",
-      "conductor": {
-        "primary": "Ma7eruix",
-        "score": 49.4,
-        "alternates": [
-          "Keetja",
-          "TomRhodes",
-          "Skiff1980"
-        ]
-      },
-      "vip": {
-        "primary": "WpgLos",
-        "score": 48.6,
-        "alternates": [
-          "Loudog90",
-          "MVP BigFoot",
+          "Milner14",
+          "SpareParts709",
           "Crashley86"
         ]
+      },
+      "vip": {
+        "primary": "Omn Setty",
+        "score": 77.44,
+        "alternates": [
+          "GoHuskers",
+          "Dolly Dragonfruit",
+          "TruPtGard"
+        ]
       }
     },
     {
-      "date": "2026-10-16",
+      "date": "2026-10-19",
       "conductor": {
-        "primary": "Keetja",
-        "score": 47.95,
+        "primary": "Milner14",
+        "score": 73.67,
         "alternates": [
-          "Skiff1980",
-          "Loudog90",
-          "MVP BigFoot"
+          "Crashley86",
+          "GoHuskers",
+          "Dolly Dragonfruit"
         ]
       },
       "vip": {
-        "primary": "TomRhodes",
-        "score": 46.95,
+        "primary": "SpareParts709",
+        "score": 73.62,
         "alternates": [
-          "Crashley86",
-          "The OWl",
+          "TruPtGard",
+          "Myosin",
+          "ghostdog203"
+        ]
+      }
+    },
+    {
+      "date": "2026-10-20",
+      "conductor": {
+        "primary": "Crashley86",
+        "score": 73.28,
+        "alternates": [
+          "Dolly Dragonfruit",
+          "TruPtGard",
+          "Myosin"
+        ]
+      },
+      "vip": {
+        "primary": "GoHuskers",
+        "score": 72.38,
+        "alternates": [
+          "ghostdog203",
+          "FIREHEART10",
+          "Hybriddom1"
+        ]
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "conductor": {
+        "primary": "Dolly Dragonfruit",
+        "score": 71.84,
+        "alternates": [
+          "Myosin",
+          "ghostdog203",
+          "FIREHEART10"
+        ]
+      },
+      "vip": {
+        "primary": "TruPtGard",
+        "score": 68.21,
+        "alternates": [
+          "Hybriddom1",
+          "Go No Go",
+          "JudgyJudy"
+        ]
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "conductor": {
+        "primary": "Myosin",
+        "score": 67.73,
+        "alternates": [
+          "FIREHEART10",
+          "Hybriddom1",
+          "Go No Go"
+        ]
+      },
+      "vip": {
+        "primary": "ghostdog203",
+        "score": 67.71,
+        "alternates": [
+          "JudgyJudy",
+          "Freddyfrick",
+          "LetBim"
+        ]
+      }
+    },
+    {
+      "date": "2026-10-23",
+      "conductor": {
+        "primary": "FIREHEART10",
+        "score": 67.24,
+        "alternates": [
+          "Go No Go",
+          "JudgyJudy",
+          "Freddyfrick"
+        ]
+      },
+      "vip": {
+        "primary": "Hybriddom1",
+        "score": 67.22,
+        "alternates": [
+          "LetBim",
+          "KencityXX",
+          "6 0 2 K"
+        ]
+      }
+    },
+    {
+      "date": "2026-10-24",
+      "conductor": {
+        "primary": "Go No Go",
+        "score": 66.84,
+        "alternates": [
+          "Freddyfrick",
+          "LetBim",
           "KencityXX"
         ]
-      }
-    },
-    {
-      "date": "2026-10-17",
-      "conductor": {
-        "primary": "Skiff1980",
-        "score": 46.76,
-        "alternates": [
-          "MVP BigFoot",
-          "Crashley86",
-          "The OWl"
-        ]
       },
       "vip": {
-        "primary": "Loudog90",
-        "score": 46.47,
+        "primary": "JudgyJudy",
+        "score": 64.73,
         "alternates": [
-          "KencityXX",
-          "Freddyfrick",
-          "Myosin"
+          "6 0 2 K",
+          "Commander MDK",
+          "SnowFOX"
         ]
       }
     }
