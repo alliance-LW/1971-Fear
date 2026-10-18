@@ -5,68 +5,68 @@
   "selection_method": "Eligibility rules first, then deterministic 70% VS / 30% Tech Donations ranking; no random component.",
   "source_week": "2026-10-12 to 2026-10-18",
   "schedule_week": "2026-10-18 to 2026-10-24",
-  "generated_at": "2026-10-17T20:36:11.569Z",
+  "generated_at": "2026-10-18T02:32:03.796Z",
   "days": [
     {
       "date": "2026-10-18",
       "conductor": {
         "primary": "Super JuNiOr",
-        "score": 84.1,
+        "score": 83.63,
         "alternates": [
+          "Crashley86",
           "Milner14",
-          "SpareParts709",
-          "Crashley86"
+          "GoHuskers"
         ]
       },
       "vip": {
         "primary": "Omn Setty",
-        "score": 77.44,
+        "score": 77.74,
         "alternates": [
-          "GoHuskers",
+          "SpareParts709",
           "Dolly Dragonfruit",
-          "TruPtGard"
+          "ghostdog203"
         ]
       }
     },
     {
       "date": "2026-10-19",
       "conductor": {
-        "primary": "Milner14",
-        "score": 73.67,
+        "primary": "Crashley86",
+        "score": 73.49,
         "alternates": [
-          "Crashley86",
           "GoHuskers",
+          "SpareParts709",
           "Dolly Dragonfruit"
         ]
       },
       "vip": {
-        "primary": "SpareParts709",
-        "score": 73.62,
+        "primary": "Milner14",
+        "score": 72.64,
         "alternates": [
+          "ghostdog203",
           "TruPtGard",
-          "Myosin",
-          "ghostdog203"
+          "Go No Go"
         ]
       }
     },
     {
       "date": "2026-10-20",
       "conductor": {
-        "primary": "Crashley86",
-        "score": 73.28,
+        "primary": "GoHuskers",
+        "score": 71.98,
         "alternates": [
           "Dolly Dragonfruit",
-          "TruPtGard",
-          "Myosin"
+          "ghostdog203",
+          "TruPtGard"
         ]
       },
       "vip": {
-        "primary": "GoHuskers",
-        "score": 72.38,
+        "primary": "SpareParts709",
+        "score": 71.9,
         "alternates": [
-          "ghostdog203",
-          "FIREHEART10",
-          "Hybriddom1"
+          "Go No Go",
+          "Hybriddom1",
+          "Myosin"
         ]
       }
     },
@@ -74,19 +74,19 @@
       "date": "2026-10-21",
       "conductor": {
         "primary": "Dolly Dragonfruit",
-        "score": 71.84,
+        "score": 69.33,
         "alternates": [
-          "Myosin",
-          "ghostdog203",
-          "FIREHEART10"
+          "TruPtGard",
+          "Go No Go",
+          "Hybriddom1"
         ]
       },
       "vip": {
-        "primary": "TruPtGard",
-        "score": 68.21,
+        "primary": "ghostdog203",
+        "score": 68.47,
         "alternates": [
-          "Hybriddom1",
-          "Go No Go",
+          "Myosin",
+          "FIREHEART10",
           "JudgyJudy"
         ]
       }
@@ -94,63 +94,63 @@
     {
       "date": "2026-10-22",
       "conductor": {
-        "primary": "Myosin",
-        "score": 67.73,
+        "primary": "TruPtGard",
+        "score": 67.91,
         "alternates": [
-          "FIREHEART10",
           "Hybriddom1",
-          "Go No Go"
+          "Myosin",
+          "FIREHEART10"
         ]
       },
       "vip": {
-        "primary": "ghostdog203",
-        "score": 67.71,
+        "primary": "Go No Go",
+        "score": 67.62,
         "alternates": [
           "JudgyJudy",
           "Freddyfrick",
-          "LetBim"
+          "KencityXX"
         ]
       }
     },
     {
       "date": "2026-10-23",
       "conductor": {
-        "primary": "FIREHEART10",
-        "score": 67.24,
+        "primary": "Hybriddom1",
+        "score": 67.58,
         "alternates": [
-          "Go No Go",
+          "FIREHEART10",
           "JudgyJudy",
           "Freddyfrick"
         ]
       },
       "vip": {
-        "primary": "Hybriddom1",
-        "score": 67.22,
+        "primary": "Myosin",
+        "score": 66.78,
         "alternates": [
-          "LetBim",
           "KencityXX",
-          "6 0 2 K"
+          "LuckyCharms23",
+          "LetBim"
         ]
       }
     },
     {
       "date": "2026-10-24",
       "conductor": {
-        "primary": "Go No Go",
-        "score": 66.84,
+        "primary": "FIREHEART10",
+        "score": 66.66,
         "alternates": [
           "Freddyfrick",
-          "LetBim",
-          "KencityXX"
+          "KencityXX",
+          "LuckyCharms23"
         ]
       },
       "vip": {
         "primary": "JudgyJudy",
-        "score": 64.73,
+        "score": 65,
         "alternates": [
-          "6 0 2 K",
+          "LetBim",
           "Commander MDK",
-          "SnowFOX"
+          "JonWucky"
         ]
       }
     }
