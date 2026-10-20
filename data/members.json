@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-19T00:30:02.869Z",
+  "generated_at": "2026-10-20T00:33:06.576Z",
   "alliance": "The Dark Side",
   "members": [
     {
@@ -68,6 +68,9 @@
     },
     {
       "name": "FIREHEART10"
+    },
+    {
+      "name": "Fearless Diego"
     },
     {
       "name": "Field Marshal Ro V"
@@ -178,7 +181,7 @@
       "name": "Pøison Ivy"
     },
     {
-      "name": "RobbyRobzz"
+      "name": "RockOfTheMarne"
     },
     {
       "name": "SSStealth"
@@ -208,7 +211,13 @@
       "name": "SpareParts709"
     },
     {
+      "name": "Stinkyfield"
+    },
+    {
       "name": "Super JuNiOr"
+    },
+    {
+      "name": "The GraveDigger"
     },
     {
       "name": "The OWl"
