@@ -2,6 +2,9 @@ name: Generate Train Roster
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'data/train-history.json'
   schedule:
     # Last War server reset: Saturday 9:00 PM Central = Sunday 02:00 UTC during CDT.
     - cron: "5 2 * * 0"
@@ -31,7 +34,7 @@ jobs:
         run: |
           git config user.name "FEAR Train Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/train-results.json data/train-7-day.json data/members.json data/member-dashboard.json
+          git add data/train-results.json data/train-7-day.json data/train-history.json data/members.json data/member-dashboard.json
           git diff --cached --quiet && exit 0
           git commit -m "Generate proposed FEAR Train roster"
           git push
