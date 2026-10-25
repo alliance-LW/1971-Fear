@@ -50,6 +50,30 @@
         ]
       },
       "source": "Corrected cooldown schedule"
+    },
+    {
+      "schedule_week": "2026-10-18 to 2026-10-24",
+      "assigned": {
+        "conductor": [
+          "Super JuNiOr",
+          "Crashley86",
+          "GoHuskers",
+          "Dolly Dragonfruit",
+          "TruPtGard",
+          "Hybriddom1",
+          "FIREHEART10"
+        ],
+        "vip": [
+          "Omn Setty",
+          "Milner14",
+          "SpareParts709",
+          "ghostdog203",
+          "Go No Go",
+          "Myosin",
+          "JudgyJudy"
+        ]
+      },
+      "source": "Recovered from locked train-7-day.json"
     }
   ]
 }
