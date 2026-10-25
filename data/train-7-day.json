@@ -3,154 +3,154 @@
   "status": "LOCKED",
   "source": "FarmOps API via GitHub Actions",
   "selection_method": "Eligibility rules first, then deterministic 70% VS / 30% Tech Donations ranking; no random component.",
-  "source_week": "2026-10-12 to 2026-10-18",
-  "schedule_week": "2026-10-18 to 2026-10-24",
-  "generated_at": "2026-10-18T02:32:03.796Z",
+  "source_week": "2026-10-19 to 2026-10-25",
+  "schedule_week": "2026-10-25 to 2026-10-31",
+  "generated_at": "2026-10-25T14:00:46.424Z",
   "days": [
     {
-      "date": "2026-10-18",
+      "date": "2026-10-25",
       "conductor": {
-        "primary": "Super JuNiOr",
-        "score": 83.63,
+        "primary": "Jhonathan9",
+        "score": 79.29,
         "alternates": [
-          "Crashley86",
-          "Milner14",
-          "GoHuskers"
+          "Mulekezord",
+          "Kcon1225",
+          "McDirick"
         ]
       },
       "vip": {
-        "primary": "Omn Setty",
-        "score": 77.74,
+        "primary": "JohnnyW1ld",
+        "score": 78.5,
         "alternates": [
-          "SpareParts709",
-          "Dolly Dragonfruit",
-          "ghostdog203"
+          "Stinkyfield",
+          "BeFE",
+          "Ashallayn Darkmyr"
         ]
       }
     },
     {
-      "date": "2026-10-19",
+      "date": "2026-10-26",
       "conductor": {
-        "primary": "Crashley86",
-        "score": 73.49,
+        "primary": "Mulekezord",
+        "score": 73.25,
         "alternates": [
-          "GoHuskers",
-          "SpareParts709",
-          "Dolly Dragonfruit"
+          "McDirick",
+          "Stinkyfield",
+          "BeFE"
         ]
       },
       "vip": {
-        "primary": "Milner14",
-        "score": 72.64,
+        "primary": "Kcon1225",
+        "score": 70.51,
         "alternates": [
-          "ghostdog203",
-          "TruPtGard",
-          "Go No Go"
+          "Ashallayn Darkmyr",
+          "combat sniper",
+          "Soul Tiller"
         ]
       }
     },
     {
-      "date": "2026-10-20",
+      "date": "2026-10-27",
       "conductor": {
-        "primary": "GoHuskers",
-        "score": 71.98,
+        "primary": "McDirick",
+        "score": 67.27,
         "alternates": [
-          "Dolly Dragonfruit",
-          "ghostdog203",
-          "TruPtGard"
+          "BeFE",
+          "Ashallayn Darkmyr",
+          "combat sniper"
         ]
       },
       "vip": {
-        "primary": "SpareParts709",
-        "score": 71.9,
+        "primary": "Stinkyfield",
+        "score": 64.65,
         "alternates": [
-          "Go No Go",
-          "Hybriddom1",
-          "Myosin"
+          "Soul Tiller",
+          "t ǝ c ᵷ r Ɩ",
+          "BriVado"
         ]
       }
     },
     {
-      "date": "2026-10-21",
+      "date": "2026-10-28",
       "conductor": {
-        "primary": "Dolly Dragonfruit",
-        "score": 69.33,
+        "primary": "BeFE",
+        "score": 60.95,
         "alternates": [
-          "TruPtGard",
-          "Go No Go",
-          "Hybriddom1"
+          "combat sniper",
+          "Soul Tiller",
+          "t ǝ c ᵷ r Ɩ"
         ]
       },
       "vip": {
-        "primary": "ghostdog203",
-        "score": 68.47,
+        "primary": "Ashallayn Darkmyr",
+        "score": 59.21,
         "alternates": [
-          "Myosin",
-          "FIREHEART10",
-          "JudgyJudy"
+          "BriVado",
+          "Kessdog",
+          "H20MAN"
         ]
       }
     },
     {
-      "date": "2026-10-22",
+      "date": "2026-10-29",
       "conductor": {
-        "primary": "TruPtGard",
-        "score": 67.91,
+        "primary": "combat sniper",
+        "score": 58.28,
         "alternates": [
-          "Hybriddom1",
-          "Myosin",
-          "FIREHEART10"
+          "t ǝ c ᵷ r Ɩ",
+          "BriVado",
+          "Kessdog"
         ]
       },
       "vip": {
-        "primary": "Go No Go",
-        "score": 67.62,
+        "primary": "Soul Tiller",
+        "score": 56.78,
         "alternates": [
-          "JudgyJudy",
-          "Freddyfrick",
-          "KencityXX"
+          "H20MAN",
+          "TomRhodes",
+          "WpgLos"
         ]
       }
     },
     {
-      "date": "2026-10-23",
+      "date": "2026-10-30",
       "conductor": {
-        "primary": "Hybriddom1",
-        "score": 67.58,
+        "primary": "t ǝ c ᵷ r Ɩ",
+        "score": 56.44,
         "alternates": [
-          "FIREHEART10",
-          "JudgyJudy",
-          "Freddyfrick"
+          "Kessdog",
+          "H20MAN",
+          "TomRhodes"
         ]
       },
       "vip": {
-        "primary": "Myosin",
-        "score": 66.78,
+        "primary": "BriVado",
+        "score": 55.85,
         "alternates": [
-          "KencityXX",
-          "LuckyCharms23",
-          "LetBim"
+          "WpgLos",
+          "Skiff1980",
+          "Loudog90"
         ]
       }
     },
     {
-      "date": "2026-10-24",
+      "date": "2026-10-31",
       "conductor": {
-        "primary": "FIREHEART10",
-        "score": 66.66,
+        "primary": "Kessdog",
+        "score": 55,
         "alternates": [
-          "Freddyfrick",
-          "KencityXX",
-          "LuckyCharms23"
+          "TomRhodes",
+          "WpgLos",
+          "Skiff1980"
         ]
       },
       "vip": {
-        "primary": "JudgyJudy",
-        "score": 65,
+        "primary": "H20MAN",
+        "score": 54.74,
         "alternates": [
-          "LetBim",
-          "Commander MDK",
-          "JonWucky"
+          "Loudog90",
+          "GRNDDGR",
+          "DubleDee"
         ]
       }
     }

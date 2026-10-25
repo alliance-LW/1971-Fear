@@ -74,6 +74,29 @@
         ]
       },
       "source": "Recovered from locked train-7-day.json"
+    },
+    {
+      "schedule_week": "2026-10-25 to 2026-10-31",
+      "assigned": {
+        "conductor": [
+          "Jhonathan9",
+          "Mulekezord",
+          "McDirick",
+          "BeFE",
+          "combat sniper",
+          "t ǝ c ᵷ r Ɩ",
+          "Kessdog"
+        ],
+        "vip": [
+          "JohnnyW1ld",
+          "Kcon1225",
+          "Stinkyfield",
+          "Ashallayn Darkmyr",
+          "Soul Tiller",
+          "BriVado",
+          "H20MAN"
+        ]
+      }
     }
   ]
 }
