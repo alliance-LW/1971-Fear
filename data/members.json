@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-27T00:31:19.710Z",
+  "generated_at": "2026-10-28T00:40:46.527Z",
   "alliance": "The Dark Side",
   "members": [
     {
@@ -47,9 +47,6 @@
     },
     {
       "name": "BriVado"
-    },
-    {
-      "name": "ChasinAirplanes"
     },
     {
       "name": "Commandant Chewie"
@@ -238,6 +235,9 @@
       "name": "SpareParts709"
     },
     {
+      "name": "SpyderBite"
+    },
+    {
       "name": "Stinkyfield"
     },
     {
@@ -254,6 +254,9 @@
     },
     {
       "name": "TomRhodes"
+    },
+    {
+      "name": "Topzeira da guerra"
     },
     {
       "name": "TruPtGard"
@@ -290,12 +293,6 @@
     },
     {
       "name": "gyu 규규0"
-    },
-    {
-      "name": "hibihibii"
-    },
-    {
-      "name": "kizzle kizzle"
     },
     {
       "name": "milllaaaaa"
