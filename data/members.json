@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-01T05:09:30.606Z",
+  "generated_at": "2026-11-02T05:10:00.626Z",
   "alliance": "The Dark Side",
   "members": [
     {
@@ -58,6 +58,9 @@
       "name": "Crashley86"
     },
     {
+      "name": "DesertPrincessSnaggy"
+    },
+    {
       "name": "Dolly Dragonfruit"
     },
     {
@@ -107,9 +110,6 @@
     },
     {
       "name": "Hybriddom1"
-    },
-    {
-      "name": "IcePrincessSnaggy"
     },
     {
       "name": "Indianacarguy"
