@@ -1,0 +1,13 @@
+{
+  "enabled": false,
+  "server_utc_offset_minutes": -120,
+  "cooldown_unlock_utc": null,
+  "rotation_id": null,
+  "preferred_start_server_time": "00:30",
+  "mg_duration_minutes": 30,
+  "lead_minutes": 30,
+  "search_days": 7,
+  "candidate_step_minutes": 30,
+  "events": [],
+  "notes": "Verify the MG cooldown unlock timestamp and server offset in-game. Populate events with start_utc, end_utc, name, and optional buffer_before_minutes/buffer_after_minutes. Enable only after verification."
+}
