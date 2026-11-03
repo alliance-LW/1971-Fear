@@ -9,5 +9,20 @@
   "search_days": 7,
   "candidate_step_minutes": 30,
   "events": [],
-  "notes": "Verify the MG cooldown unlock timestamp and server offset in-game. Populate events with start_utc, end_utc, name, and optional buffer_before_minutes/buffer_after_minutes. Enable only after verification."
+  "notes": "Only Desert Storm is confirmed: Friday 19:00-19:30 server time. Other event times are unknown and are NOT treated as clear. Live scheduling remains disabled until cooldown, rotation, and event coverage are verified.",
+  "recurring_events": [
+    {
+      "name": "Desert Storm",
+      "weekday": "Friday",
+      "start_server_time": "19:00",
+      "duration_minutes": 30,
+      "buffer_before_minutes": 30,
+      "buffer_after_minutes": 30
+    }
+  ],
+  "unconfirmed_events": [
+    "Winter Storm",
+    "Capital War",
+    "Zombie Siege"
+  ]
 }
