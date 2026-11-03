@@ -1,0 +1,97 @@
+name: FEAR R4 MG Scheduling (separate)
+on:
+  workflow_dispatch:
+    inputs:
+      test:
+        description: 'Send a test R4 scheduling alert (does not create an issue)'
+        type: boolean
+        default: false
+  schedule:
+    - cron: '*/5 * * * *'
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: fear-r4-mg-scheduler
+  cancel-in-progress: false
+jobs:
+  schedule-mg:
+    runs-on: ubuntu-latest
+    env:
+      MG_DISCORD_WEBHOOK_URL: ${{ secrets.MG_DISCORD_WEBHOOK_URL }}
+      MG_R4_ROLE_ID: ${{ vars.MG_R4_ROLE_ID }}
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      TEST_MODE: ${{ inputs.test || 'false' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check cooldown, conflicts, and alert R4
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import os, json, datetime as dt, urllib.request, urllib.error, sys
+          UTC=dt.timezone.utc
+          now=dt.datetime.now(UTC)
+          cfg=json.load(open('config/mg-r4-schedule.json',encoding='utf-8'))
+          test=os.getenv('TEST_MODE','false').lower()=='true'
+          def parse(s):
+              return dt.datetime.fromisoformat(s.replace('Z','+00:00')).astimezone(UTC)
+          def api(path, method='GET', data=None):
+              body=json.dumps(data).encode() if data is not None else None
+              req=urllib.request.Request('https://api.github.com'+path,data=body,method=method,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json','User-Agent':'FEAR-MG-R4'})
+              with urllib.request.urlopen(req,timeout=20) as r:
+                  return json.load(r)
+          if not test:
+              if not cfg.get('enabled'):
+                  print('R4 MG scheduling disabled until cooldown and events verified.');sys.exit(0)
+              if not cfg.get('cooldown_unlock_utc') or not cfg.get('rotation_id'):
+                  print('Missing verified unlock timestamp or rotation ID; no alert.');sys.exit(0)
+              unlock=parse(cfg['cooldown_unlock_utc'])
+              if now<unlock:
+                  print('Cooldown active until',unlock.isoformat());sys.exit(0)
+          else:
+              unlock=now
+          offset=dt.timedelta(minutes=int(cfg['server_utc_offset_minutes']))
+          hh,mm=map(int,cfg['preferred_start_server_time'].split(':'))
+          server_now=now+offset
+          base=server_now.replace(hour=hh,minute=mm,second=0,microsecond=0)
+          if base<server_now+dt.timedelta(minutes=int(cfg['lead_minutes'])):
+              base+=dt.timedelta(days=1)
+          duration=dt.timedelta(minutes=int(cfg['mg_duration_minutes']))
+          events=[]
+          for e in cfg.get('events',[]):
+              events.append((parse(e['start_utc'])-dt.timedelta(minutes=int(e.get('buffer_before_minutes',0))),parse(e['end_utc'])+dt.timedelta(minutes=int(e.get('buffer_after_minutes',0))),e['name']))
+          chosen=None
+          for n in range(int(cfg['search_days'])*24*60//int(cfg['candidate_step_minutes'])):
+              candidate=(base-offset)+dt.timedelta(minutes=n*int(cfg['candidate_step_minutes']))
+              if not any(candidate<b and candidate+duration>a for a,b,_ in events):
+                  chosen=candidate;break
+          if chosen is None:
+              print('No conflict-free slot; do not issue misleading recommendation.');sys.exit(1)
+          role=os.getenv('MG_R4_ROLE_ID','').strip()
+          if not role.isdigit():
+              print('Set MG_R4_ROLE_ID repository variable to numeric Discord role ID.');sys.exit(1)
+          webhook=os.getenv('MG_DISCORD_WEBHOOK_URL','').strip()
+          if not webhook:
+              print('Missing MG_DISCORD_WEBHOOK_URL secret.');sys.exit(1)
+          rotation='TEST' if test else str(cfg['rotation_id'])
+          title='MG R4 scheduling: '+rotation
+          if not test:
+              import urllib.parse
+              query=urllib.parse.quote('repo:'+os.environ['REPO']+' in:title "'+title+'"')
+              found=api('/search/issues?q='+query)
+              if any(item['title']==title for item in found.get('items',[])):
+                  print('Already alerted this rotation; no duplicate.');sys.exit(0)
+          server_time=chosen+offset
+          message=('<@&'+role+'> **1971 FEAR — MG SCHEDULING '+('TEST' if test else 'OPEN')+'**\n'
+                   +'Cooldown unlock: '+unlock.strftime('%Y-%m-%d %H:%M UTC')+'\n'
+                   +'Recommended MG: '+server_time.strftime('%a %Y-%m-%d %H:%M')+' server time '
+                   +'('+chosen.strftime('%Y-%m-%d %H:%M UTC')+')\n'
+                   +'Checked against '+str(len(events))+' configured event windows. R4: schedule in-game and confirm.')
+          payload=json.dumps({'username':'FEAR R4 MG Scheduler','content':message,'allowed_mentions':{'parse':[],'roles':[role]}}).encode()
+          req=urllib.request.Request(webhook+('&' if '?' in webhook else '?')+'wait=true',data=payload,method='POST',headers={'Content-Type':'application/json','User-Agent':'FEAR-R4-MG-Scheduler'})
+          with urllib.request.urlopen(req,timeout=20) as response:
+              print('Discord accepted R4 alert:',json.load(response).get('id'))
+          if not test:
+              api('/repos/'+os.environ['REPO']+'/issues',method='POST',data={'title':title,'body':'R4 scheduling alert sent. Recommended MG start: '+server_time.isoformat()+' (server clock). Close when scheduled in-game. Do not reuse rotation_id.'})
+          PY
