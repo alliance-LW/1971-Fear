@@ -61,6 +61,24 @@ jobs:
           events=[]
           for e in cfg.get('events',[]):
               events.append((parse(e['start_utc'])-dt.timedelta(minutes=int(e.get('buffer_before_minutes',0))),parse(e['end_utc'])+dt.timedelta(minutes=int(e.get('buffer_after_minutes',0))),e['name']))
+          # Expand confirmed weekly events using the Last War server clock.
+          weekdays={'Monday':0,'Tuesday':1,'Wednesday':2,'Thursday':3,'Friday':4,'Saturday':5,'Sunday':6}
+          for e in cfg.get('recurring_events',[]):
+              day=weekdays[e['weekday']]
+              hour,minute=map(int,e['start_server_time'].split(':'))
+              for days_ahead in range(-1,int(cfg['search_days'])+2):
+                  date=(now+offset+dt.timedelta(days=days_ahead)).date()
+                  if date.weekday()!=day:
+                      continue
+                  local=dt.datetime.combine(date,dt.time(hour,minute),tzinfo=UTC)
+                  start=local-offset
+                  end=start+dt.timedelta(minutes=int(e['duration_minutes']))
+                  events.append((start-dt.timedelta(minutes=int(e.get('buffer_before_minutes',0))),end+dt.timedelta(minutes=int(e.get('buffer_after_minutes',0))),e['name']))
+          if cfg.get('unconfirmed_events'):
+              print('WARNING: Unconfirmed event schedules:', ', '.join(cfg['unconfirmed_events']))
+              if not test:
+                  print('No conflict-free recommendation until event coverage is verified.')
+                  sys.exit(0)
           chosen=None
           for n in range(int(cfg['search_days'])*24*60//int(cfg['candidate_step_minutes'])):
               candidate=(base-offset)+dt.timedelta(minutes=n*int(cfg['candidate_step_minutes']))
