@@ -44,11 +44,18 @@ jobs:
           if not test:
               if not cfg.get('enabled'):
                   print('R4 MG scheduling disabled until cooldown and events verified.');sys.exit(0)
-              if not cfg.get('cooldown_unlock_utc') or not cfg.get('rotation_id'):
-                  print('Missing verified unlock timestamp or rotation ID; no alert.');sys.exit(0)
-              unlock=parse(cfg['cooldown_unlock_utc'])
-              if now<unlock:
-                  print('Cooldown active until',unlock.isoformat());sys.exit(0)
+              if cfg.get('phase')=='phase_1_test':
+                  offset_minutes=int(cfg['server_utc_offset_minutes'])
+                  server_now=now+dt.timedelta(minutes=offset_minutes)
+                  if server_now.hour!=0:
+                      print('Phase 1 test: waiting for server midnight reset hour.');sys.exit(0)
+                  unlock=now
+              else:
+                  if not cfg.get('cooldown_unlock_utc') or not cfg.get('rotation_id'):
+                      print('Missing verified unlock timestamp or rotation ID; no alert.');sys.exit(0)
+                  unlock=parse(cfg['cooldown_unlock_utc'])
+                  if now<unlock:
+                      print('Cooldown active until',unlock.isoformat());sys.exit(0)
           else:
               unlock=now
           offset=dt.timedelta(minutes=int(cfg['server_utc_offset_minutes']))
@@ -76,7 +83,7 @@ jobs:
                   events.append((start-dt.timedelta(minutes=int(e.get('buffer_before_minutes',0))),end+dt.timedelta(minutes=int(e.get('buffer_after_minutes',0))),e['name']))
           if cfg.get('unconfirmed_events'):
               print('WARNING: Unconfirmed event schedules:', ', '.join(cfg['unconfirmed_events']))
-              if not test:
+              if not test and cfg.get('phase')!='phase_1_test':
                   print('No conflict-free recommendation until event coverage is verified.')
                   sys.exit(0)
           chosen=None
@@ -92,7 +99,7 @@ jobs:
           webhook=os.getenv('MG_DISCORD_WEBHOOK_URL','').strip()
           if not webhook:
               print('Missing MG_DISCORD_WEBHOOK_URL secret.');sys.exit(1)
-          rotation='TEST' if test else str(cfg['rotation_id'])
+          rotation='MANUAL-TEST' if test else ('PHASE1-'+(now+offset).strftime('%Y-%m-%d') if cfg.get('phase')=='phase_1_test' else str(cfg['rotation_id']))
           title='MG R4 scheduling: '+rotation
           if not test:
               import urllib.parse
@@ -101,11 +108,13 @@ jobs:
               if any(item['title']==title for item in found.get('items',[])):
                   print('Already alerted this rotation; no duplicate.');sys.exit(0)
           server_time=chosen+offset
-          message=('<@&'+role+'> **1971 FEAR — MG SCHEDULING '+('TEST' if test else 'OPEN')+'**\n'
-                   +'Cooldown unlock: '+unlock.strftime('%Y-%m-%d %H:%M UTC')+'\n'
-                   +'Recommended MG: '+server_time.strftime('%a %Y-%m-%d %H:%M')+' server time '
-                   +'('+chosen.strftime('%Y-%m-%d %H:%M UTC')+')\n'
-                   +'Checked against '+str(len(events))+' configured event windows. R4: schedule in-game and confirm.')
+          phase1=cfg.get('phase')=='phase_1_test'
+          message=('<@&'+role+'> **1971 FEAR — MG SCHEDULING '+('MANUAL TEST' if test else 'PHASE 1 TEST' if phase1 else 'OPEN')+'**\n'
+                   +('Server reset reached (00:00 server time). Check in-game scheduling availability; this is a test alert, not proof MG is unlocked.\\n' if phase1 else 'Cooldown unlock: '+unlock.strftime('%Y-%m-%d %H:%M UTC')+'\\n')
+                   +('Tentative MG slot: ' if phase1 else 'Recommended MG: ')+server_time.strftime('%a %Y-%m-%d %H:%M')+' server time '
+                   +'('+chosen.strftime('%Y-%m-%d %H:%M UTC')+')\\n'
+                   +('INCOMPLETE CONFLICT CHECK: Winter Storm, Capital War and Zombie Siege times are unknown. Do not confirm MG without manual verification.\\n' if phase1 else 'Checked against '+str(len(events))+' configured event windows.\\n')
+                   +'R4: verify scheduling in-game and confirm manually.')
           payload=json.dumps({'username':'FEAR R4 MG Scheduler','content':message,'allowed_mentions':{'parse':[],'roles':[role]}}).encode()
           req=urllib.request.Request(webhook+('&' if '?' in webhook else '?')+'wait=true',data=payload,method='POST',headers={'Content-Type':'application/json','User-Agent':'FEAR-R4-MG-Scheduler'})
           with urllib.request.urlopen(req,timeout=20) as response:
