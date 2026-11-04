@@ -110,10 +110,10 @@ jobs:
           server_time=chosen+offset
           phase1=cfg.get('phase')=='phase_1_test'
           message=('<@&'+role+'> **1971 FEAR — MG SCHEDULING '+('MANUAL TEST' if test else 'PHASE 1 TEST' if phase1 else 'OPEN')+'**\n'
-                   +('Server reset reached (00:00 server time). Check in-game scheduling availability; this is a test alert, not proof MG is unlocked.\\n' if phase1 else 'Cooldown unlock: '+unlock.strftime('%Y-%m-%d %H:%M UTC')+'\\n')
+                   +('Server reset reached (00:00 server time). Check in-game scheduling availability; this is a test alert, not proof MG is unlocked.\n' if phase1 else 'Cooldown unlock: '+unlock.strftime('%Y-%m-%d %H:%M UTC')+'\n')
                    +('Tentative MG slot: ' if phase1 else 'Recommended MG: ')+server_time.strftime('%a %Y-%m-%d %H:%M')+' server time '
-                   +'('+chosen.strftime('%Y-%m-%d %H:%M UTC')+')\\n'
-                   +('INCOMPLETE CONFLICT CHECK: Winter Storm, Capital War and Zombie Siege times are unknown. Do not confirm MG without manual verification.\\n' if phase1 else 'Checked against '+str(len(events))+' configured event windows.\\n')
+                   +'('+chosen.strftime('%Y-%m-%d %H:%M UTC')+')\n'
+                   +('INCOMPLETE CONFLICT CHECK: Winter Storm, Capital War and Zombie Siege times are unknown. Do not confirm MG without manual verification.\n' if phase1 else 'Checked against '+str(len(events))+' configured event windows.\n')
                    +'R4: verify scheduling in-game and confirm manually.')
           payload=json.dumps({'username':'FEAR R4 MG Scheduler','content':message,'allowed_mentions':{'parse':[],'roles':[role]}}).encode()
           req=urllib.request.Request(webhook+('&' if '?' in webhook else '?')+'wait=true',data=payload,method='POST',headers={'Content-Type':'application/json','User-Agent':'FEAR-R4-MG-Scheduler'})
