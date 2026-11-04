@@ -96,13 +96,52 @@ jobs:
               if not test and cfg.get('phase')!='phase_1_test':
                   print('No conflict-free recommendation until event coverage is verified.')
                   sys.exit(0)
-          chosen=None
-          for n in range(int(cfg['search_days'])*24*60//int(cfg['candidate_step_minutes'])):
-              candidate=(base-offset)+dt.timedelta(minutes=n*int(cfg['candidate_step_minutes']))
-              if not any(candidate<b and candidate+duration>a for a,b,_ in events):
-                  chosen=candidate;break
-          if chosen is None:
-              print('No conflict-free slot; do not issue misleading recommendation.');sys.exit(1)
+          # Balanced policy: hard-block confirmed conflicts, then rank safe candidates.
+          policy=cfg.get('scheduling_policy',{})
+          max_wait=dt.timedelta(hours=float(policy.get('max_wait_hours',12)))
+          step=int(cfg['candidate_step_minutes'])
+          candidates=[]
+          for n in range(int(cfg['search_days'])*24*60//step):
+              candidate=(base-offset)+dt.timedelta(minutes=n*step)
+              if candidate>base-offset+max_wait:
+                  break
+              if any(candidate<b and candidate+duration>a for a,b,_ in events):
+                  continue
+              candidates.append(candidate)
+          if not candidates:
+              print('No conflict-free slot in balanced search window; R4 review required.');sys.exit(0)
+          # Participation scores are optional, explicitly entered windows (0-100).
+          # Never infer turnout from unknown or missing member data.
+          windows=[]
+          for w in cfg.get('participation_windows',[]):
+              try:
+                  windows.append((parse(w['start_utc']),parse(w['end_utc']),max(0,min(100,float(w['expected_percent'])))))
+              except (KeyError,TypeError,ValueError):
+                  print('Skipping invalid participation window')
+          def turnout(c):
+              matches=[pct for a,b,pct in windows if c>=a and c+duration<=b]
+              return max(matches) if matches else None
+          available=any(turnout(c) is not None for c in candidates)
+          earliest=candidates[0]
+          if available:
+              def score(c):
+                  wait=(c-earliest).total_seconds()/3600
+                  early=max(0,1-wait/max(float(policy.get('max_wait_hours',12)),0.01))
+                  part=turnout(c)
+                  # Missing estimates receive no invented score.
+                  participation=(part/100) if part is not None else 0
+                  server_c=c+offset
+                  preferred=server_c.replace(hour=hh,minute=mm,second=0,microsecond=0)
+                  proximity=abs((server_c-preferred).total_seconds())/3600
+                  preferred_score=max(0,1-proximity/12)
+                  return (float(policy.get('earliest_weight',.5))*early+
+                          float(policy.get('participation_weight',.35))*participation+
+                          float(policy.get('preferred_time_weight',.15))*preferred_score)
+              chosen=max(candidates,key=lambda c:(score(c),-c.timestamp()))
+          else:
+              chosen=earliest
+              print('Participation data missing: choosing earliest conflict-free candidate, not claiming turnout optimization.')
+          print('Balanced MG candidate:',chosen.isoformat(),'participation estimate:',turnout(chosen))
           role=os.getenv('MG_R4_ROLE_ID','').strip()
           if not role.isdigit():
               print('Set MG_R4_ROLE_ID repository variable to numeric Discord role ID.');sys.exit(1)
@@ -128,6 +167,7 @@ jobs:
                    +('Tentative MG slot: ' if phase1 else 'Recommended MG: ')+server_time.strftime('%a %Y-%m-%d %H:%M')+' server time '
                    +'('+chosen.strftime('%Y-%m-%d %H:%M UTC')+')\n'
                    +('INCOMPLETE CONFLICT CHECK: Winter Storm, Capital War and Zombie Siege times are unknown. Do not confirm MG without manual verification.\n' if phase1 else 'Checked against '+str(len(events))+' configured event windows.\n')
+                   +('Participation: '+(str(round(turnout(chosen)))+'% estimated from entered availability windows.\\n' if turnout(chosen) is not None else 'Participation not verified; earliest conflict-free fallback.\\n'))
                    +'R4: verify scheduling in-game and confirm manually.')
           payload=json.dumps({'username':'FEAR R4 MG Scheduler','content':message,'allowed_mentions':{'parse':[],'roles':[role]}}).encode()
           req=urllib.request.Request(webhook+('&' if '?' in webhook else '?')+'wait=true',data=payload,method='POST',headers={'Content-Type':'application/json','User-Agent':'FEAR-R4-MG-Scheduler'})
