@@ -42,5 +42,8 @@
     "notes": "Participation scoring requires manually confirmed availability windows. Do not assume attendance. Unknown major event times require manual conflict review."
   },
   "participation_windows": [],
-  "soft_events": []
+  "soft_events": [],
+  "discord_channel_id": "1567409272097214594",
+  "discord_channel_name": "mg-scheduling",
+  "discord_channel_status": "permissions_configured_delivery_not_verified"
 }
