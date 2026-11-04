@@ -1,0 +1,54 @@
+name: Record confirmed MG schedule from Discord
+on:
+  repository_dispatch:
+    types: [mg_scheduled]
+permissions:
+  contents: write
+concurrency:
+  group: fear-mg-record
+  cancel-in-progress: false
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Record expected MG end and reset
+        env:
+          SERVER_DATE: ${{ github.event.client_payload.server_date }}
+          SERVER_TIME: ${{ github.event.client_payload.server_time }}
+          SUBMITTED_BY: ${{ github.event.client_payload.submitted_by }}
+        run: |
+          python3 - <<'PY'
+          import os,json,datetime as dt,re,sys
+          date=os.environ['SERVER_DATE']
+          time=os.environ['SERVER_TIME']
+          if not re.fullmatch(r'\d{4}-\d{2}-\d{2}',date) or not re.fullmatch(r'(?:[01]\d|2[0-3]):[0-5]\d',time):
+              sys.exit('Invalid date or time')
+          path='config/mg-r4-schedule.json'
+          with open(path,encoding='utf-8') as f: cfg=json.load(f)
+          server_start=dt.datetime.fromisoformat(date+'T'+time+':00').replace(tzinfo=dt.timezone.utc)
+          utc_start=server_start-dt.timedelta(minutes=int(cfg['server_utc_offset_minutes']))
+          now=dt.datetime.now(dt.timezone.utc)
+          if utc_start<now-dt.timedelta(hours=1) or utc_start>now+dt.timedelta(days=14):
+              sys.exit('MG start must be between one hour ago and 14 days in the future')
+          end=utc_start+dt.timedelta(minutes=int(cfg['mg_duration_minutes']))
+          cfg['last_mg_end_utc']=end.isoformat().replace('+00:00','Z')
+          cfg['rotation_id']='MG-'+date+'-'+time.replace(':','')
+          cfg['last_mg_start_server']=date+' '+time
+          cfg['last_mg_recorded_by']=os.environ['SUBMITTED_BY']
+          with open(path,'w',encoding='utf-8') as f: json.dump(cfg,f,indent=2);f.write('\n')
+          print('MG expected end UTC:',cfg['last_mg_end_utc'])
+          PY
+      - name: Commit MG schedule
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add config/mg-r4-schedule.json
+          if git diff --cached --quiet; then
+            echo "No change"
+          else
+            git commit -m "Record MG schedule from R4 Discord command"
+            git push
+          fi
