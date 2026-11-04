@@ -9,7 +9,7 @@
   "search_days": 7,
   "candidate_step_minutes": 30,
   "events": [],
-  "notes": "Only Desert Storm is confirmed: Friday 19:00-19:30 server time. Other event times are unknown and are NOT treated as clear. Live scheduling remains disabled until cooldown, rotation, and event coverage are verified.",
+  "notes": "Confirmed by R4: next MG scheduling becomes available at the server reset following the prior MG ending. Do not use preparation countdown as unlock. Exact server-reset UTC time and MG end timestamp still require verification; do not enable live alerts. Only Desert Storm Friday 19:00-19:30 server time is confirmed. Other event times remain unknown.",
   "recurring_events": [
     {
       "name": "Desert Storm",
@@ -24,5 +24,6 @@
     "Winter Storm",
     "Capital War",
     "Zombie Siege"
-  ]
+  ],
+  "scheduling_unlock_rule": "next_server_reset_after_mg_ends"
 }
