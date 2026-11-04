@@ -99,6 +99,10 @@ jobs:
           webhook=os.getenv('MG_DISCORD_WEBHOOK_URL','').strip()
           if not webhook:
               print('Missing MG_DISCORD_WEBHOOK_URL secret.');sys.exit(1)
+          from urllib.parse import urlsplit
+          parsed_webhook=urlsplit(webhook)
+          if parsed_webhook.scheme!='https' or parsed_webhook.hostname not in ('discord.com','discordapp.com') or not parsed_webhook.path.startswith('/api/webhooks/') or len(parsed_webhook.path.split('/'))<5:
+              print('INVALID WEBHOOK URL: MG_DISCORD_WEBHOOK_URL must be the full Discord Copy Webhook URL (https://discord.com/api/webhooks/ID/TOKEN). Never paste the token alone.');sys.exit(1)
           rotation='MANUAL-TEST' if test else ('PHASE1-'+(now+offset).strftime('%Y-%m-%d') if cfg.get('phase')=='phase_1_test' else str(cfg['rotation_id']))
           title='MG R4 scheduling: '+rotation
           if not test:
