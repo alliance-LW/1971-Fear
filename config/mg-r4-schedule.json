@@ -29,5 +29,18 @@
   "server_reset_server_time": "00:00",
   "server_reset_utc_time": "02:00",
   "phase": "phase_1_test",
-  "last_mg_end_utc": null
+  "last_mg_end_utc": null,
+  "scheduling_policy": {
+    "mode": "balanced",
+    "earliest_weight": 0.5,
+    "participation_weight": 0.35,
+    "preferred_time_weight": 0.15,
+    "max_wait_hours": 12,
+    "requires_verified_cooldown": true,
+    "requires_r4_confirmation": true,
+    "participation_data_status": "unavailable",
+    "notes": "Participation scoring requires manually confirmed availability windows. Do not assume attendance. Unknown major event times require manual conflict review."
+  },
+  "participation_windows": [],
+  "soft_events": []
 }
