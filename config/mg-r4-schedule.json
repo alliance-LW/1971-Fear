@@ -9,7 +9,7 @@
   "search_days": 7,
   "candidate_step_minutes": 30,
   "events": [],
-  "notes": "PHASE 1 TEST LIVE: R4 alert at each daily 00:00 server reset (GitHub Actions checks every 5 minutes; delivery may be delayed). This is a test reminder to check in-game scheduling availability, not verified cooldown unlock. Unknown Winter Storm, Capital War and Zombie Siege conflicts require manual checks. No automatic in-game scheduling. Existing team notifications unchanged.",
+  "notes": "PHASE 1 TEST enabled but automatic alerts are gated until last_mg_end_utc is populated from a verified MG completion. Then alert once at first subsequent 00:00 server reset (within 1-hour window), deduplicated by reset timestamp. Workflow checks every 5 minutes and may be delayed. Manual dispatch test=true still works. Unknown event conflicts require manual checks. No automatic in-game scheduling. Existing team notifications unchanged.",
   "recurring_events": [
     {
       "name": "Desert Storm",
@@ -28,5 +28,6 @@
   "scheduling_unlock_rule": "next_server_reset_after_mg_ends",
   "server_reset_server_time": "00:00",
   "server_reset_utc_time": "02:00",
-  "phase": "phase_1_test"
+  "phase": "phase_1_test",
+  "last_mg_end_utc": null
 }
