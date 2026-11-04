@@ -9,7 +9,7 @@
   "search_days": 7,
   "candidate_step_minutes": 30,
   "events": [],
-  "notes": "Confirmed by R4: next MG scheduling becomes available at the server reset following the prior MG ending. Do not use preparation countdown as unlock. Exact server-reset UTC time and MG end timestamp still require verification; do not enable live alerts. Only Desert Storm Friday 19:00-19:30 server time is confirmed. Other event times remain unknown.",
+  "notes": "R4 confirmed daily server reset at 00:00 server time and next MG scheduling becomes available at the first reset after prior MG ends. UTC 02:00 follows configured server UTC-02:00 offset; verify clock offset if game changes. Preparation countdown is not unlock. Live alerts disabled pending verified MG end/rotation, role ID, and missing event times.",
   "recurring_events": [
     {
       "name": "Desert Storm",
@@ -25,5 +25,7 @@
     "Capital War",
     "Zombie Siege"
   ],
-  "scheduling_unlock_rule": "next_server_reset_after_mg_ends"
+  "scheduling_unlock_rule": "next_server_reset_after_mg_ends",
+  "server_reset_server_time": "00:00",
+  "server_reset_utc_time": "02:00"
 }
