@@ -45,11 +45,21 @@ jobs:
               if not cfg.get('enabled'):
                   print('R4 MG scheduling disabled until cooldown and events verified.');sys.exit(0)
               if cfg.get('phase')=='phase_1_test':
+                  last_end=cfg.get('last_mg_end_utc')
+                  if not last_end:
+                      print('Phase 1 test: waiting for verified last_mg_end_utc; no automatic alert.');sys.exit(0)
+                  end=parse(last_end)
+                  if now<=end:
+                      print('Phase 1 test: MG end is not in the past.');sys.exit(0)
                   offset_minutes=int(cfg['server_utc_offset_minutes'])
-                  server_now=now+dt.timedelta(minutes=offset_minutes)
-                  if server_now.hour!=0:
-                      print('Phase 1 test: waiting for server midnight reset hour.');sys.exit(0)
-                  unlock=now
+                  offset_local=dt.timedelta(minutes=offset_minutes)
+                  end_server=end+offset_local
+                  next_reset_server=end_server.replace(hour=0,minute=0,second=0,microsecond=0)+dt.timedelta(days=1)
+                  unlock=next_reset_server-offset_local
+                  if now<unlock:
+                      print('Phase 1 test: waiting for first reset after MG ends:',unlock.isoformat());sys.exit(0)
+                  if now>=unlock+dt.timedelta(hours=1):
+                      print('Phase 1 test: reset alert window expired; no stale alert.');sys.exit(0)
               else:
                   if not cfg.get('cooldown_unlock_utc') or not cfg.get('rotation_id'):
                       print('Missing verified unlock timestamp or rotation ID; no alert.');sys.exit(0)
@@ -103,7 +113,7 @@ jobs:
           parsed_webhook=urlsplit(webhook)
           if parsed_webhook.scheme!='https' or parsed_webhook.hostname not in ('discord.com','discordapp.com') or not parsed_webhook.path.startswith('/api/webhooks/') or len(parsed_webhook.path.split('/'))<5:
               print('INVALID WEBHOOK URL: MG_DISCORD_WEBHOOK_URL must be the full Discord Copy Webhook URL (https://discord.com/api/webhooks/ID/TOKEN). Never paste the token alone.');sys.exit(1)
-          rotation='MANUAL-TEST' if test else ('PHASE1-'+(now+offset).strftime('%Y-%m-%d') if cfg.get('phase')=='phase_1_test' else str(cfg['rotation_id']))
+          rotation='MANUAL-TEST' if test else ('PHASE1-'+unlock.strftime('%Y-%m-%dT%H:%MZ') if cfg.get('phase')=='phase_1_test' else str(cfg['rotation_id']))
           title='MG R4 scheduling: '+rotation
           if not test:
               import urllib.parse
@@ -114,7 +124,7 @@ jobs:
           server_time=chosen+offset
           phase1=cfg.get('phase')=='phase_1_test'
           message=('<@&'+role+'> **1971 FEAR — MG SCHEDULING '+('MANUAL TEST' if test else 'PHASE 1 TEST' if phase1 else 'OPEN')+'**\n'
-                   +('Server reset reached (00:00 server time). Check in-game scheduling availability; this is a test alert, not proof MG is unlocked.\n' if phase1 else 'Cooldown unlock: '+unlock.strftime('%Y-%m-%d %H:%M UTC')+'\n')
+                   +('First server reset after recorded MG end reached (00:00 server time). Check in-game scheduling availability; this is a test alert, not proof MG is unlocked.\n' if phase1 else 'Cooldown unlock: '+unlock.strftime('%Y-%m-%d %H:%M UTC')+'\n')
                    +('Tentative MG slot: ' if phase1 else 'Recommended MG: ')+server_time.strftime('%a %Y-%m-%d %H:%M')+' server time '
                    +'('+chosen.strftime('%Y-%m-%d %H:%M UTC')+')\n'
                    +('INCOMPLETE CONFLICT CHECK: Winter Storm, Capital War and Zombie Siege times are unknown. Do not confirm MG without manual verification.\n' if phase1 else 'Checked against '+str(len(events))+' configured event windows.\n')
