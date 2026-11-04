@@ -18,7 +18,7 @@ jobs:
   schedule-mg:
     runs-on: ubuntu-latest
     env:
-      MG_DISCORD_WEBHOOK_URL: ${{ secrets.MG_DISCORD_WEBHOOK_URL }}
+      MG_DISCORD_WEBHOOK_URL: ${{ secrets.MG_SCHEDULING_WEBHOOK_URL }}
       MG_R4_ROLE_ID: ${{ vars.MG_R4_ROLE_ID }}
       GH_TOKEN: ${{ github.token }}
       REPO: ${{ github.repository }}
