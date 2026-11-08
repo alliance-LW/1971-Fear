@@ -3,154 +3,154 @@
   "status": "LOCKED",
   "source": "FarmOps API via GitHub Actions",
   "selection_method": "Eligibility rules first, then deterministic 70% VS / 30% Tech Donations ranking; no random component.",
-  "source_week": "2026-10-26 to 2026-11-01",
-  "schedule_week": "2026-11-01 to 2026-11-07",
-  "generated_at": "2026-11-01T02:49:51.787Z",
+  "source_week": "2026-11-02 to 2026-11-08",
+  "schedule_week": "2026-11-08 to 2026-11-14",
+  "generated_at": "2026-11-08T08:53:56.258Z",
   "days": [
     {
-      "date": "2026-11-01",
+      "date": "2026-11-08",
       "conductor": {
-        "primary": "GRNDDGR",
-        "score": 83.84,
+        "primary": "DesertPrincessSnaggy",
+        "score": 81.24,
         "alternates": [
-          "6 0 2 K",
-          "Aro102",
-          "ssDewm"
+          "JohnnyW1ld",
+          "Mulekezord",
+          "FIREHEART10"
         ]
       },
       "vip": {
-        "primary": "KencityXX",
-        "score": 76.38,
+        "primary": "McDirick",
+        "score": 64.15,
         "alternates": [
-          "AshℲɒllǝn Angel",
-          "JABALLS",
-          "Pøison Ivy"
+          "Commandant Chewie",
+          "BeFE",
+          "Pourdecisions"
         ]
       }
     },
     {
-      "date": "2026-11-02",
+      "date": "2026-11-09",
       "conductor": {
-        "primary": "6 0 2 K",
-        "score": 70.08,
+        "primary": "JohnnyW1ld",
+        "score": 62.75,
         "alternates": [
-          "ssDewm",
-          "AshℲɒllǝn Angel",
-          "JABALLS"
+          "FIREHEART10",
+          "Commandant Chewie",
+          "BeFE"
         ]
       },
       "vip": {
-        "primary": "Aro102",
-        "score": 67.88,
+        "primary": "Mulekezord",
+        "score": 54.93,
         "alternates": [
-          "Pøison Ivy",
-          "Super JuNiOr",
-          "Dragonètte"
+          "Pourdecisions",
+          "Kcon1225",
+          "LuckyCharms23"
         ]
       }
     },
     {
-      "date": "2026-11-03",
+      "date": "2026-11-10",
       "conductor": {
-        "primary": "ssDewm",
-        "score": 65.34,
+        "primary": "FIREHEART10",
+        "score": 47.28,
         "alternates": [
-          "JABALLS",
-          "Pøison Ivy",
-          "Super JuNiOr"
+          "BeFE",
+          "Pourdecisions",
+          "Kcon1225"
         ]
       },
       "vip": {
-        "primary": "AshℲɒllǝn Angel",
-        "score": 63.44,
+        "primary": "Commandant Chewie",
+        "score": 45.33,
         "alternates": [
-          "Dragonètte",
-          "Jancar777",
-          "LetBim"
+          "LuckyCharms23",
+          "VVVVvvvv",
+          "H20MAN"
         ]
       }
     },
     {
-      "date": "2026-11-04",
+      "date": "2026-11-11",
       "conductor": {
-        "primary": "JABALLS",
-        "score": 61.19,
+        "primary": "BeFE",
+        "score": 45.05,
         "alternates": [
-          "Super JuNiOr",
-          "Dragonètte",
-          "Jancar777"
+          "Kcon1225",
+          "LuckyCharms23",
+          "VVVVvvvv"
         ]
       },
       "vip": {
-        "primary": "Pøison Ivy",
-        "score": 61.09,
+        "primary": "Pourdecisions",
+        "score": 44.32,
         "alternates": [
-          "LetBim",
-          "Indianacarguy",
-          "Omn Setty"
+          "H20MAN",
+          "IzyB3",
+          "TomRhodes"
         ]
       }
     },
     {
-      "date": "2026-11-05",
+      "date": "2026-11-12",
       "conductor": {
-        "primary": "Super JuNiOr",
-        "score": 60.18,
+        "primary": "Kcon1225",
+        "score": 43.71,
         "alternates": [
-          "Jancar777",
-          "LetBim",
-          "Indianacarguy"
+          "VVVVvvvv",
+          "H20MAN",
+          "IzyB3"
         ]
       },
       "vip": {
-        "primary": "Dragonètte",
-        "score": 60,
+        "primary": "LuckyCharms23",
+        "score": 42.79,
         "alternates": [
-          "Omn Setty",
-          "Ma7eruix",
+          "TomRhodes",
+          "Loudog90",
+          "BriVado"
+        ]
+      }
+    },
+    {
+      "date": "2026-11-13",
+      "conductor": {
+        "primary": "VVVVvvvv",
+        "score": 41.42,
+        "alternates": [
+          "IzyB3",
+          "TomRhodes",
+          "Loudog90"
+        ]
+      },
+      "vip": {
+        "primary": "H20MAN",
+        "score": 40.76,
+        "alternates": [
+          "BriVado",
+          "Freddyfrick",
+          "WpgLos"
+        ]
+      }
+    },
+    {
+      "date": "2026-11-14",
+      "conductor": {
+        "primary": "IzyB3",
+        "score": 39.42,
+        "alternates": [
+          "Loudog90",
+          "BriVado",
           "Freddyfrick"
         ]
-      }
-    },
-    {
-      "date": "2026-11-06",
-      "conductor": {
-        "primary": "Jancar777",
-        "score": 59.99,
-        "alternates": [
-          "Indianacarguy",
-          "Omn Setty",
-          "Ma7eruix"
-        ]
       },
       "vip": {
-        "primary": "LetBim",
-        "score": 59.99,
+        "primary": "TomRhodes",
+        "score": 39.41,
         "alternates": [
-          "Freddyfrick",
-          "Archimedes X",
-          "General JesterJ"
-        ]
-      }
-    },
-    {
-      "date": "2026-11-07",
-      "conductor": {
-        "primary": "Indianacarguy",
-        "score": 59.66,
-        "alternates": [
-          "Ma7eruix",
-          "Freddyfrick",
-          "Archimedes X"
-        ]
-      },
-      "vip": {
-        "primary": "Omn Setty",
-        "score": 58.59,
-        "alternates": [
-          "General JesterJ",
-          "BoostedT70",
-          "Myosin"
+          "WpgLos",
+          "gyu 규규0",
+          "Skiff1980"
         ]
       }
     }
