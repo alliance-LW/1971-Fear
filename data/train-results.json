@@ -2,9 +2,9 @@
   "schema_version": 1,
   "status": "PROPOSED",
   "source": "FarmOps API",
-  "alliance": "The Dark Side",
-  "week": "2026-11-02 to 2026-11-08",
-  "generated_at": "2026-11-08T08:53:56.258Z",
+  "alliance": "Havoc",
+  "week": "2026-11-09 to 2026-11-15",
+  "generated_at": "2026-11-15T09:13:39.882Z",
   "formula": {
     "minimum_donations": 30000,
     "vs_weight": 0.7,
@@ -25,920 +25,918 @@
   },
   "data_summary": {
     "active_members": 99,
-    "eligible_members": 61
+    "eligible_members": 79
   },
   "selections": {
     "conductor": {
-      "primary": "DesertPrincessSnaggy",
+      "primary": "AshℲɒllǝn Angel",
       "alternates": [
-        "McDirick",
-        "JohnnyW1ld",
-        "Mulekezord"
+        "TruPtGard",
+        "JudgyJudy",
+        "SpyderBite"
       ]
     },
     "vip": {
-      "primary": "FIREHEART10",
+      "primary": "db666",
       "alternates": [
-        "Commandant Chewie",
-        "BeFE",
-        "Pourdecisions"
+        "ArmyArmy",
+        "Crashley86",
+        "SandFOX"
       ]
     }
   },
   "audit": [
     {
-      "name": "6 0 2 K",
+      "name": "BeFE",
       "status": "INELIGIBLE",
-      "vs": "60919986",
-      "donations": "32700",
+      "vs": "84015835",
+      "donations": "66700",
       "reasons": [
         "Conductor/VIP assigned previous week"
       ]
     },
     {
-      "name": "Angeluht",
+      "name": "CerealKillerrr",
       "status": "INELIGIBLE",
-      "vs": "38711434",
-      "donations": "15650",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "ArmyArmy",
-      "status": "INELIGIBLE",
-      "vs": "68580452",
-      "donations": "29900",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "Aro102",
-      "status": "INELIGIBLE",
-      "vs": "63889072",
-      "donations": "78900",
-      "reasons": [
-        "Conductor/VIP assigned previous week"
-      ]
-    },
-    {
-      "name": "AshℲɒllǝn Angel",
-      "status": "INELIGIBLE",
-      "vs": "147281068",
-      "donations": "34800",
-      "reasons": [
-        "Conductor/VIP assigned previous week"
-      ]
-    },
-    {
-      "name": "Dragonètte",
-      "status": "INELIGIBLE",
-      "vs": "78873224",
-      "donations": "26600",
+      "vs": "0",
+      "donations": "0",
       "reasons": [
         "Below 30,000 weekly Tech Donations",
+        "No VS score imported for selected FarmOps week"
+      ]
+    },
+    {
+      "name": "Commandant Chewie",
+      "status": "INELIGIBLE",
+      "vs": "54194029",
+      "donations": "73450",
+      "reasons": [
         "Conductor/VIP assigned previous week"
       ]
     },
     {
-      "name": "DubleDee",
+      "name": "DesertPrincessSnaggy",
       "status": "INELIGIBLE",
-      "vs": "57423749",
-      "donations": "21850",
+      "vs": "89479156",
+      "donations": "33300",
       "reasons": [
-        "Below 30,000 weekly Tech Donations"
+        "Conductor/VIP assigned previous week"
       ]
     },
     {
       "name": "El3vEnBaNg",
       "status": "INELIGIBLE",
-      "vs": "32249190",
-      "donations": "5700",
+      "vs": "41064208",
+      "donations": "18500",
       "reasons": [
         "Below 30,000 weekly Tech Donations"
       ]
     },
     {
-      "name": "Ember Dragon",
+      "name": "FIREHEART10",
       "status": "INELIGIBLE",
-      "vs": "126685363",
-      "donations": "28450",
+      "vs": "66943972",
+      "donations": "65800",
       "reasons": [
-        "Below 30,000 weekly Tech Donations"
+        "Conductor/VIP assigned previous week"
       ]
     },
     {
       "name": "Fearless Diego",
       "status": "INELIGIBLE",
-      "vs": "44086955",
-      "donations": "17100",
+      "vs": "56506257",
+      "donations": "23050",
       "reasons": [
         "Below 30,000 weekly Tech Donations"
       ]
     },
     {
-      "name": "GRNDDGR",
+      "name": "H20MAN",
       "status": "INELIGIBLE",
-      "vs": "113161131",
-      "donations": "38150",
+      "vs": "117556220",
+      "donations": "55150",
       "reasons": [
         "Conductor/VIP assigned previous week"
       ]
     },
     {
-      "name": "General JesterJ",
+      "name": "Hogsyall",
       "status": "INELIGIBLE",
-      "vs": "55668188",
-      "donations": "27600",
+      "vs": "37147672",
+      "donations": "16000",
       "reasons": [
         "Below 30,000 weekly Tech Donations"
       ]
     },
     {
-      "name": "Hybriddom1",
+      "name": "IzyB3",
       "status": "INELIGIBLE",
-      "vs": "96901056",
-      "donations": "27900",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "Indianacarguy",
-      "status": "INELIGIBLE",
-      "vs": "52433740",
-      "donations": "50900",
+      "vs": "47203270",
+      "donations": "41700",
       "reasons": [
         "Conductor/VIP assigned previous week"
       ]
     },
     {
-      "name": "JABALLS",
+      "name": "JohnnyW1ld",
       "status": "INELIGIBLE",
-      "vs": "57807703",
-      "donations": "57450",
+      "vs": "86385543",
+      "donations": "62850",
       "reasons": [
         "Conductor/VIP assigned previous week"
       ]
     },
     {
-      "name": "JacksD7",
+      "name": "Kcon1225",
       "status": "INELIGIBLE",
-      "vs": "50620960",
-      "donations": "23000",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "Jancar777",
-      "status": "INELIGIBLE",
-      "vs": "65923125",
-      "donations": "40600",
+      "vs": "80919612",
+      "donations": "83700",
       "reasons": [
         "Conductor/VIP assigned previous week"
       ]
     },
     {
-      "name": "JonWucky",
+      "name": "LuckyCharms23",
       "status": "INELIGIBLE",
-      "vs": "111271483",
-      "donations": "28600",
+      "vs": "60405986",
+      "donations": "63350",
       "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "Keetja",
-      "status": "INELIGIBLE",
-      "vs": "46327135",
-      "donations": "29500",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "KencityXX",
-      "status": "INELIGIBLE",
-      "vs": "84111970",
-      "donations": "64000",
-      "reasons": [
-        "Conductor/VIP assigned previous week"
-      ]
-    },
-    {
-      "name": "LetBim",
-      "status": "INELIGIBLE",
-      "vs": "69378041",
-      "donations": "24950",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations",
         "Conductor/VIP assigned previous week"
       ]
     },
     {
       "name": "Lô Lô 95",
       "status": "INELIGIBLE",
-      "vs": "53920833",
-      "donations": "13600",
+      "vs": "33708563",
+      "donations": "19850",
       "reasons": [
         "Below 30,000 weekly Tech Donations"
       ]
     },
     {
-      "name": "Mil14",
+      "name": "McDirick",
       "status": "INELIGIBLE",
-      "vs": "223461187",
-      "donations": "22600",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "Mini Atom",
-      "status": "INELIGIBLE",
-      "vs": "64470852",
-      "donations": "24600",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "Omn Setty",
-      "status": "INELIGIBLE",
-      "vs": "70347436",
-      "donations": "40050",
+      "vs": "129181977",
+      "donations": "47850",
       "reasons": [
         "Conductor/VIP assigned previous week"
       ]
     },
     {
-      "name": "Pøison Ivy",
+      "name": "Mulekezord",
       "status": "INELIGIBLE",
-      "vs": "61366586",
-      "donations": "51100",
+      "vs": "53408057",
+      "donations": "57350",
       "reasons": [
         "Conductor/VIP assigned previous week"
       ]
     },
     {
-      "name": "RockOfTheMarne",
+      "name": "Pourdecisions",
       "status": "INELIGIBLE",
-      "vs": "61436939",
-      "donations": "27950",
+      "vs": "53543781",
+      "donations": "101800",
       "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "Sammy828",
-      "status": "INELIGIBLE",
-      "vs": "58574486",
-      "donations": "28150",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "Sasukitty",
-      "status": "INELIGIBLE",
-      "vs": "111311193",
-      "donations": "27750",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "Serviceguy85",
-      "status": "INELIGIBLE",
-      "vs": "33326677",
-      "donations": "12500",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "Super JuNiOr",
-      "status": "INELIGIBLE",
-      "vs": "90948401",
-      "donations": "28100",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations",
         "Conductor/VIP assigned previous week"
       ]
     },
     {
       "name": "The real DSA",
       "status": "INELIGIBLE",
-      "vs": "133821040",
-      "donations": "22250",
+      "vs": "24771450",
+      "donations": "18550",
       "reasons": [
         "Below 30,000 weekly Tech Donations"
       ]
     },
     {
-      "name": "Topzeira da guerra",
+      "name": "TomRhodes",
       "status": "INELIGIBLE",
-      "vs": "51749948",
-      "donations": "17650",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "Warhound Command",
-      "status": "INELIGIBLE",
-      "vs": "1681460",
-      "donations": "5950",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "db666",
-      "status": "INELIGIBLE",
-      "vs": "70388589",
-      "donations": "23350",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "milllaaaaa",
-      "status": "INELIGIBLE",
-      "vs": "68239217",
-      "donations": "28200",
-      "reasons": [
-        "Below 30,000 weekly Tech Donations"
-      ]
-    },
-    {
-      "name": "ssDewm",
-      "status": "INELIGIBLE",
-      "vs": "96895899",
-      "donations": "59300",
+      "vs": "76027215",
+      "donations": "54250",
       "reasons": [
         "Conductor/VIP assigned previous week"
       ]
     },
     {
-      "name": "xx Major Oliver xx",
+      "name": "VVVVvvvv",
       "status": "INELIGIBLE",
-      "vs": "41411382",
-      "donations": "28850",
+      "vs": "56798384",
+      "donations": "35100",
       "reasons": [
-        "Below 30,000 weekly Tech Donations"
+        "Conductor/VIP assigned previous week"
       ]
+    },
+    {
+      "name": "6 0 2 K",
+      "status": "ELIGIBLE",
+      "vs": "50006103",
+      "donations": "43900",
+      "vs_normalized": 39.82,
+      "donation_normalized": 42.33,
+      "final": 40.57
     },
     {
       "name": "Archimedes X",
       "status": "ELIGIBLE",
-      "vs": "65012506",
-      "donations": "32800",
-      "vs_normalized": 21.93,
-      "donation_normalized": 39.09,
-      "final": 27.08
+      "vs": "52263204",
+      "donations": "45650",
+      "vs_normalized": 41.62,
+      "donation_normalized": 44.02,
+      "final": 42.34
+    },
+    {
+      "name": "ArmyArmy",
+      "status": "ELIGIBLE",
+      "vs": "107354461",
+      "donations": "31400",
+      "vs_normalized": 85.5,
+      "donation_normalized": 30.27,
+      "final": 68.93
+    },
+    {
+      "name": "Aro102",
+      "status": "ELIGIBLE",
+      "vs": "66630547",
+      "donations": "94000",
+      "vs_normalized": 53.06,
+      "donation_normalized": 90.64,
+      "final": 64.33
     },
     {
       "name": "Ashallayn Darkmyr",
       "status": "ELIGIBLE",
-      "vs": "46453379",
-      "donations": "53300",
-      "vs_normalized": 15.67,
-      "donation_normalized": 63.52,
-      "final": 30.02
+      "vs": "47439477",
+      "donations": "61650",
+      "vs_normalized": 37.78,
+      "donation_normalized": 59.45,
+      "final": 44.28
     },
     {
-      "name": "BUCK NEKKID",
+      "name": "AshℲɒllǝn Angel",
       "status": "ELIGIBLE",
-      "vs": "51494484",
-      "donations": "37250",
-      "vs_normalized": 17.37,
-      "donation_normalized": 44.39,
-      "final": 25.48
-    },
-    {
-      "name": "BeFE",
-      "status": "ELIGIBLE",
-      "vs": "108617729",
-      "donations": "54250",
-      "vs_normalized": 36.64,
-      "donation_normalized": 64.66,
-      "final": 45.05
-    },
-    {
-      "name": "Big Bill 2393",
-      "status": "ELIGIBLE",
-      "vs": "57623552",
-      "donations": "36950",
-      "vs_normalized": 19.44,
-      "donation_normalized": 44.04,
-      "final": 26.82
+      "vs": "125552929",
+      "donations": "43700",
+      "vs_normalized": 100,
+      "donation_normalized": 42.14,
+      "final": 82.64
     },
     {
       "name": "Big Horse 96",
       "status": "ELIGIBLE",
-      "vs": "59446080",
-      "donations": "35950",
-      "vs_normalized": 20.05,
-      "donation_normalized": 42.84,
-      "final": 26.89
+      "vs": "51359747",
+      "donations": "35000",
+      "vs_normalized": 40.9,
+      "donation_normalized": 33.75,
+      "final": 38.75
     },
     {
       "name": "Big Meat BBQ",
       "status": "ELIGIBLE",
-      "vs": "81461205",
-      "donations": "36450",
-      "vs_normalized": 27.48,
-      "donation_normalized": 43.44,
-      "final": 32.27
+      "vs": "37824623",
+      "donations": "45600",
+      "vs_normalized": 30.12,
+      "donation_normalized": 43.97,
+      "final": 34.27
+    },
+    {
+      "name": "BioHazQueen",
+      "status": "ELIGIBLE",
+      "vs": "31486202",
+      "donations": "39850",
+      "vs_normalized": 25.07,
+      "donation_normalized": 38.42,
+      "final": 29.07
     },
     {
       "name": "BlackWidows",
       "status": "ELIGIBLE",
-      "vs": "81037397",
-      "donations": "45050",
-      "vs_normalized": 27.34,
-      "donation_normalized": 53.69,
-      "final": 35.24
+      "vs": "27031058",
+      "donations": "47100",
+      "vs_normalized": 21.52,
+      "donation_normalized": 45.41,
+      "final": 28.69
     },
     {
       "name": "BoostedT70",
       "status": "ELIGIBLE",
-      "vs": "57020764",
-      "donations": "43350",
-      "vs_normalized": 19.23,
-      "donation_normalized": 51.66,
-      "final": 28.96
+      "vs": "53621322",
+      "donations": "54400",
+      "vs_normalized": 42.7,
+      "donation_normalized": 52.45,
+      "final": 45.63
     },
     {
       "name": "BriVado",
       "status": "ELIGIBLE",
-      "vs": "66349547",
-      "donations": "64000",
-      "vs_normalized": 22.38,
-      "donation_normalized": 76.28,
-      "final": 38.55
-    },
-    {
-      "name": "Commandant Chewie",
-      "status": "ELIGIBLE",
-      "vs": "110217227",
-      "donations": "54000",
-      "vs_normalized": 37.18,
-      "donation_normalized": 64.36,
-      "final": 45.33
+      "vs": "60711683",
+      "donations": "90600",
+      "vs_normalized": 48.35,
+      "donation_normalized": 87.36,
+      "final": 60.05
     },
     {
       "name": "Commander MDK",
       "status": "ELIGIBLE",
-      "vs": "71219959",
-      "donations": "44150",
-      "vs_normalized": 24.02,
-      "donation_normalized": 52.62,
-      "final": 32.6
+      "vs": "65292373",
+      "donations": "61950",
+      "vs_normalized": 52,
+      "donation_normalized": 59.73,
+      "final": 54.32
     },
     {
       "name": "Crashley86",
       "status": "ELIGIBLE",
-      "vs": "66430260",
-      "donations": "56900",
-      "vs_normalized": 22.41,
-      "donation_normalized": 67.81,
-      "final": 36.03
+      "vs": "89360820",
+      "donations": "64350",
+      "vs_normalized": 71.17,
+      "donation_normalized": 62.05,
+      "final": 68.43
     },
     {
-      "name": "DesertPrincessSnaggy",
+      "name": "Dalai Bagger",
       "status": "ELIGIBLE",
-      "vs": "296383605",
-      "donations": "31450",
-      "vs_normalized": 100,
-      "donation_normalized": 37.48,
-      "final": 81.24
+      "vs": "76142464",
+      "donations": "42450",
+      "vs_normalized": 60.64,
+      "donation_normalized": 40.93,
+      "final": 54.73
     },
     {
       "name": "Dolly Dragonfruit",
       "status": "ELIGIBLE",
-      "vs": "61856288",
-      "donations": "33300",
-      "vs_normalized": 20.87,
-      "donation_normalized": 39.69,
-      "final": 26.52
+      "vs": "64461584",
+      "donations": "32400",
+      "vs_normalized": 51.34,
+      "donation_normalized": 31.24,
+      "final": 45.31
+    },
+    {
+      "name": "DrWho10",
+      "status": "ELIGIBLE",
+      "vs": "52213954",
+      "donations": "37500",
+      "vs_normalized": 41.58,
+      "donation_normalized": 36.16,
+      "final": 39.95
+    },
+    {
+      "name": "Dragonètte",
+      "status": "ELIGIBLE",
+      "vs": "74231489",
+      "donations": "38900",
+      "vs_normalized": 59.12,
+      "donation_normalized": 37.51,
+      "final": 52.64
     },
     {
       "name": "Drakarys726",
       "status": "ELIGIBLE",
-      "vs": "85050198",
-      "donations": "39250",
-      "vs_normalized": 28.69,
-      "donation_normalized": 46.78,
-      "final": 34.12
+      "vs": "62799248",
+      "donations": "44350",
+      "vs_normalized": 50.01,
+      "donation_normalized": 42.76,
+      "final": 47.83
     },
     {
-      "name": "FIREHEART10",
+      "name": "DubleDee",
       "status": "ELIGIBLE",
-      "vs": "113761771",
-      "donations": "57100",
-      "vs_normalized": 38.38,
-      "donation_normalized": 68.05,
-      "final": 47.28
+      "vs": "34914052",
+      "donations": "33550",
+      "vs_normalized": 27.8,
+      "donation_normalized": 32.35,
+      "final": 29.16
+    },
+    {
+      "name": "Ember Dragon",
+      "status": "ELIGIBLE",
+      "vs": "53173550",
+      "donations": "39550",
+      "vs_normalized": 42.35,
+      "donation_normalized": 38.13,
+      "final": 41.08
     },
     {
       "name": "Freddyfrick",
       "status": "ELIGIBLE",
-      "vs": "58411611",
-      "donations": "68500",
-      "vs_normalized": 19.7,
-      "donation_normalized": 81.64,
-      "final": 38.28
+      "vs": "62679516",
+      "donations": "79250",
+      "vs_normalized": 49.92,
+      "donation_normalized": 76.42,
+      "final": 57.87
+    },
+    {
+      "name": "GRNDDGR",
+      "status": "ELIGIBLE",
+      "vs": "46731244",
+      "donations": "51350",
+      "vs_normalized": 37.22,
+      "donation_normalized": 49.51,
+      "final": 40.91
+    },
+    {
+      "name": "General JesterJ",
+      "status": "ELIGIBLE",
+      "vs": "55081134",
+      "donations": "42350",
+      "vs_normalized": 43.87,
+      "donation_normalized": 40.83,
+      "final": 42.96
     },
     {
       "name": "General dynamite",
       "status": "ELIGIBLE",
-      "vs": "55715594",
-      "donations": "37950",
-      "vs_normalized": 18.79,
-      "donation_normalized": 45.23,
-      "final": 26.72
+      "vs": "89850442",
+      "donations": "32350",
+      "vs_normalized": 71.56,
+      "donation_normalized": 31.19,
+      "final": 59.45
     },
     {
       "name": "Go No Go",
       "status": "ELIGIBLE",
-      "vs": "58198172",
-      "donations": "35350",
-      "vs_normalized": 19.63,
-      "donation_normalized": 42.13,
-      "final": 26.38
+      "vs": "57507205",
+      "donations": "49800",
+      "vs_normalized": 45.8,
+      "donation_normalized": 48.02,
+      "final": 46.47
     },
     {
       "name": "GoHuskers",
       "status": "ELIGIBLE",
-      "vs": "65145966",
-      "donations": "31250",
-      "vs_normalized": 21.98,
-      "donation_normalized": 37.24,
-      "final": 26.56
-    },
-    {
-      "name": "H20MAN",
-      "status": "ELIGIBLE",
-      "vs": "120627674",
-      "donations": "34350",
-      "vs_normalized": 40.69,
-      "donation_normalized": 40.94,
-      "final": 40.76
+      "vs": "65837260",
+      "donations": "37950",
+      "vs_normalized": 52.43,
+      "donation_normalized": 36.59,
+      "final": 47.68
     },
     {
       "name": "HoneyCakes",
       "status": "ELIGIBLE",
-      "vs": "45891420",
-      "donations": "34300",
-      "vs_normalized": 15.48,
-      "donation_normalized": 40.88,
-      "final": 23.1
+      "vs": "41796230",
+      "donations": "41400",
+      "vs_normalized": 33.28,
+      "donation_normalized": 39.92,
+      "final": 35.27
     },
     {
-      "name": "IzyB3",
+      "name": "Hybriddom1",
       "status": "ELIGIBLE",
-      "vs": "91152577",
-      "donations": "50050",
-      "vs_normalized": 30.75,
-      "donation_normalized": 59.65,
-      "final": 39.42
+      "vs": "43312891",
+      "donations": "34900",
+      "vs_normalized": 34.49,
+      "donation_normalized": 33.65,
+      "final": 34.24
     },
     {
-      "name": "JohnnyW1ld",
+      "name": "JABALLS",
       "status": "ELIGIBLE",
-      "vs": "196673067",
-      "donations": "45600",
-      "vs_normalized": 66.35,
-      "donation_normalized": 54.35,
-      "final": 62.75
+      "vs": "49669728",
+      "donations": "85100",
+      "vs_normalized": 39.56,
+      "donation_normalized": 82.06,
+      "final": 52.31
+    },
+    {
+      "name": "JacksD7",
+      "status": "ELIGIBLE",
+      "vs": "48415470",
+      "donations": "35250",
+      "vs_normalized": 38.56,
+      "donation_normalized": 33.99,
+      "final": 37.19
+    },
+    {
+      "name": "Jancar777",
+      "status": "ELIGIBLE",
+      "vs": "65511369",
+      "donations": "50450",
+      "vs_normalized": 52.17,
+      "donation_normalized": 48.64,
+      "final": 51.11
+    },
+    {
+      "name": "JonWucky",
+      "status": "ELIGIBLE",
+      "vs": "63869864",
+      "donations": "41050",
+      "vs_normalized": 50.87,
+      "donation_normalized": 39.58,
+      "final": 47.48
     },
     {
       "name": "JudgyJudy",
       "status": "ELIGIBLE",
-      "vs": "63048092",
-      "donations": "35400",
-      "vs_normalized": 21.27,
-      "donation_normalized": 42.19,
-      "final": 27.55
+      "vs": "113836572",
+      "donations": "42450",
+      "vs_normalized": 90.66,
+      "donation_normalized": 40.93,
+      "final": 75.74
     },
     {
       "name": "Katie1776",
       "status": "ELIGIBLE",
-      "vs": "65009495",
-      "donations": "47800",
-      "vs_normalized": 21.93,
-      "donation_normalized": 56.97,
-      "final": 32.44
+      "vs": "41883947",
+      "donations": "47400",
+      "vs_normalized": 33.35,
+      "donation_normalized": 45.7,
+      "final": 37.05
     },
     {
-      "name": "Kcon1225",
+      "name": "Keetja",
       "status": "ELIGIBLE",
-      "vs": "101752022",
-      "donations": "55050",
-      "vs_normalized": 34.33,
-      "donation_normalized": 65.61,
-      "final": 43.71
+      "vs": "82966833",
+      "donations": "50350",
+      "vs_normalized": 66.08,
+      "donation_normalized": 48.55,
+      "final": 60.82
+    },
+    {
+      "name": "KencityXX",
+      "status": "ELIGIBLE",
+      "vs": "54406730",
+      "donations": "103700",
+      "vs_normalized": 43.33,
+      "donation_normalized": 100,
+      "final": 60.33
     },
     {
       "name": "King Bubbah Jay",
       "status": "ELIGIBLE",
-      "vs": "48523893",
-      "donations": "38650",
-      "vs_normalized": 16.37,
-      "donation_normalized": 46.06,
-      "final": 25.28
+      "vs": "59310449",
+      "donations": "48800",
+      "vs_normalized": 47.23,
+      "donation_normalized": 47.05,
+      "final": 47.18
+    },
+    {
+      "name": "LeadedMistress",
+      "status": "ELIGIBLE",
+      "vs": "52392608",
+      "donations": "52950",
+      "vs_normalized": 41.72,
+      "donation_normalized": 51.06,
+      "final": 44.52
+    },
+    {
+      "name": "LetBim",
+      "status": "ELIGIBLE",
+      "vs": "64123551",
+      "donations": "30850",
+      "vs_normalized": 51.07,
+      "donation_normalized": 29.74,
+      "final": 44.67
     },
     {
       "name": "Loudog90",
       "status": "ELIGIBLE",
-      "vs": "88787885",
-      "donations": "49650",
-      "vs_normalized": 29.95,
-      "donation_normalized": 59.17,
-      "final": 38.72
-    },
-    {
-      "name": "LuckyCharms23",
-      "status": "ELIGIBLE",
-      "vs": "111048613",
-      "donations": "46350",
-      "vs_normalized": 37.46,
-      "donation_normalized": 55.24,
-      "final": 42.79
+      "vs": "52007630",
+      "donations": "48600",
+      "vs_normalized": 41.42,
+      "donation_normalized": 46.86,
+      "final": 43.05
     },
     {
       "name": "MJArmy",
       "status": "ELIGIBLE",
-      "vs": "55536271",
-      "donations": "47900",
-      "vs_normalized": 18.73,
-      "donation_normalized": 57.09,
-      "final": 30.24
+      "vs": "51115277",
+      "donations": "61750",
+      "vs_normalized": 40.71,
+      "donation_normalized": 59.54,
+      "final": 46.36
     },
     {
       "name": "Ma7eruix",
       "status": "ELIGIBLE",
-      "vs": "36126836",
-      "donations": "36450",
-      "vs_normalized": 12.18,
-      "donation_normalized": 43.44,
-      "final": 21.56
+      "vs": "35183480",
+      "donations": "40850",
+      "vs_normalized": 28.02,
+      "donation_normalized": 39.39,
+      "final": 31.43
     },
     {
-      "name": "McDirick",
+      "name": "Mil14",
       "status": "ELIGIBLE",
-      "vs": "218117308",
-      "donations": "35350",
-      "vs_normalized": 73.59,
-      "donation_normalized": 42.13,
-      "final": 64.15
+      "vs": "49354420",
+      "donations": "36900",
+      "vs_normalized": 39.3,
+      "donation_normalized": 35.58,
+      "final": 38.18
+    },
+    {
+      "name": "Mini Atom",
+      "status": "ELIGIBLE",
+      "vs": "54050063",
+      "donations": "33300",
+      "vs_normalized": 43.04,
+      "donation_normalized": 32.11,
+      "final": 39.76
     },
     {
       "name": "Mmarronn",
       "status": "ELIGIBLE",
-      "vs": "32800706",
-      "donations": "33750",
-      "vs_normalized": 11.06,
-      "donation_normalized": 40.22,
-      "final": 19.81
+      "vs": "44409518",
+      "donations": "37150",
+      "vs_normalized": 35.37,
+      "donation_normalized": 35.82,
+      "final": 35.5
     },
     {
-      "name": "Mulekezord",
+      "name": "MrAdrien",
       "status": "ELIGIBLE",
-      "vs": "107841680",
-      "donations": "82400",
-      "vs_normalized": 36.38,
-      "donation_normalized": 98.21,
-      "final": 54.93
+      "vs": "68869684",
+      "donations": "59250",
+      "vs_normalized": 54.85,
+      "donation_normalized": 57.13,
+      "final": 55.53
     },
     {
       "name": "Myosin",
       "status": "ELIGIBLE",
-      "vs": "94234739",
-      "donations": "39350",
-      "vs_normalized": 31.79,
-      "donation_normalized": 46.9,
-      "final": 36.32
+      "vs": "53464674",
+      "donations": "51350",
+      "vs_normalized": 42.58,
+      "donation_normalized": 49.51,
+      "final": 44.66
+    },
+    {
+      "name": "Omn Setty",
+      "status": "ELIGIBLE",
+      "vs": "67333769",
+      "donations": "49900",
+      "vs_normalized": 53.62,
+      "donation_normalized": 48.11,
+      "final": 51.97
     },
     {
       "name": "PlotTwisT",
       "status": "ELIGIBLE",
-      "vs": "60994188",
-      "donations": "41550",
-      "vs_normalized": 20.57,
-      "donation_normalized": 49.52,
-      "final": 29.25
+      "vs": "47936188",
+      "donations": "52600",
+      "vs_normalized": 38.18,
+      "donation_normalized": 50.72,
+      "final": 41.94
     },
     {
-      "name": "Pourdecisions",
+      "name": "Pøison Ivy",
       "status": "ELIGIBLE",
-      "vs": "60658528",
-      "donations": "83900",
-      "vs_normalized": 20.46,
-      "donation_normalized": 100,
-      "final": 44.32
+      "vs": "28361803",
+      "donations": "50900",
+      "vs_normalized": 22.58,
+      "donation_normalized": 49.08,
+      "final": 30.53
+    },
+    {
+      "name": "Rex LS7",
+      "status": "ELIGIBLE",
+      "vs": "37169031",
+      "donations": "48200",
+      "vs_normalized": 29.6,
+      "donation_normalized": 46.48,
+      "final": 34.66
+    },
+    {
+      "name": "RockOfTheMarne",
+      "status": "ELIGIBLE",
+      "vs": "53613225",
+      "donations": "35200",
+      "vs_normalized": 42.7,
+      "donation_normalized": 33.94,
+      "final": 40.07
     },
     {
       "name": "SSStealth",
       "status": "ELIGIBLE",
-      "vs": "52792801",
-      "donations": "34950",
-      "vs_normalized": 17.81,
-      "donation_normalized": 41.65,
-      "final": 24.96
+      "vs": "57523410",
+      "donations": "37500",
+      "vs_normalized": 45.81,
+      "donation_normalized": 36.16,
+      "final": 42.91
+    },
+    {
+      "name": "Sammy828",
+      "status": "ELIGIBLE",
+      "vs": "47004481",
+      "donations": "42150",
+      "vs_normalized": 37.43,
+      "donation_normalized": 40.64,
+      "final": 38.39
+    },
+    {
+      "name": "SandFOX",
+      "status": "ELIGIBLE",
+      "vs": "94710132",
+      "donations": "43050",
+      "vs_normalized": 75.43,
+      "donation_normalized": 41.51,
+      "final": 65.25
+    },
+    {
+      "name": "Sasukitty",
+      "status": "ELIGIBLE",
+      "vs": "42484146",
+      "donations": "31550",
+      "vs_normalized": 33.83,
+      "donation_normalized": 30.42,
+      "final": 32.81
     },
     {
       "name": "Skiff1980",
       "status": "ELIGIBLE",
-      "vs": "77594741",
-      "donations": "50450",
-      "vs_normalized": 26.18,
-      "donation_normalized": 60.13,
-      "final": 36.36
+      "vs": "59854085",
+      "donations": "59900",
+      "vs_normalized": 47.67,
+      "donation_normalized": 57.76,
+      "final": 50.7
     },
     {
       "name": "Sniperbird",
       "status": "ELIGIBLE",
-      "vs": "46898728",
-      "donations": "56050",
-      "vs_normalized": 15.82,
-      "donation_normalized": 66.8,
-      "final": 31.11
-    },
-    {
-      "name": "SnowFOX",
-      "status": "ELIGIBLE",
-      "vs": "87501709",
-      "donations": "35000",
-      "vs_normalized": 29.52,
-      "donation_normalized": 41.71,
-      "final": 33.18
-    },
-    {
-      "name": "Soul Tiller",
-      "status": "ELIGIBLE",
-      "vs": "92997358",
-      "donations": "32850",
-      "vs_normalized": 31.37,
-      "donation_normalized": 39.15,
-      "final": 33.7
+      "vs": "39345660",
+      "donations": "62000",
+      "vs_normalized": 31.33,
+      "donation_normalized": 59.78,
+      "final": 39.86
     },
     {
       "name": "SpareParts709",
       "status": "ELIGIBLE",
-      "vs": "59882181",
-      "donations": "43400",
-      "vs_normalized": 20.2,
-      "donation_normalized": 51.72,
-      "final": 29.66
+      "vs": "56492734",
+      "donations": "49700",
+      "vs_normalized": 44.99,
+      "donation_normalized": 47.92,
+      "final": 45.87
     },
     {
       "name": "SpyderBite",
       "status": "ELIGIBLE",
-      "vs": "57880589",
-      "donations": "51100",
-      "vs_normalized": 19.52,
-      "donation_normalized": 60.9,
-      "final": 31.93
+      "vs": "94144006",
+      "donations": "68700",
+      "vs_normalized": 74.98,
+      "donation_normalized": 66.24,
+      "final": 72.36
     },
     {
       "name": "Stinkyfield",
       "status": "ELIGIBLE",
-      "vs": "73204074",
-      "donations": "44050",
-      "vs_normalized": 24.69,
-      "donation_normalized": 52.5,
-      "final": 33.03
+      "vs": "52759482",
+      "donations": "56950",
+      "vs_normalized": 42.02,
+      "donation_normalized": 54.91,
+      "final": 45.89
+    },
+    {
+      "name": "Stoked3",
+      "status": "ELIGIBLE",
+      "vs": "23734082",
+      "donations": "30050",
+      "vs_normalized": 18.9,
+      "donation_normalized": 28.97,
+      "final": 21.92
+    },
+    {
+      "name": "Super JuNiOr",
+      "status": "ELIGIBLE",
+      "vs": "75002107",
+      "donations": "46100",
+      "vs_normalized": 59.73,
+      "donation_normalized": 44.45,
+      "final": 55.15
     },
     {
       "name": "The GraveDigger",
       "status": "ELIGIBLE",
-      "vs": "68636376",
-      "donations": "39900",
-      "vs_normalized": 23.15,
-      "donation_normalized": 47.55,
-      "final": 30.47
+      "vs": "51243722",
+      "donations": "54600",
+      "vs_normalized": 40.81,
+      "donation_normalized": 52.65,
+      "final": 44.36
     },
     {
-      "name": "The OWl",
+      "name": "Topzeira da guerra",
       "status": "ELIGIBLE",
-      "vs": "50801790",
-      "donations": "51500",
-      "vs_normalized": 17.14,
-      "donation_normalized": 61.38,
-      "final": 30.41
-    },
-    {
-      "name": "TomRhodes",
-      "status": "ELIGIBLE",
-      "vs": "100280065",
-      "donations": "44000",
-      "vs_normalized": 33.83,
-      "donation_normalized": 52.44,
-      "final": 39.41
+      "vs": "30876141",
+      "donations": "32100",
+      "vs_normalized": 24.59,
+      "donation_normalized": 30.95,
+      "final": 26.5
     },
     {
       "name": "TruPtGard",
       "status": "ELIGIBLE",
-      "vs": "50602859",
-      "donations": "40050",
-      "vs_normalized": 17.07,
-      "donation_normalized": 47.73,
-      "final": 26.27
-    },
-    {
-      "name": "VVVVvvvv",
-      "status": "ELIGIBLE",
-      "vs": "127315961",
-      "donations": "31750",
-      "vs_normalized": 42.95,
-      "donation_normalized": 37.84,
-      "final": 41.42
+      "vs": "114476539",
+      "donations": "51050",
+      "vs_normalized": 91.17,
+      "donation_normalized": 49.22,
+      "final": 78.58
     },
     {
       "name": "Vordon888",
       "status": "ELIGIBLE",
-      "vs": "102971175",
-      "donations": "31550",
-      "vs_normalized": 34.74,
-      "donation_normalized": 37.6,
-      "final": 35.6
+      "vs": "46394562",
+      "donations": "32700",
+      "vs_normalized": 36.95,
+      "donation_normalized": 31.53,
+      "final": 35.32
     },
     {
       "name": "Weeks304",
       "status": "ELIGIBLE",
-      "vs": "71301483",
-      "donations": "47800",
-      "vs_normalized": 24.05,
-      "donation_normalized": 56.97,
-      "final": 33.93
+      "vs": "43570773",
+      "donations": "55050",
+      "vs_normalized": 34.7,
+      "donation_normalized": 53.08,
+      "final": 40.21
     },
     {
       "name": "WpgLos",
       "status": "ELIGIBLE",
-      "vs": "62789943",
-      "donations": "64400",
-      "vs_normalized": 21.18,
-      "donation_normalized": 76.75,
-      "final": 37.85
+      "vs": "57451796",
+      "donations": "78200",
+      "vs_normalized": 45.75,
+      "donation_normalized": 75.4,
+      "final": 54.64
     },
     {
       "name": "Wrecktangle27",
       "status": "ELIGIBLE",
-      "vs": "64403262",
-      "donations": "33800",
-      "vs_normalized": 21.72,
-      "donation_normalized": 40.28,
-      "final": 27.29
-    },
-    {
-      "name": "combat sniper",
-      "status": "ELIGIBLE",
-      "vs": "60625725",
-      "donations": "35800",
-      "vs_normalized": 20.45,
-      "donation_normalized": 42.66,
-      "final": 27.11
+      "vs": "70861463",
+      "donations": "39850",
+      "vs_normalized": 56.43,
+      "donation_normalized": 38.42,
+      "final": 51.03
     },
     {
       "name": "commanderbigdawg",
       "status": "ELIGIBLE",
-      "vs": "66007908",
-      "donations": "34200",
-      "vs_normalized": 22.27,
-      "donation_normalized": 40.76,
-      "final": 27.82
+      "vs": "74206069",
+      "donations": "42000",
+      "vs_normalized": 59.1,
+      "donation_normalized": 40.5,
+      "final": 53.52
+    },
+    {
+      "name": "db666",
+      "status": "ELIGIBLE",
+      "vs": "96482060",
+      "donations": "55000",
+      "vs_normalized": 76.84,
+      "donation_normalized": 53.03,
+      "final": 69.7
+    },
+    {
+      "name": "from the OWL",
+      "status": "ELIGIBLE",
+      "vs": "46466960",
+      "donations": "61750",
+      "vs_normalized": 37,
+      "donation_normalized": 59.54,
+      "final": 43.76
     },
     {
       "name": "ghostdog203",
       "status": "ELIGIBLE",
-      "vs": "57435503",
-      "donations": "40250",
-      "vs_normalized": 19.37,
-      "donation_normalized": 47.97,
-      "final": 27.95
+      "vs": "57782182",
+      "donations": "48650",
+      "vs_normalized": 46.02,
+      "donation_normalized": 46.91,
+      "final": 46.29
     },
     {
-      "name": "gyu 규규0",
+      "name": "milllaaaaa",
       "status": "ELIGIBLE",
-      "vs": "97664480",
-      "donations": "39350",
-      "vs_normalized": 32.95,
-      "donation_normalized": 46.9,
-      "final": 37.13
+      "vs": "67450796",
+      "donations": "37600",
+      "vs_normalized": 53.72,
+      "donation_normalized": 36.25,
+      "final": 48.48
+    },
+    {
+      "name": "ssDewm",
+      "status": "ELIGIBLE",
+      "vs": "71888267",
+      "donations": "83000",
+      "vs_normalized": 57.25,
+      "donation_normalized": 80.03,
+      "final": 64.08
+    },
+    {
+      "name": "xx Major Oliver xx",
+      "status": "ELIGIBLE",
+      "vs": "46899817",
+      "donations": "40300",
+      "vs_normalized": 37.35,
+      "donation_normalized": 38.86,
+      "final": 37.8
     },
     {
       "name": "여름이 최고야",
       "status": "ELIGIBLE",
-      "vs": "74885948",
-      "donations": "46850",
-      "vs_normalized": 25.26,
-      "donation_normalized": 55.84,
-      "final": 34.43
+      "vs": "53566348",
+      "donations": "56800",
+      "vs_normalized": 42.66,
+      "donation_normalized": 54.77,
+      "final": 46.29
     }
   ]
 }
