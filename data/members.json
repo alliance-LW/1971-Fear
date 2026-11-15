@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-14T05:38:26.780Z",
+  "generated_at": "2026-11-15T05:36:44.685Z",
   "alliance": "Havoc",
   "members": [
     {
@@ -41,6 +41,9 @@
     },
     {
       "name": "BriVado"
+    },
+    {
+      "name": "CerealKillerrr"
     },
     {
       "name": "Commandant Chewie"
@@ -242,9 +245,6 @@
     },
     {
       "name": "Super JuNiOr"
-    },
-    {
-      "name": "Sweet William Now"
     },
     {
       "name": "The GraveDigger"
