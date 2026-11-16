@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-15T09:13:39.863Z",
+  "generated_at": "2026-11-16T05:36:20.300Z",
   "alliance": "Havoc",
   "members": [
     {
@@ -35,6 +35,9 @@
     },
     {
       "name": "BlackWidows"
+    },
+    {
+      "name": "BlindbEar"
     },
     {
       "name": "BoostedT70"
