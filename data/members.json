@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-18T06:37:23.150Z",
+  "generated_at": "2026-11-19T06:39:19.171Z",
   "alliance": "Havoc",
   "members": [
     {
@@ -250,6 +250,9 @@
       "name": "The GraveDigger"
     },
     {
+      "name": "The War OWL"
+    },
+    {
       "name": "The real DSA"
     },
     {
@@ -281,9 +284,6 @@
     },
     {
       "name": "db666"
-    },
-    {
-      "name": "from the OWL"
     },
     {
       "name": "ghostdog203"
