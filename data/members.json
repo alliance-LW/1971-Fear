@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-20T06:26:34.717Z",
+  "generated_at": "2026-11-21T06:17:47.294Z",
   "alliance": "Havoc",
   "members": [
     {
@@ -41,6 +41,9 @@
     },
     {
       "name": "BoostedT70"
+    },
+    {
+      "name": "BoxofSand"
     },
     {
       "name": "BriVado"
@@ -218,9 +221,6 @@
     },
     {
       "name": "Sammy828"
-    },
-    {
-      "name": "SandFOX"
     },
     {
       "name": "Sasukitty"
