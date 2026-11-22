@@ -166,6 +166,29 @@
           "General dynamite"
         ]
       }
+    },
+    {
+      "schedule_week": "2026-11-22 to 2026-11-28",
+      "assigned": {
+        "conductor": [
+          "JohnnyW1ld",
+          "Drakarys726",
+          "LetBim",
+          "Rex LS7",
+          "Mil14",
+          "Skiff1980",
+          "Super JuNiOr"
+        ],
+        "vip": [
+          "Myosin",
+          "PlotTwisT",
+          "Omn Setty",
+          "Pourdecisions",
+          "H20MAN",
+          "DesertPrincessSnaggy",
+          "Ember Dragon"
+        ]
+      }
     }
   ]
 }

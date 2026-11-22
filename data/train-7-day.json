@@ -3,154 +3,154 @@
   "status": "LOCKED",
   "source": "FarmOps API via GitHub Actions",
   "selection_method": "Eligibility rules first, then deterministic 70% VS / 30% Tech Donations ranking; no random component.",
-  "source_week": "2026-11-09 to 2026-11-15",
-  "schedule_week": "2026-11-15 to 2026-11-21",
-  "generated_at": "2026-11-15T09:13:39.882Z",
+  "source_week": "2026-11-16 to 2026-11-22",
+  "schedule_week": "2026-11-22 to 2026-11-28",
+  "generated_at": "2026-11-22T09:40:35.838Z",
   "days": [
     {
-      "date": "2026-11-15",
+      "date": "2026-11-22",
       "conductor": {
-        "primary": "AshℲɒllǝn Angel",
-        "score": 82.64,
+        "primary": "JohnnyW1ld",
+        "score": 85.74,
         "alternates": [
-          "JudgyJudy",
-          "SpyderBite",
-          "db666"
+          "Drakarys726",
+          "PlotTwisT",
+          "LetBim"
         ]
       },
       "vip": {
-        "primary": "TruPtGard",
-        "score": 78.58,
+        "primary": "Myosin",
+        "score": 82.36,
         "alternates": [
-          "ArmyArmy",
-          "Crashley86",
-          "SandFOX"
+          "Omn Setty",
+          "Rex LS7",
+          "Pourdecisions"
         ]
       }
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-23",
       "conductor": {
-        "primary": "JudgyJudy",
-        "score": 75.74,
+        "primary": "Drakarys726",
+        "score": 80.73,
         "alternates": [
-          "db666",
-          "ArmyArmy",
-          "Crashley86"
+          "LetBim",
+          "Omn Setty",
+          "Rex LS7"
         ]
       },
       "vip": {
-        "primary": "SpyderBite",
-        "score": 72.36,
+        "primary": "PlotTwisT",
+        "score": 80.3,
         "alternates": [
-          "SandFOX",
-          "Aro102",
-          "ssDewm"
+          "Pourdecisions",
+          "Mil14",
+          "H20MAN"
         ]
       }
     },
     {
-      "date": "2026-11-17",
+      "date": "2026-11-24",
       "conductor": {
-        "primary": "db666",
-        "score": 69.7,
+        "primary": "LetBim",
+        "score": 79.16,
         "alternates": [
-          "Crashley86",
-          "SandFOX",
-          "Aro102"
+          "Rex LS7",
+          "Pourdecisions",
+          "Mil14"
         ]
       },
       "vip": {
-        "primary": "ArmyArmy",
-        "score": 68.93,
+        "primary": "Omn Setty",
+        "score": 73.32,
         "alternates": [
-          "ssDewm",
-          "Keetja",
-          "KencityXX"
+          "H20MAN",
+          "Skiff1980",
+          "DesertPrincessSnaggy"
         ]
       }
     },
     {
-      "date": "2026-11-18",
+      "date": "2026-11-25",
       "conductor": {
-        "primary": "Crashley86",
-        "score": 68.43,
+        "primary": "Rex LS7",
+        "score": 73.16,
         "alternates": [
-          "Aro102",
-          "ssDewm",
-          "Keetja"
+          "Mil14",
+          "H20MAN",
+          "Skiff1980"
         ]
       },
       "vip": {
-        "primary": "SandFOX",
-        "score": 65.25,
+        "primary": "Pourdecisions",
+        "score": 70.22,
         "alternates": [
-          "KencityXX",
-          "BriVado",
-          "General dynamite"
-        ]
-      }
-    },
-    {
-      "date": "2026-11-19",
-      "conductor": {
-        "primary": "Aro102",
-        "score": 64.33,
-        "alternates": [
-          "Keetja",
-          "KencityXX",
-          "BriVado"
-        ]
-      },
-      "vip": {
-        "primary": "ssDewm",
-        "score": 64.08,
-        "alternates": [
-          "General dynamite",
-          "Freddyfrick",
-          "MrAdrien"
-        ]
-      }
-    },
-    {
-      "date": "2026-11-20",
-      "conductor": {
-        "primary": "Keetja",
-        "score": 60.82,
-        "alternates": [
-          "BriVado",
-          "General dynamite",
-          "Freddyfrick"
-        ]
-      },
-      "vip": {
-        "primary": "KencityXX",
-        "score": 60.33,
-        "alternates": [
-          "MrAdrien",
+          "DesertPrincessSnaggy",
           "Super JuNiOr",
-          "Dalai Bagger"
+          "Ember Dragon"
         ]
       }
     },
     {
-      "date": "2026-11-21",
+      "date": "2026-11-26",
       "conductor": {
-        "primary": "BriVado",
-        "score": 60.05,
+        "primary": "Mil14",
+        "score": 69.79,
         "alternates": [
-          "Freddyfrick",
-          "MrAdrien",
+          "Skiff1980",
+          "DesertPrincessSnaggy",
           "Super JuNiOr"
         ]
       },
       "vip": {
-        "primary": "General dynamite",
-        "score": 59.45,
+        "primary": "H20MAN",
+        "score": 69.49,
         "alternates": [
-          "Dalai Bagger",
-          "WpgLos",
-          "Commander MDK"
+          "Ember Dragon",
+          "Dragonètte",
+          "SpareParts709"
+        ]
+      }
+    },
+    {
+      "date": "2026-11-27",
+      "conductor": {
+        "primary": "Skiff1980",
+        "score": 68.81,
+        "alternates": [
+          "Super JuNiOr",
+          "Ember Dragon",
+          "Dragonètte"
+        ]
+      },
+      "vip": {
+        "primary": "DesertPrincessSnaggy",
+        "score": 68.22,
+        "alternates": [
+          "SpareParts709",
+          "McDirick",
+          "KConDuneReaper"
+        ]
+      }
+    },
+    {
+      "date": "2026-11-28",
+      "conductor": {
+        "primary": "Super JuNiOr",
+        "score": 67.99,
+        "alternates": [
+          "Dragonètte",
+          "SpareParts709",
+          "McDirick"
+        ]
+      },
+      "vip": {
+        "primary": "Ember Dragon",
+        "score": 65.82,
+        "alternates": [
+          "KConDuneReaper",
+          "ghostdog203",
+          "JABALLS"
         ]
       }
     }
