@@ -1,110 +1,110 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-22T09:40:35.835Z",
+  "generated_at": "2026-11-23T06:37:21.813Z",
   "source": "FarmOps API",
   "alliance": "Havoc",
-  "yesterday_date": "2026-11-21",
-  "vs_week_start": "2026-11-16",
-  "vs_week_end": "2026-11-22",
+  "yesterday_date": "2026-11-22",
+  "vs_week_start": "2026-11-23",
+  "vs_week_end": "2026-11-29",
   "members": [
     {
       "name": "6 0 2 K",
-      "power": "143504858",
+      "power": "144857386",
       "thp": null,
       "kills": "728717",
       "hq": null,
-      "yesterdayVs": "6650400",
-      "weeklyVs": "57748318"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Archimedes X",
-      "power": "132233191",
+      "power": "134954988",
       "thp": null,
       "kills": "312360",
       "hq": null,
-      "yesterdayVs": "6294093",
-      "weeklyVs": "45560991"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "ArmyArmy",
-      "power": "149299295",
+      "power": "145874934",
       "thp": "78700000",
       "kills": "539402",
       "hq": null,
       "yesterdayVs": "0",
-      "weeklyVs": "48811287"
+      "weeklyVs": "0"
     },
     {
       "name": "Aro102",
-      "power": "162888505",
+      "power": "162009414",
       "thp": null,
       "kills": "222964",
       "hq": null,
-      "yesterdayVs": "4384133",
-      "weeklyVs": "57606785"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Ashallayn Darkmyr",
-      "power": "137053095",
+      "power": "136931442",
       "thp": null,
       "kills": "596140",
       "hq": null,
-      "yesterdayVs": "355719",
-      "weeklyVs": "29836709"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "AshℲɒllǝn Angel",
-      "power": "188786385",
-      "thp": "95026235",
+      "power": "188805032",
+      "thp": "94766757",
       "kills": "2061956",
       "hq": null,
-      "yesterdayVs": "7669601",
-      "weeklyVs": "59478336"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "BeFE",
-      "power": "165818085",
+      "power": "167212363",
       "thp": null,
-      "kills": "8117154",
+      "kills": "8119128",
       "hq": null,
-      "yesterdayVs": "3789600",
-      "weeklyVs": "65539853"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Big Horse 96",
-      "power": "133543637",
+      "power": "133925651",
       "thp": null,
       "kills": "896223",
       "hq": null,
-      "yesterdayVs": "2431250",
-      "weeklyVs": "68876214"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Big Meat BBQ",
-      "power": "142573495",
+      "power": "142830178",
       "thp": null,
       "kills": "463807",
       "hq": null,
-      "yesterdayVs": "7751839",
-      "weeklyVs": "47024978"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "BioHazQueen",
-      "power": "164591114",
+      "power": "165548543",
       "thp": null,
       "kills": "583217",
       "hq": null,
-      "yesterdayVs": "9062191",
-      "weeklyVs": "54505163"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "BlackWidows",
-      "power": "115396413",
+      "power": "115725207",
       "thp": "40800000",
       "kills": "1286932",
       "hq": null,
-      "yesterdayVs": "3489130",
-      "weeklyVs": "39563865"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "BlindbEar",
@@ -112,35 +112,26 @@
       "thp": null,
       "kills": "765196",
       "hq": null,
-      "yesterdayVs": "5181973",
-      "weeklyVs": "44745221"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "BoostedT70",
-      "power": "145481584",
+      "power": "120438700",
       "thp": null,
       "kills": "63796",
       "hq": null,
-      "yesterdayVs": "3497633",
-      "weeklyVs": "63905152"
-    },
-    {
-      "name": "BoxofSand",
-      "power": "162780260",
-      "thp": null,
-      "kills": "707277",
-      "hq": null,
-      "yesterdayVs": "9310231",
-      "weeklyVs": "61604916"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "BriVado",
-      "power": "202269948",
-      "thp": "102958215",
+      "power": "201563547",
+      "thp": "102973079",
       "kills": "4777070",
       "hq": null,
-      "yesterdayVs": "4564880",
-      "weeklyVs": "48832936"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "CerealKillerrr",
@@ -148,215 +139,215 @@
       "thp": "90989792",
       "kills": "4766106",
       "hq": null,
-      "yesterdayVs": "1205954",
-      "weeklyVs": "9887708"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Commandant Chewie",
-      "power": "144186730",
+      "power": "141667221",
       "thp": null,
       "kills": "89157",
       "hq": null,
-      "yesterdayVs": "2586600",
-      "weeklyVs": "49133074"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Commander MDK",
-      "power": "122878303",
+      "power": "126163361",
       "thp": null,
       "kills": "89232",
       "hq": null,
-      "yesterdayVs": "3593488",
-      "weeklyVs": "42022089"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Crashley86",
-      "power": "188087115",
+      "power": "188964652",
       "thp": null,
       "kills": "875931",
       "hq": null,
-      "yesterdayVs": "4285350",
-      "weeklyVs": "60187537"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Dalai Bagger",
-      "power": "151401759",
+      "power": "158672365",
       "thp": null,
       "kills": "2019969",
       "hq": null,
-      "yesterdayVs": "11252388",
-      "weeklyVs": "81039081"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "DesertPrincessSnaggy",
-      "power": "162869797",
-      "thp": "110059744",
+      "power": "164602502",
+      "thp": "110100420",
       "kills": "8543732",
       "hq": null,
-      "yesterdayVs": "7711726",
-      "weeklyVs": "129324393"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Dolly Dragonfruit",
-      "power": "166849119",
+      "power": "168017641",
       "thp": "61800000",
       "kills": "808311",
       "hq": null,
-      "yesterdayVs": "4450650",
-      "weeklyVs": "58038291"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "DrWho10",
-      "power": "226882431",
-      "thp": "119390345",
-      "kills": "1689518",
+      "power": "225236519",
+      "thp": "119371526",
+      "kills": "1703134",
       "hq": null,
-      "yesterdayVs": "12469348",
-      "weeklyVs": "81724511"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Dragonètte",
       "power": "218697573",
-      "thp": "119731035",
+      "thp": "119888959",
       "kills": "3706784",
       "hq": null,
-      "yesterdayVs": "11030400",
-      "weeklyVs": "118226909"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Drakarys726",
-      "power": "116976349",
+      "power": "118081475",
       "thp": null,
       "kills": "1099561",
       "hq": null,
-      "yesterdayVs": "27100590",
-      "weeklyVs": "151507001"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "DubleDee",
-      "power": "145635861",
+      "power": "146895787",
       "thp": null,
       "kills": "684574",
       "hq": null,
-      "yesterdayVs": "3554550",
-      "weeklyVs": "39558725"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "El3vEnBaNg",
-      "power": "185672635",
+      "power": "184096668",
       "thp": "103127239",
       "kills": "6407566",
       "hq": null,
       "yesterdayVs": "0",
-      "weeklyVs": "25716939"
+      "weeklyVs": "0"
     },
     {
       "name": "Ember Dragon",
-      "power": "216610335",
+      "power": "216511515",
       "thp": "109855128",
       "kills": "6560586",
       "hq": null,
-      "yesterdayVs": "11985000",
-      "weeklyVs": "122734375"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "FIREHEART10",
-      "power": "158407347",
+      "power": "157752056",
       "thp": null,
       "kills": "1471025",
       "hq": null,
-      "yesterdayVs": "3525000",
-      "weeklyVs": "61129172"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Freddyfrick",
-      "power": "152537840",
+      "power": "153641583",
       "thp": null,
       "kills": "1783530",
       "hq": null,
-      "yesterdayVs": "3766671",
-      "weeklyVs": "58589978"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "GRNDDGR",
-      "power": "160432383",
+      "power": "159391378",
       "thp": "58600000",
       "kills": "394549",
       "hq": null,
-      "yesterdayVs": "3300000",
-      "weeklyVs": "48009620"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "General JesterJ",
-      "power": "149327001",
+      "power": "154641377",
       "thp": null,
       "kills": "138066",
       "hq": null,
-      "yesterdayVs": "3383604",
-      "weeklyVs": "47973953"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "General dynamite",
-      "power": "99897788",
+      "power": "100088626",
       "thp": null,
       "kills": "363447",
       "hq": null,
-      "yesterdayVs": "4096880",
-      "weeklyVs": "60002381"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Go No Go",
-      "power": "181847026",
+      "power": "181880357",
       "thp": null,
       "kills": "2372697",
       "hq": null,
-      "yesterdayVs": "5285712",
-      "weeklyVs": "58021666"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "GoHuskers",
-      "power": "150437558",
+      "power": "147972095",
       "thp": "64000000",
       "kills": "418589",
       "hq": null,
-      "yesterdayVs": "5870816",
-      "weeklyVs": "56943102"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "H20MAN",
-      "power": "175494248",
-      "thp": "101013343",
+      "power": "178831098",
+      "thp": "101032938",
       "kills": "4057521",
       "hq": null,
-      "yesterdayVs": "9395053",
-      "weeklyVs": "128490078"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Hogsyall",
-      "power": "109733394",
+      "power": "110711111",
       "thp": null,
       "kills": "947330",
       "hq": null,
-      "yesterdayVs": "4342650",
-      "weeklyVs": "49205337"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "HoneyCakes",
-      "power": "79681864",
+      "power": "80344913",
       "thp": "30200000",
       "kills": "603749",
       "hq": null,
-      "yesterdayVs": "4360065",
-      "weeklyVs": "39131191"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Hybriddom1",
-      "power": "122832224",
+      "power": "126859683",
       "thp": null,
       "kills": "839529",
       "hq": null,
-      "yesterdayVs": "6721571",
-      "weeklyVs": "55812853"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "IzyB3",
@@ -364,539 +355,548 @@
       "thp": null,
       "kills": "684820",
       "hq": null,
-      "yesterdayVs": "5824050",
-      "weeklyVs": "35713907"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "JABALLS",
-      "power": "186265947",
+      "power": "186807115",
       "thp": null,
       "kills": "671384",
       "hq": null,
-      "yesterdayVs": "5993101",
-      "weeklyVs": "61723226"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "JacksD7",
-      "power": "127570435",
+      "power": "137125708",
       "thp": null,
       "kills": "492478",
       "hq": null,
-      "yesterdayVs": "2623873",
-      "weeklyVs": "39608087"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Jancar777",
-      "power": "174881754",
-      "thp": "95238896",
-      "kills": "4126165",
+      "power": "172454774",
+      "thp": "94858107",
+      "kills": "4129885",
       "hq": null,
-      "yesterdayVs": "6668928",
-      "weeklyVs": "64556443"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "JohnnyW1ld",
-      "power": "197638900",
-      "thp": "126209768",
+      "power": "198127967",
+      "thp": "126531298",
       "kills": "2587084",
       "hq": null,
-      "yesterdayVs": "16305926",
-      "weeklyVs": "153611464"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "JonWucky",
-      "power": "165357102",
+      "power": "161753549",
       "thp": null,
       "kills": "265099",
       "hq": null,
-      "yesterdayVs": "9740113",
-      "weeklyVs": "75817037"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "JudgyJudy",
-      "power": "147030673",
-      "thp": "95827063",
+      "power": "162225913",
+      "thp": "95873676",
       "kills": "1358940",
       "hq": null,
-      "yesterdayVs": "7523755",
-      "weeklyVs": "75098300"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "KConDuneReaper",
-      "power": "178643262",
-      "thp": "104112973",
+      "power": "180974029",
+      "thp": "104131959",
       "kills": "1145824",
       "hq": null,
-      "yesterdayVs": "3225000",
-      "weeklyVs": "83319032"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Katie1776",
-      "power": "104990027",
+      "power": "104445759",
       "thp": null,
       "kills": "115457",
       "hq": null,
-      "yesterdayVs": "7377107",
-      "weeklyVs": "58276536"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Keetja",
-      "power": "154598604",
+      "power": "155277379",
       "thp": "69000000",
       "kills": "424170",
       "hq": null,
-      "yesterdayVs": "5251800",
-      "weeklyVs": "102961202"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "KencityXX",
-      "power": "175219460",
+      "power": "175273867",
       "thp": null,
       "kills": "344689",
       "hq": null,
-      "yesterdayVs": "4428193",
-      "weeklyVs": "47048655"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "King Bubbah Jay",
-      "power": "153509093",
+      "power": "157462157",
       "thp": null,
-      "kills": "2376658",
+      "kills": "2384025",
       "hq": null,
-      "yesterdayVs": "7003063",
-      "weeklyVs": "80865333"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "LOKO1971",
-      "power": "161779560",
+      "power": "162048440",
       "thp": null,
       "kills": "599812",
       "hq": null,
-      "yesterdayVs": "10594597",
-      "weeklyVs": "54753490"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "LeadedMistress",
-      "power": "154785854",
+      "power": "159275502",
       "thp": null,
       "kills": "3879381",
       "hq": null,
-      "yesterdayVs": "9819466",
-      "weeklyVs": "70954184"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "LetBim",
-      "power": "141295105",
+      "power": "144790178",
       "thp": null,
       "kills": "4143281",
       "hq": null,
-      "yesterdayVs": "19888625",
-      "weeklyVs": "159310803"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Loudog90",
-      "power": "115296316",
+      "power": "115309554",
       "thp": null,
       "kills": "548201",
       "hq": null,
-      "yesterdayVs": "5820428",
-      "weeklyVs": "49958827"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "LuckyCharms23",
-      "power": "178048338",
+      "power": "175164190",
       "thp": null,
       "kills": "707229",
       "hq": null,
-      "yesterdayVs": "6980905",
-      "weeklyVs": "52279889"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Lô Lô 95",
-      "power": "115850342",
+      "power": "118433626",
       "thp": null,
       "kills": "1823522",
       "hq": null,
-      "yesterdayVs": "975000",
-      "weeklyVs": "34181753"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "MJArmy",
-      "power": "161988419",
+      "power": "162013783",
       "thp": null,
       "kills": "265587",
       "hq": null,
-      "yesterdayVs": "5785457",
-      "weeklyVs": "40020204"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Ma7eruix",
-      "power": "135033556",
+      "power": "134537051",
       "thp": null,
       "kills": "2217353",
       "hq": null,
-      "yesterdayVs": "748103",
-      "weeklyVs": "44903642"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "McDirick",
-      "power": "179183570",
-      "thp": "120498144",
+      "power": "188301821",
+      "thp": "120526938",
       "kills": "7910406",
       "hq": null,
-      "yesterdayVs": "21795148",
-      "weeklyVs": "103380148"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Mil14",
-      "power": "227187470",
-      "thp": "116936159",
+      "power": "228102758",
+      "thp": "118432331",
       "kills": "14781734",
       "hq": null,
-      "yesterdayVs": "7053318",
-      "weeklyVs": "138564813"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Mini Atom",
-      "power": "134953278",
+      "power": "134723979",
       "thp": null,
       "kills": "519451",
       "hq": null,
-      "yesterdayVs": "3225000",
-      "weeklyVs": "42045883"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Mmarronn",
-      "power": "114324363",
+      "power": "115334874",
       "thp": null,
       "kills": "269052",
       "hq": null,
-      "yesterdayVs": "7173835",
-      "weeklyVs": "50851158"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Mulekezord",
-      "power": "153691920",
+      "power": "153716808",
       "thp": null,
       "kills": "1027646",
       "hq": null,
-      "yesterdayVs": "2267172",
-      "weeklyVs": "63130063"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Myosin",
-      "power": "181314646",
-      "thp": "97890607",
-      "kills": "3033935",
+      "power": "187202205",
+      "thp": "97894936",
+      "kills": "3035139",
       "hq": null,
-      "yesterdayVs": "6965516",
-      "weeklyVs": "151563265"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Omn Setty",
-      "power": "177358196",
+      "power": "178589357",
       "thp": null,
       "kills": "5791104",
       "hq": null,
-      "yesterdayVs": "5766174",
-      "weeklyVs": "130819807"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "PlotTwisT",
-      "power": "156693569",
+      "power": "158508901",
       "thp": "78100000",
       "kills": "4146253",
       "hq": null,
-      "yesterdayVs": "4948650",
-      "weeklyVs": "149075903"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Pourdecisions",
-      "power": "165389400",
+      "power": "165999628",
       "thp": null,
       "kills": "168916",
       "hq": null,
-      "yesterdayVs": "5541804",
-      "weeklyVs": "91555557"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Pøison Ivy",
-      "power": "156448334",
+      "power": "156462384",
       "thp": null,
       "kills": "2202449",
       "hq": null,
-      "yesterdayVs": "3525000",
-      "weeklyVs": "35531048"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Rex LS7",
-      "power": "223239193",
-      "thp": "113367026",
+      "power": "221653919",
+      "thp": "113429174",
       "kills": "4088387",
       "hq": null,
-      "yesterdayVs": "8082982",
-      "weeklyVs": "118372393"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "RockOfTheMarne",
-      "power": "109237372",
+      "power": "110352737",
       "thp": null,
       "kills": "362862",
       "hq": null,
-      "yesterdayVs": "3497166",
-      "weeklyVs": "51301250"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "SSStealth",
-      "power": "117795412",
+      "power": "115966184",
       "thp": null,
       "kills": "451652",
       "hq": null,
-      "yesterdayVs": "2945850",
-      "weeklyVs": "48476950"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Sammy828",
-      "power": "155882050",
+      "power": "157216899",
       "thp": null,
       "kills": "1206148",
       "hq": null,
-      "yesterdayVs": "441711",
-      "weeklyVs": "25851757"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
+    },
+    {
+      "name": "SandFOX",
+      "power": "161658106",
+      "thp": null,
+      "kills": "707277",
+      "hq": null,
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Sasukitty",
-      "power": "131790776",
+      "power": "131566231",
       "thp": null,
       "kills": "200440",
       "hq": null,
-      "yesterdayVs": "3450000",
-      "weeklyVs": "60881538"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Skiff1980",
-      "power": "159134913",
-      "thp": "97540260",
+      "power": "160790796",
+      "thp": "97549348",
       "kills": "2939682",
       "hq": null,
-      "yesterdayVs": "6844286",
-      "weeklyVs": "115512158"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Sniperbird",
-      "power": "141298961",
+      "power": "139409283",
       "thp": "68600000",
       "kills": "794385",
       "hq": null,
-      "yesterdayVs": "4865715",
-      "weeklyVs": "35324040"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "SpareParts709",
-      "power": "167252085",
+      "power": "166675150",
       "thp": null,
       "kills": "209058",
       "hq": null,
-      "yesterdayVs": "4723200",
-      "weeklyVs": "91742010"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "SpyderBite",
-      "power": "182229564",
-      "thp": "100604188",
-      "kills": "2462835",
+      "power": "187898100",
+      "thp": "100675479",
+      "kills": "2462837",
       "hq": null,
-      "yesterdayVs": "7214282",
-      "weeklyVs": "105070556"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Stinkyfield",
-      "power": "165565978",
+      "power": "165348411",
       "thp": null,
       "kills": "1140717",
       "hq": null,
-      "yesterdayVs": "3525000",
-      "weeklyVs": "46169566"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Stoked3",
-      "power": "117184071",
+      "power": "120239714",
       "thp": null,
       "kills": "708721",
       "hq": null,
-      "yesterdayVs": "4699513",
-      "weeklyVs": "46043685"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Super JuNiOr",
-      "power": "176902958",
+      "power": "179142559",
       "thp": "77600000",
       "kills": "5221894",
       "hq": null,
-      "yesterdayVs": "9676644",
-      "weeklyVs": "122758301"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "The GraveDigger",
-      "power": "184920421",
-      "thp": "97358228",
+      "power": "184815307",
+      "thp": "97375648",
       "kills": "3387416",
       "hq": null,
-      "yesterdayVs": "3548700",
-      "weeklyVs": "53713554"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "The War OWL",
-      "power": "158867517",
+      "power": "162552256",
       "thp": null,
       "kills": "3443121",
       "hq": null,
-      "yesterdayVs": "5748691",
-      "weeklyVs": "39062473"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "The real DSA",
-      "power": "223633965",
-      "thp": "120342752",
+      "power": "223296894",
+      "thp": "120420631",
       "kills": "3479509",
       "hq": null,
-      "yesterdayVs": "1436253",
-      "weeklyVs": "67461163"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "TomRhodes",
-      "power": "163471919",
+      "power": "163483919",
       "thp": null,
       "kills": "302560",
       "hq": null,
-      "yesterdayVs": "4292924",
-      "weeklyVs": "47760702"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Topzeira da guerra",
-      "power": "140375208",
+      "power": "143198095",
       "thp": null,
       "kills": "894946",
       "hq": null,
-      "yesterdayVs": "2925000",
-      "weeklyVs": "43860648"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "TruPtGard",
-      "power": "186595735",
-      "thp": "110623951",
+      "power": "189447530",
+      "thp": "110677497",
       "kills": "2215850",
       "hq": null,
-      "yesterdayVs": "8926772",
-      "weeklyVs": "65501633"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "VVVVvvvv",
-      "power": "144530577",
+      "power": "145076812",
       "thp": null,
       "kills": "256318",
       "hq": null,
-      "yesterdayVs": "4894789",
-      "weeklyVs": "76565004"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Vordon888",
-      "power": "130369818",
+      "power": "131275333",
       "thp": null,
       "kills": "619648",
       "hq": null,
-      "yesterdayVs": "3968273",
-      "weeklyVs": "48203026"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Weeks304",
-      "power": "124594684",
+      "power": "126304231",
       "thp": null,
       "kills": "870318",
       "hq": null,
-      "yesterdayVs": "10200298",
-      "weeklyVs": "62465794"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "WpgLos",
-      "power": "125754474",
+      "power": "127498959",
       "thp": null,
       "kills": "118260",
       "hq": null,
-      "yesterdayVs": "3046200",
-      "weeklyVs": "60639821"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "Wrecktangle27",
-      "power": "154703828",
+      "power": "154189366",
       "thp": null,
       "kills": "684643",
       "hq": null,
-      "yesterdayVs": "4710150",
-      "weeklyVs": "90833598"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "commanderbigdawg",
-      "power": "159265744",
+      "power": "159636801",
       "thp": null,
       "kills": "118925",
       "hq": null,
-      "yesterdayVs": "5189250",
-      "weeklyVs": "59446314"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "db666",
-      "power": "141767469",
+      "power": "144307610",
       "thp": null,
       "kills": "20997",
       "hq": null,
-      "yesterdayVs": "900000",
-      "weeklyVs": "43950876"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "ghostdog203",
-      "power": "101742967",
+      "power": "103738022",
       "thp": "60900000",
       "kills": "78854",
       "hq": null,
-      "yesterdayVs": "3563935",
-      "weeklyVs": "91378277"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "milllaaaaa",
-      "power": "109175254",
+      "power": "113888591",
       "thp": null,
       "kills": "2788517",
       "hq": null,
-      "yesterdayVs": "4927269",
-      "weeklyVs": "58734084"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "ssDewm",
-      "power": "162590768",
-      "thp": "105240754",
+      "power": "165006714",
+      "thp": "105254707",
       "kills": "2015972",
       "hq": null,
-      "yesterdayVs": "7442933",
-      "weeklyVs": "46267863"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "xx Major Oliver xx",
-      "power": "148297840",
+      "power": "150761963",
       "thp": null,
       "kills": "116947",
       "hq": null,
-      "yesterdayVs": "3913350",
-      "weeklyVs": "71894975"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     },
     {
       "name": "여름이 최고야",
-      "power": "163515993",
+      "power": "163545793",
       "thp": null,
       "kills": "3651149",
       "hq": null,
-      "yesterdayVs": "3963300",
-      "weeklyVs": "50779921"
+      "yesterdayVs": "0",
+      "weeklyVs": "0"
     }
   ]
 }
