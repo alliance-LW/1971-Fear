@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-24T09:05:47.128Z",
+  "generated_at": "2026-11-25T07:42:32.447Z",
   "alliance": "Havoc",
   "members": [
     {
@@ -29,9 +29,6 @@
     },
     {
       "name": "Big Meat BBQ"
-    },
-    {
-      "name": "BioHazQueen"
     },
     {
       "name": "BlackWidows"
@@ -137,6 +134,9 @@
     },
     {
       "name": "JudgyJudy"
+    },
+    {
+      "name": "Just A Fkn Tank"
     },
     {
       "name": "KConDuneReaper"
